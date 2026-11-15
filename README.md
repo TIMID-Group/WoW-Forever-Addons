@@ -15,11 +15,11 @@
 
 | | Addon | What it does | Latest | Command | Access |
 | --- | --- | --- | --- | --- | --- |
-| 🛠️ | **[Forever Crafting Ledger](https://github.com/TIMID-Group/ForeverCraftingLedger)** | What every recipe of every profession earns: each material from your cheapest vendor or the auction house, the product sold to a vendor or auctioned. Named shopping lists with your own prices. Reads Auctionator's prices. | [1.3.1](https://github.com/TIMID-Group/ForeverCraftingLedger/releases/latest) | `/fcl` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 🛠️ | **[Forever Fishing Chart](https://github.com/TIMID-Group/ForeverFishingChart)** | Fishing waters on the world map: catches, skill checks and time-of-day rates, plus a fish finder and your own catch log. | [1.3.2](https://github.com/TIMID-Group/ForeverFishingChart/releases/latest) | `/ffc` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 💰 | **[[classified]](https://github.com/TIMID-Group/[classified])** | Hold a price ceiling on the auction house. Posts your wall when nothing is listed at or below your price, buys what undercuts it, and tracks every session's profit and gold per hour. | [1.4.0](https://github.com/TIMID-Group/[classified]/releases/latest) | `[classified]` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 📜 | **[Forever Quest Leftovers](https://github.com/TIMID-Group/ForeverQuestLeftovers)** | Looks through your bags and bank for items no quest needs any more, says why, and says what to do with each one. Dungeon keys, attunements and boss summons are listed as worth keeping. It only advises. | [0.7.0](https://github.com/TIMID-Group/ForeverQuestLeftovers/releases/latest) | `/leftovers` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 🛠️ | **[Forever Workbench](https://github.com/TIMID-Group/ForeverWorkbench)** | Makes the profession window richer. Shows materials on hand and items in bags on every recipe, buys the vendor materials for a recipe while leaving bag space to craft, sells what you crafted, and runs a crafting queue. | [2.0.1](https://github.com/TIMID-Group/ForeverWorkbench/releases/latest) | `/workbench` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Crafting Ledger](https://github.com/TIMID-Group/ForeverCraftingLedger)** | What every recipe of every profession earns: each material from your cheapest vendor or the auction house, the product sold to a vendor or auctioned. Named shopping lists with your own prices. Reads Auctionator's prices. | [1.3.2](https://github.com/TIMID-Group/ForeverCraftingLedger/releases/latest) | `/fcl` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Fishing Chart](https://github.com/TIMID-Group/ForeverFishingChart)** | Fishing waters on the world map: catches, skill checks and time-of-day rates, plus a fish finder and your own catch log. | [1.3.3](https://github.com/TIMID-Group/ForeverFishingChart/releases/latest) | `/ffc` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 💰 | **[[classified]](https://github.com/TIMID-Group/[classified])** | Hold a price ceiling on the auction house. Posts your wall when nothing is listed at or below your price, buys what undercuts it, and tracks every session's profit and gold per hour. | [1.4.1](https://github.com/TIMID-Group/[classified]/releases/latest) | `[classified]` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 📜 | **[Forever Quest Leftovers](https://github.com/TIMID-Group/ForeverQuestLeftovers)** | Looks through your bags and bank for items no quest needs any more, says why, and says what to do with each one. Dungeon keys, attunements and boss summons are listed as worth keeping. It only advises. | [0.7.1](https://github.com/TIMID-Group/ForeverQuestLeftovers/releases/latest) | `/leftovers` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Workbench](https://github.com/TIMID-Group/ForeverWorkbench)** | Makes the profession window richer. Shows materials on hand and items in bags on every recipe, buys the vendor materials for a recipe while leaving bag space to craft, sells what you crafted, and runs a crafting queue. | [2.0.2](https://github.com/TIMID-Group/ForeverWorkbench/releases/latest) | `/workbench` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 
 Each addon page has the details, commands and a full guide.
 
@@ -143,10 +143,16 @@ With the game closed, delete `WTF/Account/<account>/SavedVariables/<Addon>.lua`.
 
 ## 💬 Bugs and ideas
 
-[**Report a problem**](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=bug_report.yml) or [**suggest an idea**](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=feature_request.yml) for any of the addons, here on this page: one place for all of them, open to everyone. No title needed; say which addon, paste the report from the game and fill in the parts marked WRITE HERE.
+[**Report a problem**](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=bug_report.yml) or [**suggest an idea**](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=feature_request.yml) for any of the addons, here on this page: one place for all of them, open to everyone, invited or not. Reports here are public; the report from the game holds nothing about your character, gold or account.
+
+**From the game, the quick way:**
+
+1. Press the red **!** beside the gear on the addon's window (right-click it for an idea), or **Report a problem** / **Suggest an idea** on any of its settings pages. The window stays open.
+2. A small box shows a link, already selected: press **Ctrl+C**, then paste it into your web browser.
+3. The form opens with everything filled in: the addon, where you were, the version, your changed settings and any errors the addon caught. Type in the parts marked WRITE HERE, paste a screenshot with **Ctrl+V** if it helps, and press Submit.
 
 > [!TIP]
-> In the game, every settings page has **Report a problem** and **Suggest an idea** buttons. They make a ready-to-paste report with the version, your changed settings and any errors the addon caught, and nothing about your character. Their link opens the right form with the addon filled in.
+> No title needed: each report is labelled and titled with its addon automatically. If a link ever opens with an empty box, use **Full report** in that small box (or `/wb report`, `[classified] report` and so on) and paste the text it gives you.
 
 ## ❓ FAQ
 
