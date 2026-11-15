@@ -13,17 +13,20 @@ repo; access is per repo.
 
 ## Install
 
-Download the `<Addon>-X.Y.Z.zip` asset from the addon's latest release (not the source archive)
-and extract it into `World of Warcraft/_forever_/Interface/AddOns/`, giving
-`AddOns/<Addon>/<Addon>.toc`. To update, replace the folder. Saved settings live in `WTF/` and
-are not touched.
+**WowUp (recommended):** Options > Addons > set a **GitHub Personal Access Token** (classic token,
+`repo` scope; needed because the repos are private). Then on your `_forever_` installation use
+**Get Addons > Install from URL** with each repo URL, e.g.
+`https://github.com/TIMID-Group/[classified]`. WowUp picks the `-forever.zip` asset and handles
+updates from then on.
 
-Watch a repo with **Custom > Releases** to be notified of new versions.
+**Manual:** download `<Addon>-X.Y.Z-forever.zip` from the addon's latest release (not the source
+archive) and extract it into `World of Warcraft/_forever_/Interface/AddOns/`, giving
+`AddOns/<Addon>/<Addon>.toc`. To update, replace the folder. Saved settings live in `WTF/`.
 
 ## Versioning
 
-Tags are `vX.Y.Z` and match `## Version` in the addon's `.toc`. Every tag has a GitHub release
-with the installable zip attached.
+Tags are `vX.Y.Z` and match `## Version` in the addon's `.toc`. Every release carries
+`<Addon>-X.Y.Z-forever.zip` and a BigWigs-style `release.json`.
 
 ## Issues
 
