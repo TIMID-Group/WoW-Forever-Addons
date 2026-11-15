@@ -1,0 +1,36 @@
+# Files each new report or idea as it arrives: the label of the addon it names, and the addon (and
+# the area, when there is one) in its title, so the list reads "Workbench: Problem report (Queue)"
+# instead of a page of "Problem report". Access requests are left alone.
+name: File reports
+on:
+  issues:
+    types: [opened]
+permissions:
+  issues: write
+jobs:
+  file:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const body = issue.body || '';
+            const field = (name) => {
+              const m = body.match(new RegExp('### ' + name + '\\s*\\n+([^\\n#]+)'));
+              const v = m ? m[1].trim() : '';
+              return v === '_No response_' ? '' : v;
+            };
+            const labels = {
+              'workbench': 'Workbench', '[classified]': '[classified]', 'fishing chart': 'Fishing Chart',
+              'quest leftovers': 'Quest Leftovers', 'crafting ledger': 'Crafting Ledger',
+            };
+            const addon = field('Addon').replace(/^forever\s+/i, '').toLowerCase();
+            const label = labels[addon];
+            if (!label) return;
+            await github.rest.issues.addLabels({ ...context.repo, issue_number: issue.number, labels: [label] });
+            const area = field('Area');
+            if (issue.title === 'Problem report' || issue.title === 'Idea') {
+              const title = label + ': ' + issue.title + (area ? ' (' + area.slice(0, 40) + ')' : '');
+              await github.rest.issues.update({ ...context.repo, issue_number: issue.number, title });
+            }
