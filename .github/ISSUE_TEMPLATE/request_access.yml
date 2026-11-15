@@ -6,7 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        **No title needed.** Tick the addons you want and press Submit. You will get an email invite for each one; accept it within 7 days.
+        **No title needed.** Tick the addons you want and press Submit. If it is approved, you get an email invite for each one; accept it within 7 days.
+
+        **This request is public until it is answered,** then it is removed. All it needs is your GitHub name, which GitHub adds for you, and the addons you tick. Please don't add anything private.
   - type: checkboxes
     id: addons
     attributes:

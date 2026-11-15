@@ -9,7 +9,7 @@
 </div>
 
 > [!NOTE]
-> **You're here because you were invited.** Each addon is a private repo and access is per addon: the ones you were given open normally, the rest show a 404. **Want another?** [Request access](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml): tick the addons and submit.
+> **The addons are invite only.** Each addon is a private repo and access is per addon: the ones you were given open normally, the rest show a 404 until you're invited. **Want one?** [Request access](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml): tick the addons and submit. **Anyone can [report a problem](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=bug_report.yml) or [suggest an idea](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=feature_request.yml)**, invited or not. This page is public, so requests and reports here can be read by anyone; an access request is removed once it's answered.
 
 ## 📚 The addons
 
@@ -130,7 +130,7 @@ Tick **Load out of date AddOns** on the AddOns screen at character select.
 <details>
 <summary><b>I get a Lua error</b></summary>
 
-Copy the full text (`/console scriptErrors 1` turns the pop-ups on) and file a bug on that addon's page.
+Copy the full text (`/console scriptErrors 1` turns the pop-ups on) and [report a problem](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=bug_report.yml).
 
 </details>
 
@@ -143,7 +143,10 @@ With the game closed, delete `WTF/Account/<account>/SavedVariables/<Addon>.lua`.
 
 ## 💬 Bugs and ideas
 
-Open the addon's page → **Issues → New issue** and pick *Bug report* or *Idea*. The form asks for what's needed (version, what happened, any Lua error).
+[**Report a problem**](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=bug_report.yml) or [**suggest an idea**](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=feature_request.yml) for any of the addons, here on this page: one place for all of them, open to everyone. No title needed; say which addon, paste the report from the game and fill in the parts marked WRITE HERE.
+
+> [!TIP]
+> In the game, every settings page has **Report a problem** and **Suggest an idea** buttons. They make a ready-to-paste report with the version, your changed settings and any errors the addon caught, and nothing about your character. Their link opens the right form with the addon filled in.
 
 ## ❓ FAQ
 

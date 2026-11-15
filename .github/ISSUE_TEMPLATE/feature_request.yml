@@ -1,0 +1,54 @@
+name: Suggest an idea
+description: Something one of the addons could do, or do better.
+title: "Idea"
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **No title needed.** It is filled in for you; leave it as it is.
+
+        **In the game,** open the addon's settings (Options, AddOns) and press **Suggest an idea**. Copy the text it gives you, paste it into the box below, and fill in the parts marked WRITE HERE.
+
+        **This page is public:** anyone can read what you post. The report from the game holds nothing about your character, gold or account; please don't add any.
+  - type: input
+    id: addon
+    attributes:
+      label: Addon
+      description: "Filled in when you come from the game. Otherwise type which one: Forever Crafting Ledger, Forever Fishing Chart, [classified], Forever Quest Leftovers, Forever Workbench."
+      placeholder: "for example: Forever Workbench"
+    validations:
+      required: true
+  - type: input
+    id: area
+    attributes:
+      label: Area
+      description: Filled in when you come from a settings page. Leave it as it is, or blank.
+      placeholder: "for example: Selling"
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: Paste the text from the game here, or answer the questions below in your own words.
+      render: text
+      placeholder: |
+        ----------------------------------------------------------------
+          1. WHAT WOULD HELP?
+        ----------------------------------------------------------------
+        WRITE HERE:
+
+        ----------------------------------------------------------------
+          2. WHAT ARE YOU TRYING TO DO? (the problem it would solve)
+        ----------------------------------------------------------------
+        WRITE HERE:
+
+        ################################################################
+        ##  (The in-game report adds the details from the game here.)
+        ################################################################
+    validations:
+      required: true
+  - type: textarea
+    id: pictures
+    attributes:
+      label: Screenshots or sketches (optional)
+      description: Drag pictures here if they help explain it.
