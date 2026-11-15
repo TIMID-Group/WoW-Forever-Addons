@@ -82,6 +82,32 @@ tooltip of a setting that uses it, in the guide's "What it needs", and as an opt
 in `.pkgmeta` (so CurseForge's page and app offer it). Never in chat, at login, in a popup, or in
 an ordinary tooltip.
 
+## 1b. Windows
+
+Every window an addon opens on its own (a main window such as [classified]'s, the ledger, the fish
+finder or the leftovers list, and every report window) behaves like the game's own windows:
+
+- **The game's frame where it fits.** PortraitFrameTemplate (title bar, round portrait with the
+  addon's icon, close button), falling back to BasicFrameTemplateWithInset, then a plain frame, on
+  clients that lack it. The title is the name plus the version in grey. An addon whose window is
+  deliberately its own look keeps it ([classified], by the owner's choice), as long as the rules below
+  hold.
+- **The game's layer.** Strata MEDIUM, `SetToplevel(true)`, and a raise when opened and when
+  clicked, so the window used last is on top and other windows can come in front of it. Never
+  HIGH or DIALOG for a window; only drop-down menus, which close on any click elsewhere, sit above.
+- **One OnShow.** A later `SetScript("OnShow")` wipes an earlier `HookScript`; keep a single
+  handler, or hook after the last SetScript.
+- **Moving.** Draggable by its body or title, clamped to the screen, its position remembered per
+  account, and a "Reset window position" button on the Housekeeping page.
+- **Closing.** Escape closes it (UISpecialFrames), the close button says so in its tooltip.
+- **Sounds.** The game's IG_CHARACTER_INFO_OPEN and IG_CHARACTER_INFO_CLOSE.
+- **Ways in.** A key binding to toggle it (Bindings.xml, category = the addon's name, plain-words
+  name), the game's addon menu by the minimap (## AddonCompartmentFunc: click opens it, right-click
+  the settings, a tooltip with one useful line), and the minimap button.
+- **Lists.** The game's scroll bar (ScrollFrameTemplate) that hides itself when everything fits.
+- **Parts of the game's own windows** (Workbench's strip and pages) live inside those windows and
+  follow them; they do not need their own layer rules.
+
 ## 2. Reports and ideas
 
 Addons cannot reach the internet, so a report is text the player copies and pastes. Make every step
