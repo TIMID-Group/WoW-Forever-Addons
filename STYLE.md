@@ -17,7 +17,8 @@ Reference files (in `TIMID-Group/ForeverWorkbench`, folder `ForeverWorkbench/`):
 ## 1. Settings live in the game's own settings window
 
 Options, AddOns, *Addon Name*. Never a separate options window of our own. `/<cmd>` with nothing
-after it opens the front page.
+after it opens the front page, unless the addon has a main window of its own ([classified], Quest
+Leftovers): then plain `/<cmd>` opens that window, and `/<cmd> settings` opens the front page.
 
 ### The front page
 
@@ -104,7 +105,37 @@ The GitHub side is the same for every repo: issue forms for bugs and ideas
 - **Every guide has the same sections**, in this order: Install, What it needs, How to use it,
   Settings, Commands, Reporting a problem or an idea, Testing status.
 
-## 5. Tests
+## 5. Releases, and being ready for CurseForge
+
+Every repo carries the release kit, installed and kept in step by `forever kit` from `release-kit/`:
+
+| File | What it is for |
+|---|---|
+| `CHANGELOG.md` | Every version, newest first, as `## [X.Y.Z] - YYYY-MM-DD` then bullets a player would understand: **a bold one-line summary**, then a sentence of detail. Changed defaults say that existing players keep their values. API changes go under `### For addon authors`. |
+| `scripts/changelog.py` | Pulls one version's section out of CHANGELOG.md. |
+| `.pkgmeta` | Tells the BigWigs packager to lift `<Addon>/<Addon>` to the top of the zip and to ship `LICENSE`. |
+| `.github/workflows/package.yml` | Runs the packager on every tag: always builds the package (kept as the run's artifact), uploads to CurseForge or Wago only once that site's key secret and project ID exist. |
+| `LICENSE` | MIT, copyright TIMID Group. A copy also ships inside the addon folder. |
+
+Rules:
+
+- **No notes, no release:** `forever publish` refuses a version without its changelog section, and
+  that section becomes the GitHub release notes (and the CurseForge and Wago notes). Write the
+  section when the version is bumped.
+- **What's new matches the changelog:** the front page's What's new line for a version is the
+  summary of its changelog section.
+- **The `.toc` carries:** `## Title`, `## Notes`, `## Version` (a literal version, so the installed
+  copy shows it), `## Author: TIMID Group`, `## X-License: MIT`, `## X-Website` (the repo), and
+  `## IconTexture`. Add `## X-Curse-Project-ID` and `## X-Wago-ID` the day the project is created
+  on those sites.
+- **Credit what you borrow:** any data or code taken from elsewhere is credited in a `NOTICE.md`
+  inside the addon folder, with the source's licence text where it asks for it.
+- **Never upload** anything that reads or ships the `WTF` folder.
+
+To list an addon later: create the project on CurseForge, put its ID in the `.toc`, add the
+repository secret `CF_API_KEY` (from the CurseForge API tokens page), and publish the next version.
+
+## 6. Tests
 
 Every addon has a test suite against a strict fake of the game client. A change to settings or pages
 needs tests that:
