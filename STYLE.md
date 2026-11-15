@@ -9,9 +9,9 @@ Reference files (in `TIMID-Group/ForeverWorkbench`, folder `ForeverWorkbench/`):
 | What | File |
 |---|---|
 | Settings declared once: sections, defaults, checks | `Core.lua` (`ns.SECTIONS`, `ns.SETTINGS`, `ns.WHATS_NEW`, `ns.REPORT_URL`) |
-| Front page, sidebar pages, Housekeeping, opening a page | `Options.lua` |
-| Report window | `UI/Report.lua` |
-| Drop-down widget | `UI/Widgets.lua` (`W.Dropdown`) |
+| Front page, sidebar pages, Housekeeping, opening a page | `Libs/ForeverKit/ForeverKit.lua`, called from `Options.lua` |
+| Report window | `Libs/ForeverKit/ForeverKit.lua`, called from `UI/Report.lua` |
+| Drop-down and the other widgets | `Libs/ForeverKit/ForeverKit.lua` (`Kit.Dropdown`) |
 | Tests for all of the above | `tests/spec_y_pages.lua`, `tests/spec_h_settings.lua` |
 
 ## 1. Settings live in the game's own settings window
@@ -20,11 +20,60 @@ Options, AddOns, *Addon Name*. Never a separate options window of our own. `/<cm
 after it opens the front page, unless the addon has a main window of its own ([classified], Quest
 Leftovers): then plain `/<cmd>` opens that window, and `/<cmd> settings` opens the front page.
 
+### ForeverKit draws every page and every report window
+
+The pages and the report window are not written by each addon: they are drawn by **ForeverKit**,
+one library every Forever addon carries, so they cannot drift apart. The master copy is
+`release-kit/ForeverKit/ForeverKit.lua`; each addon ships an identical copy at
+`Libs\ForeverKit\ForeverKit.lua`, listed in its `.toc` after the other libraries. It registers with
+LibStub as `ForeverKit-1.0` with a whole-number minor, so the game keeps the newest copy loaded and
+every addon draws with it. Its API only grows: a newer minor keeps every older call working. Each
+addon's tests check that its copy is byte for byte the master. Every measure a page uses (the
+control column, the row height, the button height, heading spacing) is in one table, `Kit.LAYOUT`.
+
+- `Kit:NewOptions(spec)` returns an object with `:Build()`, `:Open(pageKey)`, `:Refresh()` and the
+  tables `.rows`, `.pages`, `.buttons` (aliased to `ns.optionRows`, `ns.optionPages`,
+  `ns.optionButtons`). The spec: `name`, `version`, `icon`, `short`, `command`, `intro`; `sections`
+  ({ key, title, desc, help }); `settings` (the declared list: key, section, group, kind bool,
+  choice, int, number, money or color, default, label, tip, min, max, unit, needs, requires,
+  requiresFor, hidden, inline, sound, color, test); `get(key)`, `set(key, value)` returning ok and
+  why, `reset(section or nil)`, `text(def, value)`, `enabled(def)`; `worksWith` (and `worksWithNote`,
+  more words for an addon's line, since minor 2); `gettingStarted`
+  and `whatsNew` lines; `housekeeping` ({ group, key, label, question, act, tip, line });
+  `frontButtons` (the addon's own buttons at the top right of the front page); `extras` (something
+  drawn under one setting's row); `report(kind, ctx)`, `test(kind)`, `clicked(def, value)` (a click
+  sound, since minor 3), `print`, `guard`.
+- `Kit:NewReport(spec)` returns `:Show(kind, ctx)` and `:Text(kind, ctx)`. The spec: `name`,
+  `short`, `addon`, `version`, `frameName`, `urls`, `settings`, `get`, `text`, and
+  `details(kind, ctx)`, the addon's own lines (its error journal and debug lines), and `scrub(text)`,
+  which takes anything personal out of the finished text (since minor 3).
+- The widgets are exported for the addon's own windows: `Kit.Button`, `Check`, `Edit`, `Dropdown`,
+  `ColorSwatch`, `ConfirmButton`, `Tip`, `Heading`, `Words`, `Scroll`, `SetEnabled`.
+- The way to the settings from an addon's own windows (since minor 5): `Kit.GearButton(parent,
+  openSettings, env, opts)`, a 16 by 16 gear with the game's highlight and the tooltip "Settings" /
+  "Opens <addon>'s settings. Right-clicking <icon> does the same."; `Kit.TitleGear(frame,
+  openSettings, env, opts)`, that gear just left of the frame's close button, level with it;
+  `Kit.SettingsOnRightClick(widget, openSettings, env, opts)`, a right-click on the widget opens the
+  settings while its left-click keeps working, and its tooltip gains "Right-click: settings" (a
+  picture or a line of words gets a clear frame over it that takes only the right-click); and
+  `Kit.ClickHints(tt, what, drag)`, the lines "Left-click: <what>", "Right-click: settings" and
+  "Drag: move this button" for a minimap button and an addon-menu entry. `opts` is the addon's name
+  or { addon, icon, title, body, close, window }.
+
+### Every page starts with the same header
+
+Every page, the front page and the pages under it, starts with the same header band: the addon's
+icon (32), its name in the large font and its version in grey, always in the same spot, so a player
+always sees which addon they are in. A page under the front page then shows where it is: a
+breadcrumb, "Settings » <page>", in the larger gold, with **All settings** (back to the front page)
+and **Reset this page** at the right of that line. Then the page's two lines on its feature, then its
+content, then its Help section.
+
 ### The front page
 
 The addon's own entry in the sidebar. Top to bottom:
 
-1. **Title and version** (the version small and grey, as `ns.title`).
+1. **The header band**: the icon, the name and the version in grey, as on every page.
 2. **One line on what the addon does**, in plain words.
 3. **Getting started**: three or four numbered steps that take a new player from nothing to the
    addon doing its job. Name buttons and tick boxes exactly as they appear, in gold
@@ -46,20 +95,22 @@ The addon's own entry in the sidebar. Top to bottom:
   do). Fewer than that can stay on the front page under a Settings heading.
 - **Housekeeping is always the last page**: Reset all settings, and every button that forgets or
   deletes saved data, each with a line saying what it does.
-- **Each page opens with:** its title and a description of the feature in two short lines at most
-  (`help` on the section: what the feature does and the one thing to know; the front page's Open
-  row keeps the one-line `desc`), then **Reset this page** at the top right.
+- **Each page opens with:** the header band and the breadcrumb, with **All settings** and **Reset
+  this page** at its right, then a description of the feature in two short lines at most (`help` on
+  the section: what the feature does and the one thing to know; the front page's Open row keeps the
+  one-line `desc`).
 - **Every page is styled like the front page.** Its settings sit under gold section headings with a
   rule under them (the front page's `heading`), grouped by what they are about: each setting
-  declares `group = "Recipe rows"` and a page with one group heads it "Settings". Reset this page
-  sits on the first heading's line, at the right. Housekeeping is grouped the same way (Settings,
-  Saved data, and so on).
+  declares `group = "Recipe rows"` and a page with one group heads it "Settings". Housekeeping is
+  grouped the same way (Settings, Saved data, and so on).
 - **Every page ends with a Help section,** never a small link: the heading "Help with <page>", the
   same **Report a problem** and **Suggest an idea** buttons as the front page, and one line saying
   the page's settings go in with the report. The buttons open the report window with
   `{ area = page title, section = key }` (see section 2). Housekeeping has one too.
-- **Rows:** a tick box or control per setting, its label, and a tooltip with what On and Off do,
-  the allowed range and the default.
+- **Rows:** a tick box or control per setting, its label (12 px, from 24, clicking it counts for a
+  tick box), and a tooltip with what On and Off do, the allowed range and the default. Controls sit
+  in one column at 370; every choice is a drop-down; a unit sits after its box; rows are 26 apart;
+  a greyed-out setting fades its label and control once, never the row on top.
 - **Old clients:** fall back to `InterfaceOptions_AddCategory` with `panel.parent` set.
 - **Opening a page from a button:** use `C_SettingsUtil.OpenSettingsPanel` through
   `securecallfunction` when the client has it (out of combat), else `Settings.OpenToCategory`.
@@ -107,10 +158,20 @@ finder or the leftovers list, and every report window) behaves like the game's o
 - **Moving.** Draggable by its body or title, clamped to the screen, its position remembered per
   account, and a "Reset window position" button on the Housekeeping page.
 - **Closing.** Escape closes it (UISpecialFrames), the close button says so in its tooltip.
+- **Settings.** Settings are one click away from every addon window: a gear left of the close
+  button, and right-click on the addon's own icon (portrait, minimap button, addon menu). Tooltips
+  say so. In Workbench, the profession icon is the addon's icon (click toggles the strip, right-click
+  settings), with the gear left of the close button like everywhere else. The gear replaces any
+  Settings or Options button a window had: no window carries one of its own. [classified], which keeps
+  its own look and has no portrait, takes the right-click on its title. Use `Kit.TitleGear` and
+  `Kit.SettingsOnRightClick`.
 - **Sounds.** The game's IG_CHARACTER_INFO_OPEN and IG_CHARACTER_INFO_CLOSE.
 - **Ways in.** A key binding to toggle it (Bindings.xml, category = the addon's name, plain-words
-  name), the game's addon menu by the minimap (## AddonCompartmentFunc: click opens it, right-click
-  the settings, a tooltip with one useful line), and the minimap button.
+  name), the game's addon menu by the minimap (## AddonCompartmentFunc), and the minimap button.
+  On both, a left-click does the addon's main thing (its window; the profession window for
+  Workbench) and a right-click opens the settings. Their tooltips have one useful line, then
+  `Kit.ClickHints`: "Left-click: ...", "Right-click: settings" and, on the minimap button only,
+  "Drag: move this button", in the game's green.
 - **Lists.** The game's scroll bar (ScrollFrameTemplate) that hides itself when everything fits.
 - **Parts of the game's own windows** (Workbench's strip and pages) live inside those windows and
   follow them; they do not need their own layer rules.
