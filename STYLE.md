@@ -43,10 +43,15 @@ control column, the row height, the button height, heading spacing) is in one ta
   `frontButtons` (the addon's own buttons at the top right of the front page); `extras` (something
   drawn under one setting's row); `report(kind, ctx)`, `test(kind)`, `clicked(def, value)` (a click
   sound, since minor 3), `print`, `guard`.
-- `Kit:NewReport(spec)` returns `:Show(kind, ctx)` and `:Text(kind, ctx)`. The spec: `name`,
-  `short`, `addon`, `version`, `frameName`, `urls`, `settings`, `get`, `text`, and
-  `details(kind, ctx)`, the addon's own lines (its error journal and debug lines), and `scrub(text)`,
-  which takes anything personal out of the finished text (since minor 3).
+- `Kit:NewReport(spec)` returns `:Show(kind, ctx)`, `:Text(kind, ctx)` and (since minor 6)
+  `:Link(kind, ctx)`, the form's link with the whole report in it (see section 2), and `:Pop(kind,
+  ctx, button)`, the small box with that link. The spec: `name`, `short`, `addon`, `version`,
+  `frameName`, `urls`, `settings`, `get`, `text`, and `details(kind, ctx)`, the addon's own lines
+  (its error journal and debug lines), and `scrub(text)`, which takes anything personal out of the
+  finished text (since minor 3); `command` ("/wb", named in a trimmed link's note) and
+  `items(kind, ctx)` (lines about the things the addon looked at, trimmed after the debug lines)
+  since minor 6. The settings spec's `reportLink` (the report, or a function returning it) makes
+  the pages' report buttons give that small box too.
 - The widgets are exported for the addon's own windows: `Kit.Button`, `Check`, `Edit`, `Dropdown`,
   `ColorSwatch`, `ConfirmButton`, `Tip`, `Heading`, `Words`, `Scroll`, `SetEnabled`.
 - The way to the settings from an addon's own windows (since minor 5): `Kit.GearButton(parent,
@@ -105,8 +110,9 @@ The addon's own entry in the sidebar. Top to bottom:
   grouped the same way (Settings, Saved data, and so on).
 - **Every page ends with a Help section,** never a small link: the heading "Help with <page>", the
   same **Report a problem** and **Suggest an idea** buttons as the front page, and one line saying
-  the page's settings go in with the report. The buttons open the report window with
-  `{ area = page title, section = key }` (see section 2). Housekeeping has one too.
+  the page's settings go in with the report. The buttons give the prefilled link in the small
+  box under the button pressed, with `{ area = page title, section = key }` (see section 2).
+  Housekeeping has one too.
 - **Rows:** a tick box or control per setting, its label (12 px, from 24, clicking it counts for a
   tick box), and a tooltip with what On and Off do, the allowed range and the default. Controls sit
   in one column at 370; every choice is a drop-down; a unit sits after its box; rows are 26 apart;
@@ -165,6 +171,18 @@ finder or the leftovers list, and every report window) behaves like the game's o
   Settings or Options button a window had: no window carries one of its own. [classified], which keeps
   its own look and has no portrait, takes the right-click on its title. Use `Kit.TitleGear` and
   `Kit.SettingsOnRightClick`.
+- **Reporting.** A report button sits just left of the gear, the same 16 by 16, with its own
+  symbol (the game's red exclamation, `HelpIcon-ReportAbuse`, or the next one the client has; a red
+  "!" when it has none). Its tooltip: "Report a problem", "Gives you a link that opens the report
+  form already filled in. Your window stays open, so you can take a screenshot." and, in green,
+  "Right-click: suggest an idea". A click opens a small box (320 by 90) under it holding the
+  prefilled link, already selected (Ctrl+C), the line "Ctrl+C, then paste it in your browser", a
+  Problem / Idea switch, Full report (the report window) and an X; Escape closes it. The window
+  stays open and uncovered, so the player pastes the link and then takes the screenshot. The box
+  is the one thing besides a drop-down that sits on DIALOG, so a click in the window never hides
+  it; it goes when its window closes. Its area is the window's name ("Profession window", "Fish
+  finder"). Use `Kit.TitleReport(frame, function() return ns.report end, env, { area = ... })`
+  after `Kit.TitleGear`. It adds a way in; every other one stays.
 - **Sounds.** The game's IG_CHARACTER_INFO_OPEN and IG_CHARACTER_INFO_CLOSE.
 - **Ways in.** A key binding to toggle it (Bindings.xml, category = the addon's name, plain-words
   name), the game's addon menu by the minimap (## AddonCompartmentFunc), and the minimap button.
@@ -178,15 +196,33 @@ finder or the leftovers list, and every report window) behaves like the game's o
 
 ## 2. Reports and ideas
 
-Addons cannot reach the internet, so a report is text the player copies and pastes. Make every step
-deliberate: one link that opens exactly the right form, one block of text, nothing to title.
+Addons cannot reach the internet, so a report is a link the player copies and pastes: one copy,
+one paste. The link opens exactly the right form with the whole report already in its box, and
+there is nothing to title.
 
-- **The buttons and commands:** **Report a problem** and **Suggest an idea** on the front page,
-  `/<cmd> report` and `/<cmd> idea`, and each page's Help section open one window. A **Problem / Idea** switch at its top right changes kind without losing the page. It
-  shows three numbered steps:
-  1. Copy this link and open it in your web browser (with a Select button beside the link box).
-  2. Copy everything in the box below (already selected: Ctrl+C) and paste it into the form.
-  3. Fill in the parts marked WRITE HERE and press Submit. There is no title to write.
+- **The buttons and commands:** the report button beside every window's gear (section 1b), and
+  **Report a problem** and **Suggest an idea** on the front page and in each page's Help section,
+  give the prefilled link in a small box under the button. `/<cmd> report`, `/<cmd> idea` and the
+  box's **Full report** open the report window. A **Problem / Idea** switch at its top right
+  changes kind without losing the page. It shows three numbered steps:
+  1. Copy this link (it is already selected: press Ctrl+C) and open it in your web browser. The
+     report is already filled in.
+  2. Fill in the parts marked WRITE HERE. Paste a screenshot into the Screenshots box if it helps.
+  3. Press Submit. You need a free GitHub account; reports there are public.
+
+  Under them sits the report text itself, "If the page opens empty, copy this too and paste it in."
+  The link box takes a link of any length (`SetMaxLetters(0)`).
+- **The prefilled link.** GitHub fills a form field from the query parameter named after its `id`:
+  `&report=` on the problem form, `&idea=` on the idea form, after `&area=`. In the report, a space
+  is `+`, a newline `%0A`, and every other character but letters, digits and `- . _ ~` is
+  percent-encoded byte by byte (`#` as `%23`, `+` as `%2B`, an accented letter as its UTF-8 bytes).
+  Its rule lines are 32 wide, not 64, so more fits.
+- **The 6,000-character budget.** GitHub takes a link of 6,000 characters and fails above about
+  6,500, so the whole link stays at or under 6,000 (`Kit.LINK_BUDGET`). A longer report is trimmed
+  in this order: the other addons list, then debug and probe lines, then item or detail lines, then
+  settings, and one line under the version says so: "Trimmed to fit the link: other addons list.
+  /<cmd> report shows the full report." The questions, the version and client line and the problems
+  caught are never trimmed.
 - **The link opens one form, never a chooser:** `ns.REPORT_URLS.problem` is
   `.../issues/new?template=bug_report.yml`, `ns.REPORT_URLS.idea` is `...?template=feature_request.yml`.
   Never `issues/new/choose`.
@@ -214,7 +250,7 @@ deliberate: one link that opens exactly the right form, one block of text, nothi
 
   An idea asks 1. WHAT WOULD HELP? and 2. WHAT ARE YOU TRYING TO DO?, and its details are the
   version, client, changed settings and other addons.
-- **From a settings page** (`ns.ShowReport(kind, { area = page title, section = key })`), the
+- **From a settings page** (`{ area = page title, section = key }`), the
   details start with `Area: <page>` and `Settings on this page:` (every setting there, changed or
   not), and the link gains `&area=<page>`, which fills in the form's Area box.
 - **Never in a report:** the character's name, realm, guild, gold, account, or exact map position.

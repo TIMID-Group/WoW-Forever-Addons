@@ -8,7 +8,7 @@ body:
       value: |
         **No title needed.** It is filled in for you; leave it as it is.
 
-        **In the game,** open the addon's settings (Options, AddOns) and press **Suggest an idea**. Copy the text it gives you, paste it into the box below, and fill in the parts marked WRITE HERE.
+        **From the game,** right-click the small report button (**!**) beside the gear on the addon's window (or press **Suggest an idea** in its settings). Copy the link it gives you and open it: this form opens with your idea's details already filled in. Fill in the parts marked WRITE HERE and press Submit.
 
         **This page is public:** anyone can read what you post. The report from the game holds nothing about your character, gold or account; please don't add any.
   - type: input
