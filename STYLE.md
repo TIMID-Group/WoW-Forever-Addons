@@ -49,8 +49,15 @@ The addon's own entry in the sidebar. Top to bottom:
 - **Each page opens with:** its title and a description of the feature in two short lines at most
   (`help` on the section: what the feature does and the one thing to know; the front page's Open
   row keeps the one-line `desc`), then **Reset this page** at the top right.
-- **Each page ends with** a quiet link, "Problem or idea about <page>?", that opens the report window
-  already knowing the page (see section 2). Housekeeping has one too.
+- **Every page is styled like the front page.** Its settings sit under gold section headings with a
+  rule under them (the front page's `heading`), grouped by what they are about: each setting
+  declares `group = "Recipe rows"` and a page with one group heads it "Settings". Reset this page
+  sits on the first heading's line, at the right. Housekeeping is grouped the same way (Settings,
+  Saved data, and so on).
+- **Every page ends with a Help section,** never a small link: the heading "Help with <page>", the
+  same **Report a problem** and **Suggest an idea** buttons as the front page, and one line saying
+  the page's settings go in with the report. The buttons open the report window with
+  `{ area = page title, section = key }` (see section 2). Housekeeping has one too.
 - **Rows:** a tick box or control per setting, its label, and a tooltip with what On and Off do,
   the allowed range and the default.
 - **Old clients:** fall back to `InterfaceOptions_AddCategory` with `panel.parent` set.
@@ -114,8 +121,7 @@ Addons cannot reach the internet, so a report is text the player copies and past
 deliberate: one link that opens exactly the right form, one block of text, nothing to title.
 
 - **The buttons and commands:** **Report a problem** and **Suggest an idea** on the front page,
-  `/<cmd> report` and `/<cmd> idea`, and each page's "Problem or idea about <page>?" link open one
-  window. A **Problem / Idea** switch at its top right changes kind without losing the page. It
+  `/<cmd> report` and `/<cmd> idea`, and each page's Help section open one window. A **Problem / Idea** switch at its top right changes kind without losing the page. It
   shows three numbered steps:
   1. Copy this link and open it in your web browser (with a Select button beside the link box).
   2. Copy everything in the box below (already selected: Ctrl+C) and paste it into the form.
