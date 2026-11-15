@@ -1,0 +1,23 @@
+name: Request access
+description: Ask for an invite to one or more of the invite-only addons.
+title: "Access request"
+labels: [access]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **No title needed.** Tick the addons you want and press Submit. You will get an email invite for each one; accept it within 7 days.
+  - type: checkboxes
+    id: addons
+    attributes:
+      label: Which addons?
+      options:
+        - label: Forever Crafting Ledger
+        - label: Forever Fishing Chart
+        - label: [classified]
+        - label: Forever Quest Leftovers
+        - label: Forever Workbench
+  - type: textarea
+    id: note
+    attributes:
+      label: Anything to add (optional)
