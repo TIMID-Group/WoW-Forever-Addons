@@ -23,9 +23,9 @@
 | | Addon | What it does | Latest | Command | Access |
 | --- | --- | --- | --- | --- | --- |
 | 🛠️ | **[Forever Crafting Ledger](https://github.com/TIMID-Group/ForeverCraftingLedger)** | What every recipe of every profession earns: each material from your cheapest vendor or the auction house, the product sold to a vendor or auctioned. Named shopping lists with your own prices. Reads Auctionator's prices. | [1.6.0](https://github.com/TIMID-Group/ForeverCraftingLedger/releases/latest) | `/fcl` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 🛠️ | **[Forever Fishing Chart](https://github.com/TIMID-Group/ForeverFishingChart)** | Fishing waters on the world map: catches, skill checks and time-of-day rates, plus a fish finder and your own catch log. | [1.6.0](https://github.com/TIMID-Group/ForeverFishingChart/releases/latest) | `/ffc` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 💰 | **[[classified]](https://github.com/TIMID-Group/[classified])** | Hold a price ceiling on the auction house. Posts your wall when nothing is listed at or below your price, buys what undercuts it, and tracks every session's profit and gold per hour. | [1.7.0](https://github.com/TIMID-Group/[classified]/releases/latest) | `[classified]` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 📜 | **[Forever Quest Leftovers](https://github.com/TIMID-Group/ForeverQuestLeftovers)** | Looks through your bags and bank for items no quest needs any more, says why, and says what to do with each one. Dungeon keys, attunements and boss summons are listed as worth keeping. It only advises. | [0.10.0](https://github.com/TIMID-Group/ForeverQuestLeftovers/releases/latest) | `/leftovers` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Fishing Chart](https://github.com/TIMID-Group/ForeverFishingChart)** | Fishing waters on the world map: catches, skill checks and time-of-day rates, plus a fish finder and your own catch log. | [1.6.1](https://github.com/TIMID-Group/ForeverFishingChart/releases/latest) | `/ffc` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 💰 | **[[classified]](https://github.com/TIMID-Group/[classified])** | Hold a price ceiling on the auction house. Posts your wall when nothing is listed at or below your price, buys what undercuts it, and tracks every session's profit and gold per hour. | [1.7.1](https://github.com/TIMID-Group/[classified]/releases/latest) | `[classified]` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 📜 | **[Forever Quest Leftovers](https://github.com/TIMID-Group/ForeverQuestLeftovers)** | Looks through your bags and bank for items no quest needs any more, says why, and says what to do with each one. Dungeon keys, attunements and boss summons are listed as worth keeping. It only advises. | [0.10.1](https://github.com/TIMID-Group/ForeverQuestLeftovers/releases/latest) | `/leftovers` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 | 🛠️ | **[Forever Workbench](https://github.com/TIMID-Group/ForeverWorkbench)** | Makes the profession window richer. Shows materials on hand and items in bags on every recipe, buys the vendor materials for a recipe while leaving bag space to craft, sells what you crafted, and runs a crafting queue. | [2.2.0](https://github.com/TIMID-Group/ForeverWorkbench/releases/latest) | `/workbench` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 
 Each addon page has the details, commands and a full guide.
@@ -64,7 +64,7 @@ WowUp shows updates from then on.
 
 1. On the addon's page, open **Latest release** and download `<Addon>-X.Y.Z-forever.zip` under *Assets* (not *Source code*).
 2. Extract it into `World of Warcraft/_forever_/Interface/AddOns/`, giving `AddOns/<Addon>/<Addon>.toc`.
-3. Restart the game, or `/reload`.
+3. Restart the game. A new addon only shows after a restart; `/reload` doesn't find it.
 
 ### 3. Let an AI agent do it
 
@@ -90,8 +90,8 @@ I can only see the repos I have been invited to.
    there is one, and extract the new folder in its place.
 5. Never touch the `WTF` folder (my settings and history live there) or any other addon.
 6. Finish with a table: addon, installed version (the `## Version` line in the .toc), and
-   whether it was new, updated or already current. Remind me to type /reload in game, or to
-   restart it.
+   whether it was new, updated or already current. Remind me to restart the game: a new
+   addon only shows after a restart, not a /reload.
 ```
 
 ## 🧭 The TIMID button
@@ -101,6 +101,7 @@ With **two or more** TIMID addons installed, their minimap buttons fold into **o
 | Do this | To |
 | --- | --- |
 | **Left-click** the TIMID button | open the TIMID panel beside it: a row per TIMID addon with its icon, name and a live status line |
+| **Click** "TIMID Group" at the top of the panel | open the TIMID Group window (below) |
 | **Left-click** a row in the panel | open that addon, as its own button does |
 | **Right-click** a row in the panel | open its settings |
 | **Hover** a row in the panel | see its usual tooltip |
@@ -110,14 +111,33 @@ With **two or more** TIMID addons installed, their minimap buttons fold into **o
 Each row's status line says what that addon is doing now, for example the crafting queue's step in Workbench, running or paused in [classified], your zone's fishing skill in Fishing Chart, or how many items look left over in Quest Leftovers.
 
 > [!TIP]
-> Rather have every button on its own? Untick **TIMID minimap button** on the Housekeeping page of any TIMID addon's settings, right-click the TIMID button twice, or type `/timid separate` (`/timid group` brings the TIMID button back). It is remembered for all of them.
+> Rather have every button on its own? Untick **Group the TIMID addons' buttons into one** (under *TIMID minimap button* on the Housekeeping page of any TIMID addon's settings), right-click the TIMID button twice, or type `/timid separate` (`/timid group` brings the TIMID button back). It is remembered for all of them.
+
+### The TIMID Group window
+
+Click **TIMID Group** at the top of the TIMID panel, or type **`/timid`**, for one window about all of them:
+
+- every TIMID addon you have, with its version and what it is doing now (left-click a row to open that addon, right-click for its settings);
+- **Report a problem** and **Suggest an idea** for all of them at once, for something that isn't about one addon;
+- the address of this page, and the credits.
+
+<p align="center"><img src="media/timid-group/window.png" alt="The TIMID Group window: every TIMID addon with its version and status, Report a problem and Suggest an idea for all of them, and this page's address" width="360"></p>
+
+With two or more TIMID addons, the game's **Settings** have one **TIMID Group** entry in the AddOns list, with each addon's settings under it. With just one, it keeps its own entry.
+
+| Command | Does |
+| --- | --- |
+| `/timid` | open the TIMID Group window |
+| `/timid report`, `/timid idea` | report a problem, or suggest an idea, for all the TIMID addons |
+| `/timid settings` | open the TIMID Group settings |
+| `/timid group`, `/timid separate` | one TIMID button, or every addon's own button |
 
 ## 🔄 Updating
 
 | If you installed with | To update |
 | --- | --- |
 | WowUp | It shows the update; press *Update* (or *Update All*). |
-| Manual | Delete the old folder, extract the new zip. |
+| Manual | Delete the old folder, extract the new zip, restart the game. |
 | AI agent | Run the same prompt again. |
 
 Settings are never lost on update. To be emailed about new versions, open an addon's page and choose **Watch → Custom → Releases**.
@@ -141,7 +161,7 @@ Check the token is saved in *Options → Addons*, is a **classic** token with `r
 <details>
 <summary><b>The addon isn't in the game's AddOns list</b></summary>
 
-The folder is probably nested (`AddOns/[classified]/[classified]/...`). Move the inner folder up one level so the `.toc` sits directly inside `AddOns/<Addon>/`.
+Restart the game first: a new addon only shows after a restart, not a `/reload`. Still missing? The folder is probably nested (`AddOns/[classified]/[classified]/...`). Move the inner folder up one level so the `.toc` sits directly inside `AddOns/<Addon>/`.
 
 </details>
 
@@ -172,12 +192,12 @@ With the game closed, delete `WTF/Account/<account>/SavedVariables/<Addon>.lua`.
 
 **From the game, the quick way:**
 
-1. Press the small report button (**!**) beside the gear on the addon's window (right-click it for an idea), or **Report a problem** / **Suggest an idea** on any of its settings pages. The window stays open.
+1. Press the small report button (**!**) beside the gear on the addon's window (right-click it for an idea), or **Report a problem** / **Suggest an idea** on any of its settings pages. The window stays open. Not about one addon? Use the same buttons in the TIMID Group window (`/timid`), or type `/timid report`.
 2. A small box shows a link, already selected: press **Ctrl+C**, then paste it into your web browser.
 3. The form opens with the addon, where you were and the details from the game (the version, your changed settings and any errors the addon caught) already filled in. Write what happened in the boxes above the details, paste a screenshot with **Ctrl+V** if it helps, and press Submit.
 
 > [!TIP]
-> No title needed: each report is labelled and titled with its addon automatically. If a link ever opens with an empty Details box, use **Full report** in that small box (or `/wb report`, `[classified] report` and so on) and paste the text it gives you there.
+> No title needed: each report is labelled and titled with its addon automatically. If a link ever opens with an empty Details box, use **Full report** in that small box (or `/wb report`, `[classified] report` and so on, or `/timid report` for all of them) and paste the text it gives you there.
 
 ## ❓ FAQ
 
@@ -194,7 +214,7 @@ WoW Forever only (the `_forever_` folder). They aren't built for Retail or Class
 Access is read-only. Ideas and bug reports are welcome as issues; if you'd like to send code, ask for write access.
 
 **Why is there one TIMID button instead of five on my minimap?**  
-With two or more TIMID addons, their buttons share one TIMID Group button; click it for a panel with all of them. Untick TIMID minimap button on any addon's Housekeeping page to give each its own button again.
+With two or more TIMID addons, their buttons share one TIMID Group button; click it for a panel with all of them. Untick **Group the TIMID addons' buttons into one** (under TIMID minimap button on any addon's Housekeeping page), or type `/timid separate`, to give each its own button again.
 
 <details>
 <summary><b>For developers</b></summary>
