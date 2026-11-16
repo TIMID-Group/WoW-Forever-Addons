@@ -17,6 +17,7 @@ body:
       label: Which addons?
       options:
         - label: Forever Crafting Ledger
+        - label: Forever Ding
         - label: Forever Fishing Chart
         - label: [classified]
         - label: Forever Quest Leftovers

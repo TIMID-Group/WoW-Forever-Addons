@@ -10,14 +10,14 @@ body:
 
         **No title needed.** It is filled in for you.
 
-        **From the game,** press the small report button (**!**) beside the gear on the addon's window, or **Report a problem** in its settings (or type `/fcl report`, `/ffc report`, `[classified] report`, `/leftovers report`, `/wb report`, `/timid report` for all of them). Copy the link it gives you and open it: the Addon, Area and Details boxes come filled in. Write what happened in the boxes below, add a screenshot if it helps, and press Submit.
+        **From the game,** press the small report button (**!**) beside the gear on the addon's window, or **Report a problem** in its settings (or type `/fcl report`, `/ding report`, `/ffc report`, `[classified] report`, `/leftovers report`, `/wb report`, `/timid report` for all of them). Copy the link it gives you and open it: the Addon, Area and Details boxes come filled in. Write what happened in the boxes below, add a screenshot if it helps, and press Submit.
 
         **This page is public:** anyone can read what you post. The report from the game holds nothing about your character, gold or account; please don't add any.
   - type: input
     id: addon
     attributes:
       label: Addon
-      description: "Filled in when you come from the game. Otherwise type which one: Forever Crafting Ledger, Forever Fishing Chart, [classified], Forever Quest Leftovers, Forever Workbench, or TIMID Group (all of them, or the TIMID button)."
+      description: "Filled in when you come from the game. Otherwise type which one: Forever Crafting Ledger, Forever Ding, Forever Fishing Chart, [classified], Forever Quest Leftovers, Forever Workbench, or TIMID Group (all of them, or the TIMID button)."
       placeholder: "for example: Forever Workbench"
     validations:
       required: true
