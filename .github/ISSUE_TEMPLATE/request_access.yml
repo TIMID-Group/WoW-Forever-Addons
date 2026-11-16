@@ -19,7 +19,6 @@ body:
         - label: Forever Crafting Ledger
         - label: Forever Ding
         - label: Forever Fishing Chart
-        - label: [classified]
         - label: Forever Quest Leftovers
         - label: Forever Workbench
   - type: textarea

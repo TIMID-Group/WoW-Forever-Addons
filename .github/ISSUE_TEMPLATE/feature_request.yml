@@ -17,7 +17,7 @@ body:
     id: addon
     attributes:
       label: Addon
-      description: "Filled in when you come from the game. Otherwise type which one: Forever Crafting Ledger, Forever Ding, Forever Fishing Chart, [classified], Forever Quest Leftovers, Forever Workbench, or TIMID Group (all of them, or the TIMID button)."
+      description: "Filled in when you come from the game. Otherwise type which one: Forever Crafting Ledger, Forever Ding, Forever Fishing Chart, Forever Quest Leftovers, Forever Workbench, or TIMID Group (all of them, or the TIMID button)."
       placeholder: "for example: Forever Workbench"
     validations:
       required: true
