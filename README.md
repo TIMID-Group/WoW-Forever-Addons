@@ -22,11 +22,11 @@
 
 | | Addon | What it does | Latest | Command | Access |
 | --- | --- | --- | --- | --- | --- |
-| 🛠️ | **[Forever Crafting Ledger](addons/ForeverCraftingLedger.md)** | What every recipe of every profession earns: each material from your cheapest vendor or the auction house, the product sold to a vendor or auctioned. Named shopping lists with your own prices. Reads Auctionator's prices. | [1.8.0](https://github.com/TIMID-Group/ForeverCraftingLedger/releases/latest) | `/fcl` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 📜 | **[Forever Ding](addons/ForeverDing.md)** | Will the quests you can hand in level you up? Forever Ding adds up their XP, in your zone and across the world, and shows the level you would reach. | [1.0.0](https://github.com/TIMID-Group/ForeverDing/releases/latest) | `/ding` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 🛠️ | **[Forever Fishing Chart](addons/ForeverFishingChart.md)** | Fishing waters on the world map: catches, skill checks and time-of-day rates, plus a fish finder and your own catch log. | [1.6.3](https://github.com/TIMID-Group/ForeverFishingChart/releases/latest) | `/ffc` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 📜 | **[Forever Quest Leftovers](addons/ForeverQuestLeftovers.md)** | Looks through your bags and bank for items no quest needs any more, says why, and says what to do with each one. Dungeon keys, attunements and boss summons are listed as worth keeping. It only advises. | [0.10.3](https://github.com/TIMID-Group/ForeverQuestLeftovers/releases/latest) | `/leftovers` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 🛠️ | **[Forever Workbench](addons/ForeverWorkbench.md)** | Makes the profession window richer. Shows materials on hand and items in bags on every recipe, buys the vendor materials for a recipe while leaving bag space to craft, sells what you crafted, and runs a crafting queue. | [2.4.2](https://github.com/TIMID-Group/ForeverWorkbench/releases/latest) | `/workbench` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Crafting Ledger](addons/ForeverCraftingLedger.md)** | What every recipe of every profession earns: each material from your cheapest vendor or the auction house, the product sold to a vendor or auctioned. Named shopping lists with your own prices. Reads Auctionator's prices. | [1.9.0](https://github.com/TIMID-Group/ForeverCraftingLedger/releases/latest) | `/fcl` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 📜 | **[Forever Ding](addons/ForeverDing.md)** | Will the quests you can hand in level you up? Forever Ding adds up their XP, in your zone and across the world, and shows the level you would reach. | [1.0.1](https://github.com/TIMID-Group/ForeverDing/releases/latest) | `/ding` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Fishing Chart](addons/ForeverFishingChart.md)** | Fishing waters on the world map: catches, skill checks and time-of-day rates, plus a fish finder and your own catch log. | [1.6.4](https://github.com/TIMID-Group/ForeverFishingChart/releases/latest) | `/ffc` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 📜 | **[Forever Quest Leftovers](addons/ForeverQuestLeftovers.md)** | Looks through your bags and bank for items no quest needs any more, says why, and says what to do with each one. Dungeon keys, attunements and boss summons are listed as worth keeping. It only advises. | [0.10.4](https://github.com/TIMID-Group/ForeverQuestLeftovers/releases/latest) | `/leftovers` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Workbench](addons/ForeverWorkbench.md)** | Makes the profession window richer. Shows materials on hand and items in bags on every recipe, buys the vendor materials for a recipe while leaving bag space to craft, sells what you crafted, and runs a crafting queue. | [2.5.0](https://github.com/TIMID-Group/ForeverWorkbench/releases/latest) | `/workbench` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 
 Click an addon's name for its page here: what it does, with pictures. Its own page (invite only) has the download, the commands and a full guide.
 
@@ -237,9 +237,11 @@ What has been reported and suggested, per addon: open first, then done. An addon
 </details>
 
 <details>
-<summary><b>Ding</b> (0 open, 0 done)</summary>
+<summary><b>Ding</b> (1 open, 0 done)</summary>
 
-Nothing reported yet.
+**Open**
+
+- 💡 [Idea (Ding window)](https://github.com/TIMID-Group/ForeverDing/issues/1) · #1
 
 [See all](https://github.com/TIMID-Group/ForeverDing/issues?q=is%3Aissue)
 
@@ -266,10 +268,13 @@ Nothing reported yet.
 </details>
 
 <details>
-<summary><b>Workbench</b> (9 open, 24 done)</summary>
+<summary><b>Workbench</b> (14 open, 24 done)</summary>
 
 **Open**
 
+- 💡 [Queue blocks with a KPI header that folds to its current step](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/70) · #70
+- 🐞 [The queue's right-click menu doesn't close when you click elsewhere](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/69) · #69
+- 💡 [Collect all the mail in one trip when it fits, sell first for space, Skip step while running](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/68) · #68
 - 🐞 [A queue sale is announced twice in chat](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/67) · #67
 - 💡 [Jump to this step, from a step's right-click menu](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/66) · #66
 - 💡 [The Lists bar a little taller, two rows of lists](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/64) · #64
@@ -279,6 +284,8 @@ Nothing reported yet.
 - 💡 [Collect from mail step (take only what the queue needs)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/54) · #54
 - 💡 [Run a material group as one chain in rounds](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/52) · #52
 - 💡 [Note and Repeat the queue steps](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/24) · #24
+- 🐞 [Lists bar: Export to text is hard to find (urgent)](https://github.com/TIMID-Group/ForeverWorkbench/issues/2) · #2
+- 🐞 [Queue card: the step list stops early above a mostly empty footer; redesign the footer](https://github.com/TIMID-Group/ForeverWorkbench/issues/1) · #1
 
 **Done**
 
@@ -288,11 +295,6 @@ Nothing reported yet.
 - 🐞 [Lists for Cooking shows Engineering lists (lists no longer follow the profession)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/42) · #42
 - 🐞 [Are the rounds right? (380 then 130, the 500/10 forecast)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/34) · #34
 - 🐞 [Why does the queue split Solid Dynamite into rounds of 80?](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/19) · #19
-- 💡 [Craft time per craft on item tooltips](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/35) · #35
-- 🐞 [The Resume glow is a flat yellow block (card and strip)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/32) · #32
-- 💡 [Money-saving tips in the plan check](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/23) · #23
-- 💡 [Materials first, queue the materials a recipe needs](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/22) · #22
-- 💡 [The queue's row on the vendor strip](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/21) · #21
 
 [See all](https://github.com/TIMID-Group/ForeverWorkbench/issues?q=is%3Aissue) (the newest 20 are above)
 
