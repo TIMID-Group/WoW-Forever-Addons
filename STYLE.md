@@ -90,6 +90,7 @@ control column, the row height, the button height, heading spacing) is in one ta
   ns.db.timid end)` last in its `housekeeping` list: the tick "Group the TIMID addons' buttons into
   one" under TIMID minimap button. A housekeeping item may be such a tick since minor 9: `{ group,
   key, kind = "check", label, get, set, tip, line, default }`.
+- A two-way choice (since minor 13): `Kit.KindButton(parent, kind, width, onPick, note, env)` makes one side of the Problem / Idea switch; `Kit.SetChosen(button, on)` marks any `Kit.Button` as the chosen side or the one a click switches to. The chosen side is never greyed: a thin edge in TIMID gold (`ffd100`) glows around it, its label is lit, and it takes no click and shows no hover highlight because it is chosen already. Its tooltip says what you are doing ("You're reporting a problem") and how to switch; the other side's tooltip says what a click does ("Switch to suggesting an idea"). Leave at least 6px around it for the glow. `Kit.SetEnabled` is for controls that are off, never for a choice that is on.
 - The TIMID Group window (since minor 12): one window for the whole family, built once by the newest
   kit loaded (`ForeverKitTIMIDWindow`, `Kit.OpenTIMIDWindow()`), with the panel's look (orange edge,
   dark background). Header: the TIMID logo, "TIMID Group", the tagline in TIMID orange (`e8661c`) and
