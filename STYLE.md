@@ -87,6 +87,20 @@ control column, the row height, the button height, heading spacing) is in one ta
   ns.db.timid end)` last in its `housekeeping` list: the tick "Group the TIMID addons' buttons into
   one" under TIMID minimap button. A housekeeping item may be such a tick since minor 9: `{ group,
   key, kind = "check", label, get, set, tip, line, default }`.
+- The TIMID Group window (since minor 12): one window for the whole family, built once by the newest
+  kit loaded (`ForeverKitTIMIDWindow`, `Kit.OpenTIMIDWindow()`), with the panel's look (orange edge,
+  dark background). Header: the TIMID logo, "TIMID Group", the tagline in TIMID orange (`e8661c`) and
+  "Technological Integration and Managerial Innovation Department" in grey over an orange line. Then
+  one row per joined addon in name order (icon, name in gold, .toc version in grey, `status` under
+  them), behaving exactly like the panel's rows; Report a problem and Suggest an idea for every TIMID
+  addon at once (Addon = TIMID Group; details: the client, the kit minor, one line per addon, never
+  trimmed, no settings lines); the hub address in a copy box; and the credits line. It opens from a
+  click on the panel's "TIMID Group" header or `/timid` alone; `/timid group`, `separate`,
+  `settings`, `report` and `idea` remain. Escape or its X closes it; its position is not saved.
+- TIMID Group in the game's Settings (since minor 12): with two or more TIMID addons enabled and one
+  shared kit (LibStub), the first addon to build its settings registers "TIMID Group" in the AddOns
+  list, whose page is the window's view, and every TIMID addon's front page goes under it with its own
+  pages under that. With one TIMID addon it keeps its own top-level entry, as before.
 
 ### Every page starts with the same header
 
