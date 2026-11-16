@@ -1,10 +1,11 @@
 # Files each new report or idea as it arrives: the label of the addon it names, and the addon (and
 # the area, when there is one) in its title, so the list reads "Workbench: Problem report (Queue)"
-# instead of a page of "Problem report". Access requests are left alone.
+# instead of a page of "Problem report". Every issue's title also starts with its number, "#30 · ...",
+# so the list is easy to scan and search; an edit that drops the number gets it back.
 name: File reports
 on:
   issues:
-    types: [opened]
+    types: [opened, edited]
 permissions:
   issues: write
 jobs:
@@ -15,6 +16,13 @@ jobs:
         with:
           script: |
             const issue = context.payload.issue;
+            const tag = '#' + issue.number + ' · ';
+            const numbered = (t) => t.startsWith(tag) ? t : tag + t.replace(/^#\d+\s*·\s*/, '');
+            if (context.payload.action === 'edited') {
+              if (!issue.title.startsWith(tag))
+                await github.rest.issues.update({ ...context.repo, issue_number: issue.number, title: numbered(issue.title) });
+              return;
+            }
             const body = issue.body || '';
             const field = (name) => {
               const m = body.match(new RegExp('### ' + name + '\\s*\\n+([^\\n#]+)'));
@@ -28,10 +36,12 @@ jobs:
             const addon = field('Addon').replace(/^forever\s+/i, '').toLowerCase();
             // the shared TIMID minimap button, however it is written ("TIMID - Minimap", "TIMID button")
             const label = labels[addon] || (/timid|minimap/.test(addon) ? 'TIMID button' : undefined);
-            if (!label) return;
-            await github.rest.issues.addLabels({ ...context.repo, issue_number: issue.number, labels: [label] });
-            const area = field('Area');
-            if (issue.title === 'Problem report' || issue.title === 'Idea') {
-              const title = label + ': ' + issue.title + (area ? ' (' + area.slice(0, 40) + ')' : '');
-              await github.rest.issues.update({ ...context.repo, issue_number: issue.number, title });
+            let title = issue.title;
+            if (label) {
+              await github.rest.issues.addLabels({ ...context.repo, issue_number: issue.number, labels: [label] });
+              const area = field('Area');
+              if (title === 'Problem report' || title === 'Idea')
+                title = label + ': ' + title + (area ? ' (' + area.slice(0, 40) + ')' : '');
             }
+            if (numbered(title) !== issue.title)
+              await github.rest.issues.update({ ...context.repo, issue_number: issue.number, title: numbered(title) });
