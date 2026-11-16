@@ -8,7 +8,7 @@
 
 <sub>A <a href="https://github.com/TIMID-Group">TIMID Group</a> addon · Technological Integration and Managerial Innovation Department</sub>
 
-[![Latest version 2.4.2](https://img.shields.io/badge/latest-2.4.2-e8661c?labelColor=0b1321)](https://github.com/TIMID-Group/WoW-Forever-Addons#-install)
+[![Latest version 2.5.0](https://img.shields.io/badge/latest-2.5.0-e8661c?labelColor=0b1321)](https://github.com/TIMID-Group/WoW-Forever-Addons#-install)
 ![For WoW Forever](https://img.shields.io/badge/WoW-Forever-0b1321)
 ![Invite only](https://img.shields.io/badge/access-invite%20only-lightgrey)
 
@@ -28,8 +28,10 @@ Crafting in bulk means a lot of small chores: counting materials, walking to a v
 - **Buy mats in one press.** Workbench works out what the selected recipe is short of and buys the vendor part, always stopping before your bags get too full or your gold drops below the reserve you set.
 - **Sell what you crafted.** Sell one item or everything you have marked to sell, with a double-click guard and a warning before a sale too big for the vendor's buyback tab.
 - **A crafting queue.** Line up Buy, Craft and Sell steps on a card beside the profession window. One click adds the whole chain for a recipe, and a chain too big for your bags runs in rounds that fit.
+- **Deep chains (new in 2.5).** Smelt, forge, assemble and sell as one chain in rounds. Each round collects auction house purchases from the mail (one trip when your bags have room), buys from the vendor, crafts from the deepest material up and sells, so in-between materials never fill your bags.
+- **Full control of a run.** Note, Repeat and Restart steps, Jump to any step (forward or back), and Skip while it runs.
 - **A plan check before you start.** See the time, the money in and out, your tightest bag moment and any problems, plus tips on materials that are cheaper elsewhere or already in your bank.
-- **Queue Lists.** Save a queue under a name and load it again in one click the next time you craft the same things.
+- **Queue Lists you can share.** Save a queue under a name and load it again in one click, sorted under profession headers. Export any queue as text for a friend, and Import shows every step before saving.
 - **Crafting alerts.** Optional sounds and on-screen messages when a long run is almost done or finished, and a warning before the game's idle logout cuts a long Create All short.
 - **Trophies.** Optional totals, records and 140 achievements for your crafting, counted from the day you turn them on.
 

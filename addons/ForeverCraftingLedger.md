@@ -8,7 +8,7 @@
 
 <sub>A <a href="https://github.com/TIMID-Group">TIMID Group</a> addon · Technological Integration and Managerial Innovation Department</sub>
 
-[![Latest version 1.8.0](https://img.shields.io/badge/latest-1.8.0-e8661c?labelColor=0b1321)](https://github.com/TIMID-Group/WoW-Forever-Addons#-install)
+[![Latest version 1.9.0](https://img.shields.io/badge/latest-1.9.0-e8661c?labelColor=0b1321)](https://github.com/TIMID-Group/WoW-Forever-Addons#-install)
 ![For WoW Forever](https://img.shields.io/badge/WoW-Forever-0b1321)
 ![Invite only](https://img.shields.io/badge/access-invite%20only-lightgrey)
 
@@ -31,7 +31,8 @@ Is a recipe worth crafting? The answer depends on where each material is cheapes
 - **Shopping lists.** Keep named lists of crafts and materials. Auto-fill adds what is worth buying, and a list breaks down all the way to ores, ending in one shopping total for the whole plan.
 - **Plan by the hour.** A recipe shows what one hour of it makes and everything to buy for it, and a list can size a craft in hours as well as in counts.
 - **Recipes you don't know yet.** See what you are ready to learn, what comes later, and how to learn each one, down to the vendor who sells it.
-- **Hand the plan to Forever Workbench.** Queue it sends a list's whole plan to Workbench's crafting queue in an order that can run, or saves it as a Queue List.
+- **Plan for what matters to you (new in 1.9).** Each list is planned for Make all, Cheapest, Best gold per hour or Buy all, with all four compared side by side on the list's card.
+- **Hand the plan to Forever Workbench.** Queue it sends a list's whole plan as groups, deepest materials first with a mail stage on top, and Workbench runs each group in rounds.
 
 ## 🎯 Who it's for
 
