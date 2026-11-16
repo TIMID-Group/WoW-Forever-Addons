@@ -256,6 +256,17 @@ finder or the leftovers list, and every report window) behaves like the game's o
   off. A hover only looks the item up in a table built beforehand; it never walks every recipe or
   bag.
 
+### Popups close the way players expect
+
+Every menu, small question, editor box and other popup in every TIMID addon follows one rule:
+
+- **It closes** on a click anywhere outside it, on Escape, when the window or card it belongs to hides, and when another popup opens.
+- **It never closes** on a click inside it, so choosing, typing and scrolling inside it is safe.
+- **One popup at a time:** opening a new one closes the last.
+- **Use the kit's helper** (`Kit.AutoClose(frame, opts)`, since kit minor 16) instead of writing the rule again; new popups get it for free.
+- **Escape closes only the topmost popup**, never the window under it, and other keys pass through to the game.
+- **Tests:** every popup gets a test for each part of the rule.
+
 ## 2. Reports and ideas
 
 Addons cannot reach the internet, so a report is a link the player copies and pastes: one copy,
