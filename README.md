@@ -31,7 +31,7 @@
 Each addon page has the details, commands and a full guide.
 
 > [!NOTE]
-> **🛩️ TIMID Skunkworks.** Classified projects are in development. Details are need-to-know.
+> **🚪 Room 404.** Projects in development. If you can't find it, you weren't meant to.
 
 ## 📦 Install
 
