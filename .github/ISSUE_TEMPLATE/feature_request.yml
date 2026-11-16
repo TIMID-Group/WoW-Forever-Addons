@@ -1,5 +1,5 @@
 name: Suggest an idea
-description: Something one of the addons could do, or do better.
+description: Something all the TIMID addons, the TIMID button, or several addons together could do, or do better.
 title: "Idea"
 labels: [enhancement]
 body:
@@ -10,15 +10,19 @@ body:
 
         **No title needed.** It is filled in for you.
 
-        **From the game,** right-click the small report button (**!**) beside the gear on the addon's window, or press **Suggest an idea** in its settings (or type `/timid idea` for all of them). Copy the link it gives you and open it: the Addon, Area and Details boxes come filled in. Write your idea in the boxes below and press Submit.
+        **For TIMID as a whole:** the TIMID button and its panel, the TIMID Group window, a new addon, or an idea for several addons at once.
+
+        **From the game,** press **Suggest an idea** in the TIMID Group window (type `/timid`), or type `/timid idea`. Copy the link it gives you and open it: the Addon and Details boxes come filled in. Write your idea in the boxes below and press Submit.
+
+        **About one addon?** Report it on that addon's own page instead (you need access to it; the button in the game takes you there): Forever Crafting Ledger: [suggest an idea](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/new?template=feature_request.yml); Forever Ding: [suggest an idea](https://github.com/TIMID-Group/ForeverDing/issues/new?template=feature_request.yml); Forever Fishing Chart: [suggest an idea](https://github.com/TIMID-Group/ForeverFishingChart/issues/new?template=feature_request.yml); Forever Quest Leftovers: [suggest an idea](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/new?template=feature_request.yml); Forever Workbench: [suggest an idea](https://github.com/TIMID-Group/ForeverWorkbench/issues/new?template=feature_request.yml).
 
         **This page is public:** anyone can read what you post. The report from the game holds nothing about your character, gold or account; please don't add any.
   - type: input
     id: addon
     attributes:
       label: Addon
-      description: "Filled in when you come from the game. Otherwise type which one: Forever Crafting Ledger, Forever Ding, Forever Fishing Chart, Forever Quest Leftovers, Forever Workbench, or TIMID Group (all of them, or the TIMID button)."
-      placeholder: "for example: Forever Workbench"
+      description: "TIMID Group, for TIMID as a whole. Filled in when you come from the game."
+      value: "TIMID Group"
     validations:
       required: true
   - type: input
@@ -26,7 +30,7 @@ body:
     attributes:
       label: Area
       description: Where you were, filled in from the game. Leave it as it is, or blank.
-      placeholder: "for example: Queue"
+      placeholder: "for example: Settings"
   - type: textarea
     id: help
     attributes:
@@ -48,7 +52,7 @@ body:
     id: idea
     attributes:
       label: Details from the game
-      description: "Filled in by the game's link: the version, your changed settings and what you were looking at. Nothing about your character, gold or account. Leave it as it is. Came without the link? Paste the full report from `/wb report` (or the addon's own command) here."
+      description: "Filled in by the game's link: the version, your changed settings and every TIMID addon's version. Nothing about your character, gold or account. Leave it as it is. Came without the link? Paste the full report from `/timid idea` here."
       render: text
   - type: textarea
     id: pictures

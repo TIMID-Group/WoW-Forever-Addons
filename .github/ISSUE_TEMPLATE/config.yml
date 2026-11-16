@@ -1,1 +1,17 @@
 blank_issues_enabled: false
+contact_links:
+  - name: "Forever Crafting Ledger: report a problem or suggest an idea"
+    url: https://github.com/TIMID-Group/ForeverCraftingLedger/issues/new/choose
+    about: On the addon's own page, which only people who have the addon can open. The game's report button takes you there.
+  - name: "Forever Ding: report a problem or suggest an idea"
+    url: https://github.com/TIMID-Group/ForeverDing/issues/new/choose
+    about: On the addon's own page, which only people who have the addon can open. The game's report button takes you there.
+  - name: "Forever Fishing Chart: report a problem or suggest an idea"
+    url: https://github.com/TIMID-Group/ForeverFishingChart/issues/new/choose
+    about: On the addon's own page, which only people who have the addon can open. The game's report button takes you there.
+  - name: "Forever Quest Leftovers: report a problem or suggest an idea"
+    url: https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/new/choose
+    about: On the addon's own page, which only people who have the addon can open. The game's report button takes you there.
+  - name: "Forever Workbench: report a problem or suggest an idea"
+    url: https://github.com/TIMID-Group/ForeverWorkbench/issues/new/choose
+    about: On the addon's own page, which only people who have the addon can open. The game's report button takes you there.

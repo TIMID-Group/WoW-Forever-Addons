@@ -1,5 +1,5 @@
 name: Report a problem
-description: Something in one of the addons is broken, wrong, or shows an error.
+description: Something about all the TIMID addons, the TIMID button, or several addons at once is broken, wrong, or shows an error.
 title: "Problem report"
 labels: [bug]
 body:
@@ -10,15 +10,19 @@ body:
 
         **No title needed.** It is filled in for you.
 
-        **From the game,** press the small report button (**!**) beside the gear on the addon's window, or **Report a problem** in its settings (or type `/fcl report`, `/ding report`, `/ffc report`, `/leftovers report`, `/wb report`, `/timid report` for all of them). Copy the link it gives you and open it: the Addon, Area and Details boxes come filled in. Write what happened in the boxes below, add a screenshot if it helps, and press Submit.
+        **For TIMID as a whole:** the TIMID button and its panel, the TIMID Group window, or something that goes wrong in several addons at once.
+
+        **From the game,** press **Report a problem** in the TIMID Group window (type `/timid`), or type `/timid report`. Copy the link it gives you and open it: the Addon and Details boxes come filled in. Write what happened in the boxes below, add a screenshot if it helps, and press Submit.
+
+        **About one addon?** Report it on that addon's own page instead (you need access to it; the button in the game takes you there): Forever Crafting Ledger: [report a problem](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/new?template=bug_report.yml); Forever Ding: [report a problem](https://github.com/TIMID-Group/ForeverDing/issues/new?template=bug_report.yml); Forever Fishing Chart: [report a problem](https://github.com/TIMID-Group/ForeverFishingChart/issues/new?template=bug_report.yml); Forever Quest Leftovers: [report a problem](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/new?template=bug_report.yml); Forever Workbench: [report a problem](https://github.com/TIMID-Group/ForeverWorkbench/issues/new?template=bug_report.yml).
 
         **This page is public:** anyone can read what you post. The report from the game holds nothing about your character, gold or account; please don't add any.
   - type: input
     id: addon
     attributes:
       label: Addon
-      description: "Filled in when you come from the game. Otherwise type which one: Forever Crafting Ledger, Forever Ding, Forever Fishing Chart, Forever Quest Leftovers, Forever Workbench, or TIMID Group (all of them, or the TIMID button)."
-      placeholder: "for example: Forever Workbench"
+      description: "TIMID Group, for TIMID as a whole. Filled in when you come from the game."
+      value: "TIMID Group"
     validations:
       required: true
   - type: input
@@ -26,7 +30,7 @@ body:
     attributes:
       label: Area
       description: Where you were, filled in from the game. Leave it as it is, or blank.
-      placeholder: "for example: Queue"
+      placeholder: "for example: Settings"
   - type: textarea
     id: what
     attributes:
@@ -47,7 +51,7 @@ body:
     id: report
     attributes:
       label: Details from the game
-      description: "Filled in by the game's link: the version, your changed settings and any errors the addon caught. Nothing about your character, gold or account. Leave it as it is. Came without the link? Paste the full report from `/wb report` (or the addon's own command) here."
+      description: "Filled in by the game's link: the version, your changed settings and every TIMID addon's version. Nothing about your character, gold or account. Leave it as it is. Came without the link? Paste the full report from `/timid report` here."
       render: text
   - type: textarea
     id: pictures
