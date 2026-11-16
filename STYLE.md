@@ -266,6 +266,8 @@ Every menu, small question, editor box and other popup in every TIMID addon foll
 - **Use the kit's helper** (`Kit.AutoClose(frame, opts)`, since kit minor 16) instead of writing the rule again; new popups get it for free.
 - **Escape closes only the topmost popup**, never the window under it, and other keys pass through to the game.
 - **Tests:** every popup gets a test for each part of the rule.
+- **How Escape works:** while a popup shows, the kit takes Escape for it alone, so the window under it stays open; every other key goes through to the game. In combat the game also sees Escape (the kit cannot hold keys back in combat).
+- **The game's own questions** (StaticPopup) keep the game's behaviour: they close on Escape or an answer, not on a click outside. Use them for questions that lose work if dismissed by accident.
 
 ### Build it once
 
