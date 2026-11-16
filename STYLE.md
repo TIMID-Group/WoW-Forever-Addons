@@ -1,8 +1,9 @@
 # House style for the Forever addons
 
 How every addon in this family looks, behaves and takes reports, so a player who knows one knows them
-all. **Forever Workbench 1.3.0 is the reference implementation**: when this page and Workbench
-disagree, Workbench wins and this page gets fixed.
+all. **Forever Workbench, in its newest version, is the reference implementation**, with ForeverKit
+for everything the addons share: when this page and Workbench disagree, Workbench wins and this
+page gets fixed.
 
 Reference files (in `TIMID-Group/ForeverWorkbench`, folder `ForeverWorkbench/`):
 
@@ -16,7 +17,9 @@ Reference files (in `TIMID-Group/ForeverWorkbench`, folder `ForeverWorkbench/`):
 
 ## 1. Settings live in the game's own settings window
 
-Options, AddOns, *Addon Name*. Never a separate options window of our own. `/<cmd>` with nothing
+Options, AddOns, *Addon Name*; with two or more TIMID addons, Options, AddOns, *TIMID Group*, then
+*Addon Name* under it (see "TIMID Group in the game's Settings" below). Never a separate options
+window of our own. `/<cmd>` with nothing
 after it opens the front page, unless the addon has a main window of its own ([classified], Quest
 Leftovers): then plain `/<cmd>` opens that window, and `/<cmd> settings` opens the front page.
 
@@ -167,6 +170,8 @@ The addon's own entry in the sidebar. Top to bottom:
   label and tip. The pages, the resets and `/<cmd> set` are built from that list.
 - **Light defaults for a fresh install:** nothing chatty, noisy or automatic is on until the player
   turns it on. An existing install keeps every value it has; a new setting gets its default.
+  One exception, by the owner's request (#35): Workbench's craft time on item tooltips
+  (`itemTooltipTime`) is on to begin with. It adds one quiet line and does nothing else.
 - **Main switches grey out what hangs off them**, but never forget the choices under them.
 - **Every reset or delete takes two presses**, and says what it will do on the first.
 - **Sounds:** every sound has a drop-down to pick it (picking plays it) and a **Test** button. Play
@@ -204,7 +209,8 @@ finder or the leftovers list, and every report window) behaves like the game's o
 - **Settings.** Settings are one click away from every addon window: a gear left of the close
   button, and right-click on the addon's own icon (portrait, minimap button, addon menu). Tooltips
   say so. In Workbench, the profession icon is the addon's icon (click toggles the strip, right-click
-  settings), with the gear left of the close button like everywhere else. The gear replaces any
+  settings; while the Queue card is open, the click, on the portrait or the title, closes the queue
+  first and the strip is back as it was, and the next click toggles it as usual), with the gear left of the close button like everywhere else. The gear replaces any
   Settings or Options button a window had: no window carries one of its own. [classified], which keeps
   its own look and has no portrait, takes the right-click on its title. Use `Kit.TitleGear` and
   `Kit.SettingsOnRightClick`.
@@ -227,9 +233,27 @@ finder or the leftovers list, and every report window) behaves like the game's o
   Workbench) and a right-click opens the settings. Their tooltips have one useful line, then
   `Kit.ClickHints`: "Left-click: ...", "Right-click: settings" and, on the minimap button only,
   "Drag: move this button", in the game's green.
-- **Lists.** The game's scroll bar (ScrollFrameTemplate) that hides itself when everything fits.
+- **Lists.** The game's scroll bar (ScrollFrameTemplate) that hides itself when everything fits. A
+  short list in a tight spot, where the game's bar would take too much room (Workbench's Queue
+  Lists in the strip, two rows high), may scroll with the mouse wheel and draw a slim thumb of its
+  own instead (3 pixels, on a faint track), hidden when everything fits.
 - **Parts of the game's own windows** (Workbench's strip and pages) live inside those windows and
   follow them; they do not need their own layer rules.
+- **The strip takeover** (Workbench 2.3.0, #33). While the Queue card is open, the bar under the
+  profession window (the strip) always shows, whatever its own setting says, and holds the Queue
+  Lists: "Lists for <profession>", a search box that filters by name as you type, Save (a glowing
+  Save changes once the queue differs from its list) and Save as..., then the lists as full-width
+  rows (name, steps, the plan check's time, when it last ran), two at a time, scrolled with the
+  mouse wheel. The strip's own rows make way, since they repeat what the card shows, and the card
+  runs all the way down to the strip's bottom edge, so more steps show. Closing the card puts the
+  strip back exactly as it was (or hidden again, when it is switched off). The card's edge never
+  moves in combat; it waits.
+- **Item tooltip lines.** An addon that adds to item tooltips (Workbench's craft time, Quest
+  Leftovers' advice) adds at the bottom, starts with its short name (Workbench's in gold:
+  "Workbench: 8.2s a craft"), keeps to one line where it can, never adds itself twice to the same
+  tooltip, says nothing about an item it has nothing to say about, and has a setting to turn it
+  off. A hover only looks the item up in a table built beforehand; it never walks every recipe or
+  bag.
 
 ## 2. Reports and ideas
 
@@ -297,15 +321,22 @@ ordinary boxes above the Details box (ForeverKit minor 7): the link never fills 
 - **Every addon keeps an error journal:** errors caught by its guard are printed once and kept in
   its saved variables (up to 40), so a report can include them.
 
-**The GitHub side** is generated by `docs.py` for every repo:
+**The GitHub side** is generated by `docs.py`. The forms live on the hub only, so anyone can report,
+invited or not. An addon repo has no forms of its own: its `.github/ISSUE_TEMPLATE/config.yml`
+turns blank issues off and points its New issue page at the hub's forms with the addon filled in.
 
-- **Two forms:** Report a problem (label `bug`) and Suggest an idea (label `enhancement`).
-- **An Area box,** filled in by the link when the report comes from a settings page.
-- **One required paste box** each, shown as plain text, with the CAPS skeleton as a faint placeholder
-  for anyone not in the game, and an optional box for screenshots.
-- **No title to write:** each form fills in its own ("Problem report", "Idea"). The owner renames
-  issues later if ever; the issue number is the real identifier.
-- **No form-less issues:** blank issues are off.
+- **Three forms on the hub:** Report a problem (label `bug`), Suggest an idea (label
+  `enhancement`) and Request access (label `access`, ticks for the invite-only addons).
+- **An Addon box and an Area box,** filled in by the link from the game. The Addon box's hint
+  names every addon and TIMID Group (a report for all of them, from the TIMID Group window).
+- **The player's own words** in ordinary boxes ("What happened?" is required), then the **Details
+  from the game** box the link fills, shown as plain text, and an optional box for screenshots.
+- **No title to write:** each form starts as "Problem report", "Idea" or "Access request". The
+  File reports workflow (`.github/workflows/file-reports.yml`) then adds the addon's label and
+  retitles a report or idea "#N · Addon: Problem report (Area)" (for example "#41 · Workbench:
+  Idea (Queue)"); an edit that drops the number gets it back. The issue number is the real
+  identifier.
+- **No form-less issues:** blank issues are off, on the hub and on every addon repo.
 - **Links point at the forms:** README links go straight to a form, never the chooser.
 
 - **Filing.** Every report, idea and owner request made in chat becomes an issue on the hub, with
