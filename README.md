@@ -13,7 +13,7 @@
 </div>
 
 > [!TIP]
-> **📣 New: The TIMID button, one panel for every addon.** [Read the announcement, with screenshots](https://github.com/TIMID-Group/WoW-Forever-Addons/discussions/31).
+> **📣 New: TIMID Group: one button, one panel, one home for every addon.** [Read the announcement, with screenshots](https://github.com/TIMID-Group/WoW-Forever-Addons/discussions/31).
 
 > [!NOTE]
 > **The addons are invite only.** Each addon is a private repo and access is per addon: the ones you were given open normally, the rest show a 404 until you're invited. **Want one?** [Request access](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml): tick the addons and submit. **Anyone can [report a problem](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=bug_report.yml) or [suggest an idea](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=feature_request.yml)**, invited or not. This page is public, so requests and reports here can be read by anyone; an access request is removed once it's answered.
