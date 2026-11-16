@@ -267,6 +267,15 @@ Every menu, small question, editor box and other popup in every TIMID addon foll
 - **Escape closes only the topmost popup**, never the window under it, and other keys pass through to the game.
 - **Tests:** every popup gets a test for each part of the rule.
 
+### Build it once
+
+Every TIMID addon should look, read and behave the same, so shared things live in the kit, not in each addon.
+
+- **The second-use rule:** the first time a pattern is built it may live in its addon. The moment a second addon needs it, it moves into the kit, and the first addon switches to the kit's version in the same release.
+- **Decide for all addons:** a design decision about how something looks or behaves (popups, confirmations, chat lines, money, cards, export text) is written here as a rule for every addon, not just the one that asked.
+- **Use the game first:** the game's own pieces (the Settings window, StaticPopup questions, item and spell tooltips, standard frame templates, `GetCoinTextureString`) come before home-made ones, unless they don't exist on Forever or cause taint, and the reason is written next to the kit's replacement.
+- **Reviews check it:** a new helper that already exists elsewhere, or a second way of doing the same thing, is sent back.
+
 ## 2. Reports and ideas
 
 Addons cannot reach the internet, so a report is a link the player copies and pastes: one copy,
