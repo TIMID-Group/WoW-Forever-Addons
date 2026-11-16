@@ -26,7 +26,8 @@ jobs:
               'quest leftovers': 'Quest Leftovers', 'crafting ledger': 'Crafting Ledger',
             };
             const addon = field('Addon').replace(/^forever\s+/i, '').toLowerCase();
-            const label = labels[addon];
+            // the shared TIMID minimap button, however it is written ("TIMID - Minimap", "TIMID button")
+            const label = labels[addon] || (/timid|minimap/.test(addon) ? 'TIMID button' : undefined);
             if (!label) return;
             await github.rest.issues.addLabels({ ...context.repo, issue_number: issue.number, labels: [label] });
             const area = field('Area');
