@@ -8,7 +8,7 @@
 
 **Small, focused addons for WoW Forever:** professions, crafting, fishing, quests and levelling.
 
-[Addons](#-the-addons) · [Install](#-install) · [Let an AI do it](#3-let-an-ai-agent-do-it) · [Updating](#-updating) · [Troubleshooting](#-troubleshooting) · [Bugs and ideas](#-bugs-and-ideas) · [FAQ](#-faq)
+[Addons](#-the-addons) · [Install](#-install) · [Let an AI do it](#3-let-an-ai-agent-do-it) · [Updating](#-updating) · [Troubleshooting](#-troubleshooting) · [Bugs and ideas](#-bugs-and-ideas) · [Reports](#-reports) · [FAQ](#-faq)
 
 </div>
 
@@ -16,19 +16,19 @@
 > **📣 New: Introducing Forever Ding.** [Read the announcement, with screenshots](https://github.com/TIMID-Group/WoW-Forever-Addons/discussions/50).
 
 > [!NOTE]
-> **The addons are invite only.** Each addon is a private repo and access is per addon: the ones you were given open normally, the rest show a 404 until you're invited. **Want one?** [Request access](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml): tick the addons and submit. **Anyone can [report a problem](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=bug_report.yml) or [suggest an idea](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=feature_request.yml)**, invited or not. This page is public, so requests and reports here can be read by anyone; an access request is removed once it's answered.
+> **The addons are invite only.** Each addon is a private repo and access is per addon: the ones you were given open normally, the rest show a 404 until you're invited. **Want one?** [Request access](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml): tick the addons and submit. **Reports:** a problem or an idea about one addon goes to that addon's own page (the report button in the game takes you there). For TIMID as a whole, or several addons at once, anyone can [report a problem](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=bug_report.yml&addon=TIMID%20Group) or [suggest an idea](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=feature_request.yml&addon=TIMID%20Group) here, invited or not. This page is public, so requests and reports here can be read by anyone; an access request is removed once it's answered.
 
 ## 📚 The addons
 
 | | Addon | What it does | Latest | Command | Access |
 | --- | --- | --- | --- | --- | --- |
-| 🛠️ | **[Forever Crafting Ledger](https://github.com/TIMID-Group/ForeverCraftingLedger)** | What every recipe of every profession earns: each material from your cheapest vendor or the auction house, the product sold to a vendor or auctioned. Named shopping lists with your own prices. Reads Auctionator's prices. | [1.8.0](https://github.com/TIMID-Group/ForeverCraftingLedger/releases/latest) | `/fcl` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 📜 | **[Forever Ding](https://github.com/TIMID-Group/ForeverDing)** | Will the quests you can hand in level you up? Forever Ding adds up their XP, in your zone and across the world, and shows the level you would reach. | [1.0.0](https://github.com/TIMID-Group/ForeverDing/releases/latest) | `/ding` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 🛠️ | **[Forever Fishing Chart](https://github.com/TIMID-Group/ForeverFishingChart)** | Fishing waters on the world map: catches, skill checks and time-of-day rates, plus a fish finder and your own catch log. | [1.6.3](https://github.com/TIMID-Group/ForeverFishingChart/releases/latest) | `/ffc` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 📜 | **[Forever Quest Leftovers](https://github.com/TIMID-Group/ForeverQuestLeftovers)** | Looks through your bags and bank for items no quest needs any more, says why, and says what to do with each one. Dungeon keys, attunements and boss summons are listed as worth keeping. It only advises. | [0.10.3](https://github.com/TIMID-Group/ForeverQuestLeftovers/releases/latest) | `/leftovers` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 🛠️ | **[Forever Workbench](https://github.com/TIMID-Group/ForeverWorkbench)** | Makes the profession window richer. Shows materials on hand and items in bags on every recipe, buys the vendor materials for a recipe while leaving bag space to craft, sells what you crafted, and runs a crafting queue. | [2.4.2](https://github.com/TIMID-Group/ForeverWorkbench/releases/latest) | `/workbench` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Crafting Ledger](addons/ForeverCraftingLedger.md)** | What every recipe of every profession earns: each material from your cheapest vendor or the auction house, the product sold to a vendor or auctioned. Named shopping lists with your own prices. Reads Auctionator's prices. | [1.8.0](https://github.com/TIMID-Group/ForeverCraftingLedger/releases/latest) | `/fcl` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 📜 | **[Forever Ding](addons/ForeverDing.md)** | Will the quests you can hand in level you up? Forever Ding adds up their XP, in your zone and across the world, and shows the level you would reach. | [1.0.0](https://github.com/TIMID-Group/ForeverDing/releases/latest) | `/ding` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Fishing Chart](addons/ForeverFishingChart.md)** | Fishing waters on the world map: catches, skill checks and time-of-day rates, plus a fish finder and your own catch log. | [1.6.3](https://github.com/TIMID-Group/ForeverFishingChart/releases/latest) | `/ffc` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 📜 | **[Forever Quest Leftovers](addons/ForeverQuestLeftovers.md)** | Looks through your bags and bank for items no quest needs any more, says why, and says what to do with each one. Dungeon keys, attunements and boss summons are listed as worth keeping. It only advises. | [0.10.3](https://github.com/TIMID-Group/ForeverQuestLeftovers/releases/latest) | `/leftovers` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Workbench](addons/ForeverWorkbench.md)** | Makes the profession window richer. Shows materials on hand and items in bags on every recipe, buys the vendor materials for a recipe while leaving bag space to craft, sells what you crafted, and runs a crafting queue. | [2.4.2](https://github.com/TIMID-Group/ForeverWorkbench/releases/latest) | `/workbench` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 
-Each addon page has the details, commands and a full guide.
+Click an addon's name for its page here: what it does, with pictures. Its own page (invite only) has the download, the commands and a full guide.
 
 > [!NOTE]
 > **🚪 Room 404.** Projects in development. If you can't find it, you weren't meant to.
@@ -178,7 +178,7 @@ Tick **Load out of date AddOns** on the AddOns screen at character select.
 <details>
 <summary><b>I get a Lua error</b></summary>
 
-Copy the full text (`/console scriptErrors 1` turns the pop-ups on) and [report a problem](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=bug_report.yml).
+Copy the full text (`/console scriptErrors 1` turns the pop-ups on), then press the addon's report button (**!**) or type its report command (`/wb report`, `/fcl report` and so on): the link opens that addon's own form. Paste the error there.
 
 </details>
 
@@ -191,16 +191,145 @@ With the game closed, delete `WTF/Account/<account>/SavedVariables/<Addon>.lua`.
 
 ## 💬 Bugs and ideas
 
-[**Report a problem**](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=bug_report.yml) or [**suggest an idea**](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=feature_request.yml) for any of the addons, here on this page: one place for all of them, open to everyone, invited or not. Reports here are public; the report from the game holds nothing about your character, gold or account.
+**About one addon:** report it on that addon's own page. Only people who have the addon can read it, and that is all it takes to report there.
+
+| Addon | |
+| --- | --- |
+| Forever Crafting Ledger | [Report a problem](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/new?template=feature_request.yml) |
+| Forever Ding | [Report a problem](https://github.com/TIMID-Group/ForeverDing/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverDing/issues/new?template=feature_request.yml) |
+| Forever Fishing Chart | [Report a problem](https://github.com/TIMID-Group/ForeverFishingChart/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverFishingChart/issues/new?template=feature_request.yml) |
+| Forever Quest Leftovers | [Report a problem](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/new?template=feature_request.yml) |
+| Forever Workbench | [Report a problem](https://github.com/TIMID-Group/ForeverWorkbench/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverWorkbench/issues/new?template=feature_request.yml) |
+
+**About TIMID as a whole** (the TIMID button and panel, the TIMID Group window, or several addons at once): [**report a problem**](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=bug_report.yml&addon=TIMID%20Group) or [**suggest an idea**](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=feature_request.yml&addon=TIMID%20Group) here, on this page, open to everyone, invited or not. Reports here are public; the report from the game holds nothing about your character, gold or account.
 
 **From the game, the quick way:**
 
-1. Press the small report button (**!**) beside the gear on the addon's window (right-click it for an idea), or **Report a problem** / **Suggest an idea** on any of its settings pages. The window stays open. Not about one addon? Use the same buttons in the TIMID Group window (`/timid`), or type `/timid report`.
+1. Press the small report button (**!**) beside the gear on the addon's window (right-click it for an idea), or **Report a problem** / **Suggest an idea** on any of its settings pages. The window stays open, and the link opens that addon's own form. Not about one addon? Use the same buttons in the TIMID Group window (`/timid`), or type `/timid report`: those come here.
 2. A small box shows a link, already selected: press **Ctrl+C**, then paste it into your web browser.
-3. The form opens with the addon, where you were and the details from the game (the version, your changed settings and any errors the addon caught) already filled in. Write what happened in the boxes above the details, paste a screenshot with **Ctrl+V** if it helps, and press Submit.
+3. The form opens with where you were and the details from the game (the version, your changed settings and any errors the addon caught) already filled in. Write what happened in the boxes above the details, paste a screenshot with **Ctrl+V** if it helps, and press Submit.
 
 > [!TIP]
-> No title needed: each report is labelled and titled with its addon automatically. If a link ever opens with an empty Details box, use **Full report** in that small box (or `/wb report`, `/fcl report` and so on, or `/timid report` for all of them) and paste the text it gives you there.
+> No title needed: each report is labelled and titled automatically. If a link ever opens with an empty Details box, use **Full report** in that small box (or `/wb report`, `/fcl report` and so on, or `/timid report` for all of them) and paste the text it gives you there.
+
+## 🗂️ Reports
+
+What has been reported and suggested, per addon: open first, then done. An addon's reports are on its own page, so its links open for people who have that addon. 🐞 a problem, 💡 an idea.
+
+<details>
+<summary><b>Crafting Ledger</b> (3 open, 4 done)</summary>
+
+**Open**
+
+- 💡 ["Plan for" setting per list (make everything / cheapest / best gold per hour / buy all I can)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/60) · #60
+- 💡 [An overview of all lists as cards, and a clear way back](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/59) · #59
+- 💡 [Keep the \[classified\] list in step with the plan](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/55) · #55
+
+**Done**
+
+- 💡 [Plan an hour of crafting (how much to buy for one hour)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/45) · #45
+- 💡 [The Materials tab's profit and Gold/hour columns read as selling the material itself](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/44) · #44
+- 💡 [Pull your \[classified\] prices into Your prices](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/43) · #43
+- 💡 [Gold per hour, counting craft time (nested crafts included)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/36) · #36
+
+[See all](https://github.com/TIMID-Group/ForeverCraftingLedger/issues?q=is%3Aissue)
+
+</details>
+
+<details>
+<summary><b>Ding</b> (0 open, 0 done)</summary>
+
+Nothing reported yet.
+
+[See all](https://github.com/TIMID-Group/ForeverDing/issues?q=is%3Aissue)
+
+</details>
+
+<details>
+<summary><b>Fishing Chart</b> (0 open, 0 done)</summary>
+
+Nothing reported yet.
+
+[See all](https://github.com/TIMID-Group/ForeverFishingChart/issues?q=is%3Aissue)
+
+</details>
+
+<details>
+<summary><b>Quest Leftovers</b> (0 open, 1 done)</summary>
+
+**Done**
+
+- 🐞 [Dungeon keys, a boss summon and a quest reward listed as left over](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/2) · #2
+
+[See all](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues?q=is%3Aissue)
+
+</details>
+
+<details>
+<summary><b>Workbench</b> (9 open, 24 done)</summary>
+
+**Open**
+
+- 🐞 [A queue sale is announced twice in chat](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/67) · #67
+- 💡 [Jump to this step, from a step's right-click menu](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/66) · #66
+- 💡 [The Lists bar a little taller, two rows of lists](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/64) · #64
+- 💡 [The Lists bar shows all lists under profession headers, and scrolls to the open profession](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/61) · #61
+- 💡 [A Restart button for the queue](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/57) · #57
+- 💡 [Export a Queue List to text and import one from text](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/56) · #56
+- 💡 [Collect from mail step (take only what the queue needs)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/54) · #54
+- 💡 [Run a material group as one chain in rounds](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/52) · #52
+- 💡 [Note and Repeat the queue steps](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/24) · #24
+
+**Done**
+
+- 💡 [Drop the strip under the vendor window; open the step editor at the step you clicked](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/49) · #49
+- 🐞 [A plain Queue click should always queue as many as I can](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/48) · #48
+- 🐞 [Two chains sharing Hot Spices; buy a full stack when a slot is used; chains that keep looping](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/46) · #46
+- 🐞 [Lists for Cooking shows Engineering lists (lists no longer follow the profession)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/42) · #42
+- 🐞 [Are the rounds right? (380 then 130, the 500/10 forecast)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/34) · #34
+- 🐞 [Why does the queue split Solid Dynamite into rounds of 80?](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/19) · #19
+- 💡 [Craft time per craft on item tooltips](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/35) · #35
+- 🐞 [The Resume glow is a flat yellow block (card and strip)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/32) · #32
+- 💡 [Money-saving tips in the plan check](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/23) · #23
+- 💡 [Materials first, queue the materials a recipe needs](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/22) · #22
+- 💡 [The queue's row on the vendor strip](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/21) · #21
+
+[See all](https://github.com/TIMID-Group/ForeverWorkbench/issues?q=is%3Aissue) (the newest 20 are above)
+
+</details>
+
+<details>
+<summary><b>TIMID Group</b> (5 open, 13 done)</summary>
+
+**Open**
+
+- 💡 [New addon: Forever Stocking Stuffer, a simple auction house shopping list](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/65) · #65
+- 💡 [New addon: guided profession levelling (route, costs and times, exports a shopping list and a Workbench queue)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/63) · #63
+- 💡 [Ledger → Workbench: craft the materials that free the most bag space first; include mail and vendor steps](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/62) · #62
+- 💡 [Ledger: Queue it sends each plan as a group](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/53) · #53
+- 💡 [All addons: stay quiet during an Auctionator scan](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/51) · #51
+
+**Done**
+
+- 💡 [Ledger: break a list down to basic materials, and send the plan to a Workbench queue and a \[classified\] list](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/41) · #41
+- 💡 [All addons: no tooltip on the TIMID minimap button itself](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/40) · #40
+- 💡 [Tests read the version from the .toc instead of pinning it](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/25) · #25
+- 💡 [All addons: the report window's Problem / Idea switch is confusing](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/37) · #37
+- 💡 [Crafting Ledger: run its tests on GitHub](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/26) · #26
+- 💡 [A page of its own, with one Report button and credits](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/30) · #30
+- 💡 [Crafting Ledger: a refresh script for the AtlasLoot-derived Data.lua](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/27) · #27
+- 💡 [All addons: group the TIMID addons together in the game's AddOn List](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/18) · #18
+- 💡 [TIMID button: a panel with names and a live status, in place of the ring](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/17) · #17
+- 🐞 [TIMID button: the ring covers the TIMID button near a corner, so it can't be closed](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/16) · #16
+- 💡 [All addons: one TIMID minimap button that bursts into a ring](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/13) · #13
+- 🐞 [All addons: keep the player's words apart from the game's details in reports](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/9) · #9
+- 💡 [TIMID branding on the GitHub pages](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/8) · #8
+
+[See all](https://github.com/TIMID-Group/WoW-Forever-Addons/issues?q=is%3Aissue+-label%3Aaccess)
+
+</details>
+
+🚪 **Room 404** (0 open, 3 done)
 
 ## ❓ FAQ
 
