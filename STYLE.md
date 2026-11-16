@@ -197,8 +197,9 @@ finder or the leftovers list, and every report window) behaves like the game's o
 ## 2. Reports and ideas
 
 Addons cannot reach the internet, so a report is a link the player copies and pastes: one copy,
-one paste. The link opens exactly the right form with the whole report already in its box, and
-there is nothing to title.
+one paste. The link opens exactly the right form with the Addon, Area and **Details from the game**
+boxes already filled in, and there is nothing to title. The form asks the player's own questions in
+ordinary boxes above the Details box (ForeverKit minor 7): the link never fills those.
 
 - **The buttons and commands:** the report button beside every window's gear (section 1b), and
   **Report a problem** and **Suggest an idea** on the front page and in each page's Help section,
@@ -206,8 +207,9 @@ there is nothing to title.
   box's **Full report** open the report window. A **Problem / Idea** switch at its top right
   changes kind without losing the page. It shows three numbered steps:
   1. Copy this link (it is already selected: press Ctrl+C) and open it in your web browser. The
-     report is already filled in.
-  2. Fill in the parts marked WRITE HERE. Paste a screenshot into the Screenshots box if it helps.
+     details from the game are already filled in.
+  2. Write what happened (or your idea) in the boxes above them. Paste a screenshot into the
+     Screenshots box if it helps.
   3. Press Submit. You need a free GitHub account; reports there are public.
 
   Under them sits the report text itself, "If the page opens empty, copy this too and paste it in."
@@ -268,6 +270,25 @@ there is nothing to title.
   issues later if ever; the issue number is the real identifier.
 - **No form-less issues:** blank issues are off.
 - **Links point at the forms:** README links go straight to a form, never the chooser.
+
+- **Filing.** Every report, idea and owner request made in chat becomes an issue on the hub, with
+  its addon's label (added by the File reports workflow) and, for planned work, a milestone. A fix
+  is answered on its issue, the issue is closed with the `fixed` label, the release notes link the
+  issue, the CHANGELOG bullet ends "(#N on the WoW Forever Addons page)", and a line goes into
+  `forever-admin/reports-log.csv`. Design decisions also go into the design doc's Decisions log.
+
+## 2b. TIMID Group branding
+
+Every Forever addon is a TIMID Group addon, and says so everywhere:
+
+- **In the game:** ForeverKit (minor 8) draws the TIMID logo (`Libs/ForeverKit/timid.tga`, copied by
+  `forever kit`) and "A TIMID Group addon · Connected systems. Better builds." at the foot of every
+  settings front page. Each addon passes `addon = ADDON` in its options spec so the logo can be found.
+- **On GitHub:** `docs.py` puts the TIMID logo, a "built by TIMID Group" badge and the values-strip
+  footer on every addon page and the hub, and the logo on every form; `forever` adds the footer to
+  every release's notes. Colours: orange `#e8661c`, navy `#0b1321`. Tagline: "Connected systems.
+  Better builds." Brand pictures live in the hub's `media/brand/`.
+- **Words:** "TIMID Group" in full the first time on a page; never an em dash in the brand lines.
 
 ## 3. Chat
 
