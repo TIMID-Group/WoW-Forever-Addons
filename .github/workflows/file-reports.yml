@@ -31,7 +31,7 @@ jobs:
             };
             const labels = {
               'workbench': 'Workbench', '[classified]': '[classified]', 'fishing chart': 'Fishing Chart',
-              'quest leftovers': 'Quest Leftovers', 'crafting ledger': 'Crafting Ledger',
+              'quest leftovers': 'Quest Leftovers', 'crafting ledger': 'Crafting Ledger', 'ding': 'Ding',
             };
             const addon = field('Addon').replace(/^forever\s+/i, '').toLowerCase();
             // the shared TIMID minimap button, however it is written ("TIMID - Minimap", "TIMID button", "TIMID Group")
