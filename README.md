@@ -22,11 +22,11 @@
 
 | | Addon | What it does | Latest | Command | Access |
 | --- | --- | --- | --- | --- | --- |
-| 🛠️ | **[Forever Crafting Ledger](https://github.com/TIMID-Group/ForeverCraftingLedger)** | What every recipe of every profession earns: each material from your cheapest vendor or the auction house, the product sold to a vendor or auctioned. Named shopping lists with your own prices. Reads Auctionator's prices. | [1.3.3](https://github.com/TIMID-Group/ForeverCraftingLedger/releases/latest) | `/fcl` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 🛠️ | **[Forever Fishing Chart](https://github.com/TIMID-Group/ForeverFishingChart)** | Fishing waters on the world map: catches, skill checks and time-of-day rates, plus a fish finder and your own catch log. | [1.3.4](https://github.com/TIMID-Group/ForeverFishingChart/releases/latest) | `/ffc` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 💰 | **[[classified]](https://github.com/TIMID-Group/[classified])** | Hold a price ceiling on the auction house. Posts your wall when nothing is listed at or below your price, buys what undercuts it, and tracks every session's profit and gold per hour. | [1.4.2](https://github.com/TIMID-Group/[classified]/releases/latest) | `[classified]` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 📜 | **[Forever Quest Leftovers](https://github.com/TIMID-Group/ForeverQuestLeftovers)** | Looks through your bags and bank for items no quest needs any more, says why, and says what to do with each one. Dungeon keys, attunements and boss summons are listed as worth keeping. It only advises. | [0.7.2](https://github.com/TIMID-Group/ForeverQuestLeftovers/releases/latest) | `/leftovers` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 🛠️ | **[Forever Workbench](https://github.com/TIMID-Group/ForeverWorkbench)** | Makes the profession window richer. Shows materials on hand and items in bags on every recipe, buys the vendor materials for a recipe while leaving bag space to craft, sells what you crafted, and runs a crafting queue. | [2.0.5](https://github.com/TIMID-Group/ForeverWorkbench/releases/latest) | `/workbench` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Crafting Ledger](https://github.com/TIMID-Group/ForeverCraftingLedger)** | What every recipe of every profession earns: each material from your cheapest vendor or the auction house, the product sold to a vendor or auctioned. Named shopping lists with your own prices. Reads Auctionator's prices. | [1.4.0](https://github.com/TIMID-Group/ForeverCraftingLedger/releases/latest) | `/fcl` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Fishing Chart](https://github.com/TIMID-Group/ForeverFishingChart)** | Fishing waters on the world map: catches, skill checks and time-of-day rates, plus a fish finder and your own catch log. | [1.4.0](https://github.com/TIMID-Group/ForeverFishingChart/releases/latest) | `/ffc` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 💰 | **[[classified]](https://github.com/TIMID-Group/[classified])** | Hold a price ceiling on the auction house. Posts your wall when nothing is listed at or below your price, buys what undercuts it, and tracks every session's profit and gold per hour. | [1.5.0](https://github.com/TIMID-Group/[classified]/releases/latest) | `[classified]` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 📜 | **[Forever Quest Leftovers](https://github.com/TIMID-Group/ForeverQuestLeftovers)** | Looks through your bags and bank for items no quest needs any more, says why, and says what to do with each one. Dungeon keys, attunements and boss summons are listed as worth keeping. It only advises. | [0.8.0](https://github.com/TIMID-Group/ForeverQuestLeftovers/releases/latest) | `/leftovers` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Workbench](https://github.com/TIMID-Group/ForeverWorkbench)** | Makes the profession window richer. Shows materials on hand and items in bags on every recipe, buys the vendor materials for a recipe while leaving bag space to craft, sells what you crafted, and runs a crafting queue. | [2.1.0](https://github.com/TIMID-Group/ForeverWorkbench/releases/latest) | `/workbench` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 
 Each addon page has the details, commands and a full guide.
 
@@ -93,6 +93,22 @@ I can only see the repos I have been invited to.
    whether it was new, updated or already current. Remind me to type /reload in game, or to
    restart it.
 ```
+
+## 🧭 The TIMID button
+
+With **two or more** TIMID addons installed, their minimap buttons fold into **one TIMID Group button**, so your minimap stays clean however many you use. With just one, its own button shows as always.
+
+| Do this | To |
+| --- | --- |
+| **Left-click** the TIMID button | burst your TIMID addons out in a ring around it |
+| **Left-click** an addon in the ring | open it, as its own button does |
+| **Right-click** an addon in the ring | open its settings |
+| **Hover** an addon in the ring | see its usual tooltip |
+| **Drag** the TIMID button | move it (one spot for all of them, remembered) |
+| Click anywhere else, or press **Escape** | fold the ring away |
+
+> [!TIP]
+> Rather have every button on its own? Untick **TIMID minimap button** on the Housekeeping page of any TIMID addon's settings (or right-click the TIMID button). It is remembered for all of them.
 
 ## 🔄 Updating
 
@@ -174,6 +190,9 @@ WoW Forever only (the `_forever_` folder). They aren't built for Retail or Class
 
 **Can I change the code?**  
 Access is read-only. Ideas and bug reports are welcome as issues; if you'd like to send code, ask for write access.
+
+**Why is there one TIMID button instead of five on my minimap?**  
+With two or more TIMID addons, their buttons share one TIMID Group button; click it to see them all. Untick TIMID minimap button on any addon's Housekeeping page to give each its own button again.
 
 <details>
 <summary><b>For developers</b></summary>
