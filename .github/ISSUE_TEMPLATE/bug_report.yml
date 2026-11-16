@@ -6,6 +6,8 @@ body:
   - type: markdown
     attributes:
       value: |
+        <img src="https://raw.githubusercontent.com/TIMID-Group/WoW-Forever-Addons/main/media/brand/timid-logo.png" alt="TIMID Group" width="48" align="right">
+
         **No title needed.** It is filled in for you.
 
         **From the game,** press the small report button (**!**) beside the gear on the addon's window, or **Report a problem** in its settings (or type `/fcl report`, `/ffc report`, `[classified] report`, `/leftovers report`, `/wb report`). Copy the link it gives you and open it: the Addon, Area and Details boxes come filled in. Write what happened in the boxes below, add a screenshot if it helps, and press Submit.

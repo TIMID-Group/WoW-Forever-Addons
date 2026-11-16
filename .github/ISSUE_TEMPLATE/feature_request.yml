@@ -6,6 +6,8 @@ body:
   - type: markdown
     attributes:
       value: |
+        <img src="https://raw.githubusercontent.com/TIMID-Group/WoW-Forever-Addons/main/media/brand/timid-logo.png" alt="TIMID Group" width="48" align="right">
+
         **No title needed.** It is filled in for you.
 
         **From the game,** right-click the small report button (**!**) beside the gear on the addon's window, or press **Suggest an idea** in its settings. Copy the link it gives you and open it: the Addon, Area and Details boxes come filled in. Write your idea in the boxes below and press Submit.
