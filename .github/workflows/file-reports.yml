@@ -34,8 +34,8 @@ jobs:
               'quest leftovers': 'Quest Leftovers', 'crafting ledger': 'Crafting Ledger',
             };
             const addon = field('Addon').replace(/^forever\s+/i, '').toLowerCase();
-            // the shared TIMID minimap button, however it is written ("TIMID - Minimap", "TIMID button")
-            const label = labels[addon] || (/timid|minimap/.test(addon) ? 'TIMID button' : undefined);
+            // the shared TIMID minimap button, however it is written ("TIMID - Minimap", "TIMID button", "TIMID Group")
+            const label = labels[addon] || (/timid|minimap/.test(addon) ? 'TIMID Group' : undefined);
             let title = issue.title;
             if (label) {
               await github.rest.issues.addLabels({ ...context.repo, issue_number: issue.number, labels: [label] });
