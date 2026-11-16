@@ -30,7 +30,7 @@ jobs:
               return v === '_No response_' ? '' : v;
             };
             const labels = {
-              'workbench': 'Workbench', '[classified]': '[classified]', 'fishing chart': 'Fishing Chart',
+              'workbench': 'Workbench', 'fishing chart': 'Fishing Chart',
               'quest leftovers': 'Quest Leftovers', 'crafting ledger': 'Crafting Ledger', 'ding': 'Ding',
             };
             const addon = field('Addon').replace(/^forever\s+/i, '').toLowerCase();

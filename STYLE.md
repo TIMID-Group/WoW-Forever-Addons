@@ -20,7 +20,7 @@ Reference files (in `TIMID-Group/ForeverWorkbench`, folder `ForeverWorkbench/`):
 Options, AddOns, *Addon Name*; with two or more TIMID addons, Options, AddOns, *TIMID Group*, then
 *Addon Name* under it (see "TIMID Group in the game's Settings" below). Never a separate options
 window of our own. `/<cmd>` with nothing
-after it opens the front page, unless the addon has a main window of its own ([classified], Quest
+after it opens the front page, unless the addon has a main window of its own (Quest
 Leftovers): then plain `/<cmd>` opens that window, and `/<cmd> settings` opens the front page.
 
 ### ForeverKit draws every page and every report window
@@ -191,13 +191,13 @@ an ordinary tooltip.
 
 ## 1b. Windows
 
-Every window an addon opens on its own (a main window such as [classified]'s, the ledger, the fish
+Every window an addon opens on its own (a main window such as the ledger's, the fish
 finder or the leftovers list, and every report window) behaves like the game's own windows:
 
 - **The game's frame where it fits.** PortraitFrameTemplate (title bar, round portrait with the
   addon's icon, close button), falling back to BasicFrameTemplateWithInset, then a plain frame, on
   clients that lack it. The title is the name plus the version in grey. An addon whose window is
-  deliberately its own look keeps it ([classified], by the owner's choice), as long as the rules below
+  deliberately its own look keeps it (by the owner's choice), as long as the rules below
   hold.
 - **The game's layer.** Strata MEDIUM, `SetToplevel(true)`, and a raise when opened and when
   clicked, so the window used last is on top and other windows can come in front of it. Never
@@ -212,8 +212,8 @@ finder or the leftovers list, and every report window) behaves like the game's o
   say so. In Workbench, the profession icon is the addon's icon (click toggles the strip, right-click
   settings; while the Queue card is open, the click, on the portrait or the title, closes the queue
   first and the strip is back as it was, and the next click toggles it as usual), with the gear left of the close button like everywhere else. The gear replaces any
-  Settings or Options button a window had: no window carries one of its own. [classified], which keeps
-  its own look and has no portrait, takes the right-click on its title. Use `Kit.TitleGear` and
+  Settings or Options button a window had: no window carries one of its own. A window that keeps
+  its own look and has no portrait takes the right-click on its title. Use `Kit.TitleGear` and
   `Kit.SettingsOnRightClick`.
 - **Reporting.** A report button sits just left of the gear, the same 16 by 16, with its own
   symbol (the game's red exclamation, `HelpIcon-ReportAbuse`, or the next one the client has; a red
