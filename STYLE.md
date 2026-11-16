@@ -64,6 +64,29 @@ control column, the row height, the button height, heading spacing) is in one ta
   `Kit.ClickHints(tt, what, drag)`, the lines "Left-click: <what>", "Right-click: settings" and
   "Drag: move this button" for a minimap button and an addon-menu entry. `opts` is the addon's name
   or { addon, icon, title, body, close, window }.
+- The TIMID button (since minor 9): each addon calls `Kit.JoinLauncher({ addon, name, icon,
+  dataObject, iconName, db, status })` once its LibDataBroker object and LibDBIcon button exist (`db`
+  is a table in its saved variables, `ns.db.timid`), and `Kit.RefreshLauncher()` after it shows or
+  hides its own button. With two or more members the kit registers one LibDBIcon button, "TIMID
+  Group", with the TIMID logo, and hides the members' buttons (never their saved `hide`). Since minor
+  11 a left-click opens the TIMID panel (the ring of minor 9 and 10 is gone): a small dark panel
+  beside the button, with an orange edge and line under a "TIMID Group" header with the logo, one row
+  per member in name order (its icon, its name in gold, its status in grey under the name, lit on
+  hover) and the foot line "Left-click: open · Right-click: settings" in the hint green. A row's
+  left-click and right-click are the member's own `dataObject.OnClick` (and close the panel); hovering
+  shows the member's own `OnTooltipShow` beside the panel, without the drag line. The panel opens on
+  the side of the button towards the middle of the screen, anchored to it and never clamped, so it
+  never covers the button; a second click, Escape, a press anywhere else, or the mouse away from the
+  panel and button for 0.6 seconds closes it. `status` is optional: a function returning a few words
+  ("queue: step 2 of 3", "paused", "3 left over"), called guarded about once a second while the panel
+  is open and cut with "..." to fit, so it must only read state the addon already has, never scan;
+  nil or an error shows nothing. `Kit.OpenLauncherRing` and `Kit.CloseLauncherRing` are kept as
+  aliases of `Kit.OpenLauncherPanel` and `Kit.CloseLauncherPanel`. Two right-clicks on the button
+  (or `/timid separate`) show the buttons separately again; `/timid group` groups them. The state (grouped, the TIMID button's spot, when it changed) is read from the
+  newest member db and written to all. Every addon puts `Kit.LauncherHousekeeping(function() return
+  ns.db.timid end)` last in its `housekeeping` list: the tick "Group the TIMID addons' buttons into
+  one" under TIMID minimap button. A housekeeping item may be such a tick since minor 9: `{ group,
+  key, kind = "check", label, get, set, tip, line, default }`.
 
 ### Every page starts with the same header
 
@@ -327,7 +350,10 @@ Rules:
   summary of its changelog section.
 - **The `.toc` carries:** `## Title`, `## Notes`, `## Version` (a literal version, so the installed
   copy shows it), `## Author: TIMID Group`, `## X-License: MIT`, `## X-Website` (the repo), and
-  `## IconTexture`. Add `## X-Curse-Project-ID` and `## X-Wago-ID` the day the project is created
+  `## IconTexture`. Since #18 every TIMID addon is grouped on the game's AddOn List as DBM does it:
+  `## Category: TIMID Group`, the old category kept for the docs as `## X-Category` (Professions,
+  Auctions or Quests), and a tagged title, `## Title: |cffffd100<|r|cffe8661cTIMID|r|cffffd100>|r
+  |cffffffffForever Workbench|r` with the addon's own full name (no `Title-enUS`). Add `## X-Curse-Project-ID` and `## X-Wago-ID` the day the project is created
   on those sites.
 - **Credit what you borrow:** any data or code taken from elsewhere is credited in a `NOTICE.md`
   inside the addon folder, with the source's licence text where it asks for it.
