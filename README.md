@@ -1,6 +1,10 @@
 <div align="center">
 
+<a href="https://github.com/TIMID-Group"><img src="https://github.com/TIMID-Group/WoW-Forever-Addons/raw/main/media/brand/timid-logo.png" alt="TIMID Group" width="72"></a>
+
 # 🧩 WoW Forever Addons
+
+<sub>by [TIMID Group](https://github.com/TIMID-Group) · connected systems, better builds</sub>
 
 **Small, focused addons for WoW Forever:** the auction house, professions, fishing and quest clean-up.
 
