@@ -1,10 +1,10 @@
 <div align="center">
 
-<a href="https://github.com/TIMID-Group"><img src="https://github.com/TIMID-Group/WoW-Forever-Addons/raw/main/media/brand/timid-logo.png" alt="TIMID Group" width="72"></a>
+<a href="https://github.com/TIMID-Group"><img src="https://raw.githubusercontent.com/TIMID-Group/WoW-Forever-Addons/main/media/brand/timid-banner.png" alt="TIMID Group: Technological Integration and Managerial Innovation Department. Connected systems. Better builds." width="100%"></a>
 
 # 🧩 WoW Forever Addons
 
-<sub>by [TIMID Group](https://github.com/TIMID-Group) · connected systems, better builds</sub>
+<sub>by [TIMID Group](https://github.com/TIMID-Group) · connected systems. better builds.</sub>
 
 **Small, focused addons for WoW Forever:** the auction house, professions, fishing and quest clean-up.
 
@@ -186,5 +186,9 @@ Access is read-only. Ideas and bug reports are welcome as issues; if you'd like 
 </details>
 
 ---
+
+<p align="center"><a href="https://github.com/TIMID-Group"><img src="https://raw.githubusercontent.com/TIMID-Group/WoW-Forever-Addons/main/media/brand/timid-footer.png" alt="TIMID Group. Secure by design. Scalable by nature. Driven by data. Built for collaboration." width="100%"></a></p>
+
+<p align="center"><b><a href="https://github.com/TIMID-Group">TIMID Group</a></b> · Technological Integration and Managerial Innovation Department<br><sub>Connected systems. Better builds.</sub></p>
 
 <sub>Generated on every release. Versions above are the latest published.</sub>
