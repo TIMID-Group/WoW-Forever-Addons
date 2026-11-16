@@ -152,10 +152,10 @@ With the game closed, delete `WTF/Account/<account>/SavedVariables/<Addon>.lua`.
 
 1. Press the small report button (**!**) beside the gear on the addon's window (right-click it for an idea), or **Report a problem** / **Suggest an idea** on any of its settings pages. The window stays open.
 2. A small box shows a link, already selected: press **Ctrl+C**, then paste it into your web browser.
-3. The form opens with everything filled in: the addon, where you were, the version, your changed settings and any errors the addon caught. Type in the parts marked WRITE HERE, paste a screenshot with **Ctrl+V** if it helps, and press Submit.
+3. The form opens with the addon, where you were and the details from the game (the version, your changed settings and any errors the addon caught) already filled in. Write what happened in the boxes above the details, paste a screenshot with **Ctrl+V** if it helps, and press Submit.
 
 > [!TIP]
-> No title needed: each report is labelled and titled with its addon automatically. If a link ever opens with an empty box, use **Full report** in that small box (or `/wb report`, `[classified] report` and so on) and paste the text it gives you.
+> No title needed: each report is labelled and titled with its addon automatically. If a link ever opens with an empty Details box, use **Full report** in that small box (or `/wb report`, `[classified] report` and so on) and paste the text it gives you there.
 
 ## ❓ FAQ
 
