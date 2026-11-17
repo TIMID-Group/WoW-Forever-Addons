@@ -278,6 +278,17 @@ Every TIMID addon should look, read and behave the same, so shared things live i
 - **Use the game first:** the game's own pieces (the Settings window, StaticPopup questions, item and spell tooltips, standard frame templates, `GetCoinTextureString`) come before home-made ones, unless they don't exist on Forever or cause taint, and the reason is written next to the kit's replacement.
 - **Reviews check it:** a new helper that already exists elsewhere, or a second way of doing the same thing, is sent back.
 
+### Shared pieces (kit minor 17)
+
+Use the kit's version; never build another (see "Build it once"):
+
+- **Money:** `Kit.Money`, `Kit.MoneyShort`, `Kit.ParseMoney`, `Kit.MoneyBox`. A comma in typed gold is a thousands separator ("1,000"). Escape in a money box puts the old amount back.
+- **Chat:** `Kit.Say(addon, text, kind)` with the kinds action (purchases, sales), step (progress), reply (an answer to a command) and warn. Every addon has **Messages in chat: All / Important / Off** (Important = actions and warnings). Off for new installs; replies and warnings always show. Lines go to the Addons chat tab, or the main chat when there is none.
+- **Are you sure?** The game's own question (`Kit.Confirm`) for anything that loses work (deleting a list, clearing a queue, a big sale); press again (`Kit.ConfirmButton`) for the rest. A double-click is not a confirmation.
+- **Busy and scans:** `Kit.Busy("auction")` / `Kit.IsBusy`, `Kit.ScanBusy` / `Kit.OnScanQuiet`, and `Kit.Coalesce` for redraw caps.
+- **Cards, lists, text and windows:** `Kit.Card`, `Kit.FoldList`, `Kit.Export` / `Kit.Import` / `Kit.CopyBox` / `Kit.ImportWindow`, and `Kit.Window`.
+- **Changing a default:** `Kit.MigrateDefault` moves an old saved default once; `Kit.SeedSetting` gives a new setting its first value from an old one.
+
 ## 2. Reports and ideas
 
 Addons cannot reach the internet, so a report is a link the player copies and pastes: one copy,
