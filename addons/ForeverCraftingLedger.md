@@ -51,7 +51,11 @@ Is a recipe worth crafting? The answer depends on where each material is cheapes
 
 ## 📸 Screenshots
 
-Screenshots are on their way. Until then, the guide in the addon's repo walks through each tab.
+<p align="center"><img src="../media/showcase/ledger-cards.png" alt="The Crafting Ledger Lists tab showing four list cards. Each card shows the planned craft, today's cost and profit, your own prices, and four Plan for buttons with gold per hour." width="720"></p>
+<p align="center"><sub>Your lists as cards, each with its four Plan for figures (version 1.9).</sub></p>
+
+<p align="center"><img src="../media/showcase/ledger-list.png" alt="One open Crafting Ledger list, Compact Harvest Reaper Kit, broken down into what to buy on the auction house and what to make yourself, with cost, vendor, auction and gold per hour columns." width="720"></p>
+<p align="center"><sub>One list broken down all the way, with today's prices and your own (version 1.9).</sub></p>
 
 ## 🔗 Works with
 
