@@ -26,7 +26,7 @@
 | 📜 | **[Forever Ding](addons/ForeverDing.md)** | Will the quests you can hand in level you up? Forever Ding adds up their XP, in your zone and across the world, and shows the level you would reach. | [1.1.2](https://github.com/TIMID-Group/ForeverDing/releases/latest) | `/ding` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 | 🛠️ | **[Forever Fishing Chart](addons/ForeverFishingChart.md)** | Fishing waters on the world map: catches, skill checks and time-of-day rates, plus a fish finder and your own catch log. | [1.7.2](https://github.com/TIMID-Group/ForeverFishingChart/releases/latest) | `/ffc` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 | 📜 | **[Forever Quest Leftovers](addons/ForeverQuestLeftovers.md)** | Looks through your bags and bank for items no quest needs any more, says why, and says what to do with each one. Dungeon keys, attunements and boss summons are listed as worth keeping. It only advises. | [0.11.2](https://github.com/TIMID-Group/ForeverQuestLeftovers/releases/latest) | `/leftovers` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 🛠️ | **[Forever Workbench](addons/ForeverWorkbench.md)** | Makes the profession window richer. Shows materials on hand and items in bags on every recipe, buys the vendor materials for a recipe while leaving bag space to craft, sells what you crafted, and runs a crafting queue. | [2.6.1](https://github.com/TIMID-Group/ForeverWorkbench/releases/latest) | `/workbench` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Workbench](addons/ForeverWorkbench.md)** | Makes the profession window richer. Shows materials on hand and items in bags on every recipe, buys the vendor materials for a recipe while leaving bag space to craft, sells what you crafted, and runs a crafting queue. | [2.7.0](https://github.com/TIMID-Group/ForeverWorkbench/releases/latest) | `/workbench` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 
 Click an addon's name for its page here: what it does, with pictures. Its own page (invite only) has the download, the commands and a full guide.
 
@@ -219,11 +219,10 @@ With the game closed, delete `WTF/Account/<account>/SavedVariables/<Addon>.lua`.
 What has been reported and suggested, per addon: open first, then done. An addon's reports are on its own page, so its links open for people who have that addon. 🐞 a problem, 💡 an idea.
 
 <details>
-<summary><b>Crafting Ledger</b> (8 open, 12 done)</summary>
+<summary><b>Crafting Ledger</b> (7 open, 13 done)</summary>
 
 **Open**
 
-- 🐞 [Bundled recipe data has Classic reagents for about 25 recipes WoW Forever changed](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/13) · #13
 - 💡 [Queue it sends no Sell steps, so a group with tight bags pauses with "no room"](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/11) · #11
 - 💡 [Saved data: a version, caps and repair on load](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/10) · #10
 - 🐞 [Pull prices: a second pull overwrites the undo, so prices from before the first are lost](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/9) · #9
@@ -234,6 +233,7 @@ What has been reported and suggested, per addon: open first, then done. An addon
 
 **Done**
 
+- 🐞 [Bundled recipe data has Classic reagents for about 25 recipes WoW Forever changed](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/13) · #13
 - 💡 [Materials: a Craft sells for column (what one craft of the best recipe vendors for)](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/12) · #12
 - 🐞 [Measured craft times read from Workbench's saved data; the contract test loads Workbench by file name](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/8) · #8
 - 🐞 [Garbage and hitches in play: a per-frame watcher, uncached plans, nothing waits for combat](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/5) · #5
@@ -367,7 +367,7 @@ What has been reported and suggested, per addon: open first, then done. An addon
 
 </details>
 
-🚪 **Room 404** (6 open, 11 done)
+🚪 **Room 404** (2 open, 15 done)
 
 <!-- reports:end -->
 
