@@ -30,6 +30,14 @@ TOKEN = os.environ.get("HUB_READ_TOKEN", "")
 ORG = os.environ.get("ORG", "TIMID-Group")
 HUB = os.environ.get("HUB", f"{ORG}/WoW-Forever-Addons")
 README = os.environ.get("README", "README.md")
+# Words that must never appear on the public page (a classified addon's real name), comma-separated.
+# Kept out of this public file: set CLASSIFIED_WORDS in the environment (a repo secret in Actions).
+HIDDEN = [w.strip().lower() for w in os.environ.get("CLASSIFIED_WORDS", "").split(",") if w.strip()]
+
+
+def hidden(i):
+    t = i["title"].lower()
+    return any(w in t for w in HIDDEN)
 
 
 def call(url, data=None):
@@ -114,7 +122,7 @@ def main():
     addons = sorted((r for r in repos if "timid-addon" in (r.get("topics") or [])), key=lambda r: r["name"])
     secret = [r for r in addons if "room-404" in (r.get("topics") or [])]
     public = [r for r in addons if r not in secret]
-    hub_issues = [i for i in issues(HUB) if "access" not in i["labels"]]
+    hub_issues = [i for i in issues(HUB) if "access" not in i["labels"] and not hidden(i)]
     names = {r["full_name"]: title_of(r["full_name"]) for r in public}
     labels = set(names.values())
     out = ["## 🗂️ Reports\n",
@@ -123,7 +131,7 @@ def main():
     every = []
     for r in sorted(public, key=lambda r: names[r["full_name"]]):
         slug, name = r["full_name"], names[r["full_name"]]
-        own = issues(slug)
+        own = [i for i in issues(slug) if not hidden(i)]
         older = [i for i in hub_issues if set(i["labels"]) & labels == {name}]
         every += own
         out += fold(name, own + older, f"{GH}/{slug}/issues?q=is%3Aissue")

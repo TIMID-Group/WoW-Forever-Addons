@@ -17,6 +17,7 @@ jobs:
         env:
           HUB_READ_TOKEN: ${{ secrets.HUB_READ_TOKEN }}
           PROJECT_TITLE: ${{ vars.PROJECT_TITLE }}
+          CLASSIFIED_WORDS: ${{ secrets.CLASSIFIED_WORDS }}
         run: python3 .github/scripts/reports.py
       - name: Save it
         run: |
