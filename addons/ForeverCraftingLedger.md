@@ -8,7 +8,7 @@
 
 <sub>A <a href="https://github.com/TIMID-Group">TIMID Group</a> addon · Technological Integration and Managerial Innovation Department</sub>
 
-[![Latest version 1.9.0](https://img.shields.io/badge/latest-1.9.0-e8661c?labelColor=0b1321)](https://github.com/TIMID-Group/WoW-Forever-Addons#-install)
+[![Latest version 1.9.1](https://img.shields.io/badge/latest-1.9.1-e8661c?labelColor=0b1321)](https://github.com/TIMID-Group/WoW-Forever-Addons#-install)
 ![For WoW Forever](https://img.shields.io/badge/WoW-Forever-0b1321)
 ![Invite only](https://img.shields.io/badge/access-invite%20only-lightgrey)
 
