@@ -219,10 +219,19 @@ With the game closed, delete `WTF/Account/<account>/SavedVariables/<Addon>.lua`.
 What has been reported and suggested, per addon: open first, then done. An addon's reports are on its own page, so its links open for people who have that addon. 🐞 a problem, 💡 an idea.
 
 <details>
-<summary><b>Crafting Ledger</b> (1 open, 8 done)</summary>
+<summary><b>Crafting Ledger</b> (10 open, 8 done)</summary>
 
 **Open**
 
+- 💡 [Queue it sends no Sell steps, so a group with tight bags pauses with "no room"](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/11) · #11
+- 💡 [Saved data: a version, caps and repair on load](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/10) · #10
+- 🐞 [Pull prices: a second pull overwrites the undo, so prices from before the first are lost](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/9) · #9
+- 🐞 [Measured craft times read from Workbench's saved data; the contract test loads Workbench by file name](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/8) · #8
+- 🐞 [Send can change a list while it is being bought, or overwrite one without asking](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/7) · #7
+- 🐞 [A confidential addon's name ships in the README, CHANGELOG, About.lua and tests](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/6) · #6
+- 🐞 [Garbage and hitches in play: a per-frame watcher, uncached plans, nothing waits for combat](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/5) · #5
+- 🐞 [Send to shopping list: the most to pay can mean buying at a loss](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/4) · #4
+- 💡 [Materials: a "Sells for" column, clearly marked unlearned recipes, and a Known / All recipes switch](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/3) · #3
 - 💡 [What can I make from my bags? A list built from the random materials you collect while levelling](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/2) · #2
 
 **Done**
@@ -241,10 +250,13 @@ What has been reported and suggested, per addon: open first, then done. An addon
 </details>
 
 <details>
-<summary><b>Ding</b> (1 open, 1 done)</summary>
+<summary><b>Ding</b> (4 open, 1 done)</summary>
 
 **Open**
 
+- 🐞 [A confidential addon's name appears in a test file](https://github.com/TIMID-Group/ForeverDing/issues/5) · #5
+- 💡 [Double-click the XP or reputation bar to open Ding](https://github.com/TIMID-Group/ForeverDing/issues/4) · #4
+- 🐞 [At level 60 the sums read "0 XP to reach 61" and "-nan to 60"](https://github.com/TIMID-Group/ForeverDing/issues/3) · #3
 - 🐞 [The Ready to hand in list cuts the XP column short (290 shows as 29)](https://github.com/TIMID-Group/ForeverDing/issues/2) · #2
 
 **Done**
@@ -256,16 +268,28 @@ What has been reported and suggested, per addon: open first, then done. An addon
 </details>
 
 <details>
-<summary><b>Fishing Chart</b> (0 open, 0 done)</summary>
+<summary><b>Fishing Chart</b> (3 open, 0 done)</summary>
 
-Nothing reported yet.
+**Open**
+
+- 💡 [World map: no tests for its 7 requirements, and a watcher that runs every frame](https://github.com/TIMID-Group/ForeverFishingChart/issues/3) · #3
+- 🐞 [A confidential addon's name ships in the README, Window.lua comments and a test](https://github.com/TIMID-Group/ForeverFishingChart/issues/2) · #2
+- 💡 [Treasure broken out: every container, bloated fish and trophy fish as its own entry, with where it comes from and drop rates](https://github.com/TIMID-Group/ForeverFishingChart/issues/1) · #1
 
 [See all](https://github.com/TIMID-Group/ForeverFishingChart/issues?q=is%3Aissue)
 
 </details>
 
 <details>
-<summary><b>Quest Leftovers</b> (0 open, 1 done)</summary>
+<summary><b>Quest Leftovers</b> (5 open, 1 done)</summary>
+
+**Open**
+
+- 💡 [Dungeon Journal and Questie are read through their internals: guard, probe and test older shapes](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/5) · #5
+- 💡 [Saved data: a version, caps and repair on load](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/4) · #4
+- 🐞 [A confidential addon's name ships in the README and a test](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/3) · #3
+- 🐞 [The scan gets slower every month: remembered quests never pruned, scans in combat and per bank slot](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/2) · #2
+- 💡 [Tests for every sell-or-destroy verdict rule (7 of 22 untested)](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/1) · #1
 
 **Done**
 
@@ -276,11 +300,22 @@ Nothing reported yet.
 </details>
 
 <details>
-<summary><b>Workbench</b> (5 open, 38 done)</summary>
+<summary><b>Workbench</b> (16 open, 38 done)</summary>
 
 **Open**
 
 - 💡 [Queue blocks with a KPI header that folds to its current step](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/70) · #70
+- 💡 [Import from text: a size limit and number ranges](https://github.com/TIMID-Group/ForeverWorkbench/issues/18) · #18
+- 💡 [Repeat until a pass makes nothing: go to Sell, then repeat (the owner's rule, not built)](https://github.com/TIMID-Group/ForeverWorkbench/issues/17) · #17
+- 🐞 [Sell all crafted and the vendor queue row sell on a double-click](https://github.com/TIMID-Group/ForeverWorkbench/issues/16) · #16
+- 💡 [Contract tests against the real callers, loaded by .toc, run in CI](https://github.com/TIMID-Group/ForeverWorkbench/issues/15) · #15
+- 🐞 [Counts recorded without a bag check or after a reset: sell first, Restart or Jump mid-buy, late mail](https://github.com/TIMID-Group/ForeverWorkbench/issues/14) · #14
+- 🐞 [A confidential addon's name ships in the README, CHANGELOG and tests](https://github.com/TIMID-Group/ForeverWorkbench/issues/13) · #13
+- 🐞 [The open card and the profession strip cost frames and garbage even when nothing changes](https://github.com/TIMID-Group/ForeverWorkbench/issues/12) · #12
+- 🐞 [Card words from a second calculation: a Buy row says nothing is short while it buys 12; Sell all counts stock already sold](https://github.com/TIMID-Group/ForeverWorkbench/issues/11) · #11
+- 🐞 [Export to text breaks every group: imported groups buy nothing and run the top craft alone](https://github.com/TIMID-Group/ForeverWorkbench/issues/10) · #10
+- 🐞 [A reload or disconnect mid-buy can make a Buy step buy past its total](https://github.com/TIMID-Group/ForeverWorkbench/issues/9) · #9
+- 🐞 [Adding many steps at once (Queue it, loading a list, import) freezes the game for seconds](https://github.com/TIMID-Group/ForeverWorkbench/issues/8) · #8
 - 🐞 [A block's Craft "all I can" finished with 0 made while its materials were in the bags, so its Sell had nothing to sell](https://github.com/TIMID-Group/ForeverWorkbench/issues/7) · #7
 - 🐞 [Buy for this queue: the plan check says it will buy 100000 of each, then buys the right amounts](https://github.com/TIMID-Group/ForeverWorkbench/issues/6) · #6
 - 🐞 [A large queue lags the game while it sits idle (the plan check reruns too often and too heavily)](https://github.com/TIMID-Group/ForeverWorkbench/issues/5) · #5
@@ -292,27 +327,21 @@ Nothing reported yet.
 - 🐞 [Lists bar: Export to text is hard to find (urgent)](https://github.com/TIMID-Group/ForeverWorkbench/issues/2) · #2
 - 🐞 [Queue card: the step list stops early above a mostly empty footer; redesign the footer](https://github.com/TIMID-Group/ForeverWorkbench/issues/1) · #1
 - 🐞 [The queue's right-click menu doesn't close when you click elsewhere](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/69) · #69
-- 💡 [Collect all the mail in one trip when it fits, sell first for space, Skip step while running](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/68) · #68
-- 🐞 [A queue sale is announced twice in chat](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/67) · #67
-- 💡 [Jump to this step, from a step's right-click menu](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/66) · #66
-- 💡 [The Lists bar a little taller, two rows of lists](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/64) · #64
-- 💡 [The Lists bar shows all lists under profession headers, and scrolls to the open profession](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/61) · #61
-- 💡 [A Restart button for the queue](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/57) · #57
-- 💡 [Export a Queue List to text and import one from text](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/56) · #56
-- 💡 [Collect from mail step (take only what the queue needs)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/54) · #54
-- 💡 [Run a material group as one chain in rounds](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/52) · #52
-- 💡 [Note and Repeat the queue steps](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/24) · #24
-- 💡 [Drop the strip under the vendor window; open the step editor at the step you clicked](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/49) · #49
 
 [See all](https://github.com/TIMID-Group/ForeverWorkbench/issues?q=is%3Aissue) (the newest 20 are above)
 
 </details>
 
 <details>
-<summary><b>TIMID Group</b> (3 open, 16 done)</summary>
+<summary><b>TIMID Group</b> (8 open, 16 done)</summary>
 
 **Open**
 
+- 🐞 [Kit busy signal: a holder that errors keeps everyone throttled; scan quiet has no maximum wait](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/78) · #78
+- 💡 [Hub tooling has no tests, and no release check for em dashes, names or confidential names](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/77) · #77
+- 🐞 [Reports: the kit scrubs nothing personal by default, so a name in an error line goes out as is](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/76) · #76
+- 🐞 [Kit popups: keys could stick if combat starts right after an Escape](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/75) · #75
+- 🐞 [Public posts: edit history and original uploads may still hold text and images that were replaced](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/74) · #74
 - 💡 [New addon: Forever Light Bags (open all your clams in one go)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/73) · #73
 - 💡 [New addon: Forever Stocking Stuffer, a simple auction house shopping list](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/65) · #65
 - 💡 [New addon: guided profession levelling (route, costs and times, exports a shopping list and a Workbench queue)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/63) · #63
@@ -331,16 +360,12 @@ Nothing reported yet.
 - 💡 [Crafting Ledger: a refresh script for the AtlasLoot-derived Data.lua](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/27) · #27
 - 💡 [All addons: group the TIMID addons together in the game's AddOn List](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/18) · #18
 - 💡 [TIMID button: a panel with names and a live status, in place of the ring](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/17) · #17
-- 🐞 [TIMID button: the ring covers the TIMID button near a corner, so it can't be closed](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/16) · #16
-- 💡 [All addons: one TIMID minimap button that bursts into a ring](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/13) · #13
-- 🐞 [All addons: keep the player's words apart from the game's details in reports](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/9) · #9
-- 💡 [TIMID branding on the GitHub pages](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/8) · #8
 
-[See all](https://github.com/TIMID-Group/WoW-Forever-Addons/issues?q=is%3Aissue+-label%3Aaccess)
+[See all](https://github.com/TIMID-Group/WoW-Forever-Addons/issues?q=is%3Aissue+-label%3Aaccess) (the newest 20 are above)
 
 </details>
 
-🚪 **Room 404** (3 open, 4 done)
+🚪 **Room 404** (11 open, 4 done)
 
 <!-- reports:end -->
 
