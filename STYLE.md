@@ -278,6 +278,15 @@ Every TIMID addon should look, read and behave the same, so shared things live i
 - **Use the game first:** the game's own pieces (the Settings window, StaticPopup questions, item and spell tooltips, standard frame templates, `GetCoinTextureString`) come before home-made ones, unless they don't exist on Forever or cause taint, and the reason is written next to the kit's replacement.
 - **Reviews check it:** a new helper that already exists elsewhere, or a second way of doing the same thing, is sent back.
 
+### Works alone, richer together
+
+Owner rule for every TIMID addon:
+
+- **Every feature works with no other addon installed.** Nothing is ever required.
+- **Other addons make figures richer and more accurate,** never different in kind: with the Crafting Ledger a value can be a crafting value instead of a market price, and with Workbench a time can include measured crafting time.
+- **Some extras may appear only when the other addon is there** (a column, a line, a choice). Without it they are simply absent, never greyed out or broken.
+- **Every figure says where it came from** in its tooltip ("valued at the Crafting Ledger's crafting value", "market price less the 5% cut"), so a richer number is never a mystery.
+
 ### Shared pieces (kit minor 17)
 
 Use the kit's version; never build another (see "Build it once"):
