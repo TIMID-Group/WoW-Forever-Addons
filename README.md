@@ -13,7 +13,7 @@
 </div>
 
 > [!TIP]
-> **📣 New: Introducing Forever Ding.** [Read the announcement, with screenshots](https://github.com/TIMID-Group/WoW-Forever-Addons/discussions/50).
+> **📣 New: Deep chains: Forever Workbench 2.5 and Forever Crafting Ledger 1.9.** [Read the announcement, with screenshots](https://github.com/TIMID-Group/WoW-Forever-Addons/discussions/71).
 
 > [!NOTE]
 > **The addons are invite only.** Each addon is a private repo and access is per addon: the ones you were given open normally, the rest show a 404 until you're invited. **Want one?** [Request access](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml): tick the addons and submit. **Reports:** a problem or an idea about one addon goes to that addon's own page (the report button in the game takes you there). For TIMID as a whole, or several addons at once, anyone can [report a problem](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=bug_report.yml&addon=TIMID%20Group) or [suggest an idea](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=feature_request.yml&addon=TIMID%20Group) here, invited or not. This page is public, so requests and reports here can be read by anyone; an access request is removed once it's answered.
@@ -217,16 +217,17 @@ With the game closed, delete `WTF/Account/<account>/SavedVariables/<Addon>.lua`.
 What has been reported and suggested, per addon: open first, then done. An addon's reports are on its own page, so its links open for people who have that addon. 🐞 a problem, 💡 an idea.
 
 <details>
-<summary><b>Crafting Ledger</b> (3 open, 4 done)</summary>
+<summary><b>Crafting Ledger</b> (1 open, 7 done)</summary>
 
 **Open**
+
+- 💡 [Sending a shopping list is one and done: remove the self-updating link](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/1) · #1
+
+**Done**
 
 - 💡 ["Plan for" setting per list (make everything / cheapest / best gold per hour / buy all I can)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/60) · #60
 - 💡 [An overview of all lists as cards, and a clear way back](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/59) · #59
 - 💡 [Keep the \[classified\] list in step with the plan](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/55) · #55
-
-**Done**
-
 - 💡 [Plan an hour of crafting (how much to buy for one hour)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/45) · #45
 - 💡 [The Materials tab's profit and Gold/hour columns read as selling the material itself](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/44) · #44
 - 💡 [Pull your \[classified\] prices into Your prices](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/43) · #43
@@ -268,11 +269,17 @@ Nothing reported yet.
 </details>
 
 <details>
-<summary><b>Workbench</b> (14 open, 24 done)</summary>
+<summary><b>Workbench</b> (2 open, 37 done)</summary>
 
 **Open**
 
 - 💡 [Queue blocks with a KPI header that folds to its current step](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/70) · #70
+- 💡 [Buy and Collect from mail choices by scope: next craft, this block, this queue (all bag-smart)](https://github.com/TIMID-Group/ForeverWorkbench/issues/3) · #3
+
+**Done**
+
+- 🐞 [Lists bar: Export to text is hard to find (urgent)](https://github.com/TIMID-Group/ForeverWorkbench/issues/2) · #2
+- 🐞 [Queue card: the step list stops early above a mostly empty footer; redesign the footer](https://github.com/TIMID-Group/ForeverWorkbench/issues/1) · #1
 - 🐞 [The queue's right-click menu doesn't close when you click elsewhere](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/69) · #69
 - 💡 [Collect all the mail in one trip when it fits, sell first for space, Skip step while running](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/68) · #68
 - 🐞 [A queue sale is announced twice in chat](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/67) · #67
@@ -284,35 +291,29 @@ Nothing reported yet.
 - 💡 [Collect from mail step (take only what the queue needs)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/54) · #54
 - 💡 [Run a material group as one chain in rounds](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/52) · #52
 - 💡 [Note and Repeat the queue steps](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/24) · #24
-- 🐞 [Lists bar: Export to text is hard to find (urgent)](https://github.com/TIMID-Group/ForeverWorkbench/issues/2) · #2
-- 🐞 [Queue card: the step list stops early above a mostly empty footer; redesign the footer](https://github.com/TIMID-Group/ForeverWorkbench/issues/1) · #1
-
-**Done**
-
 - 💡 [Drop the strip under the vendor window; open the step editor at the step you clicked](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/49) · #49
 - 🐞 [A plain Queue click should always queue as many as I can](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/48) · #48
 - 🐞 [Two chains sharing Hot Spices; buy a full stack when a slot is used; chains that keep looping](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/46) · #46
 - 🐞 [Lists for Cooking shows Engineering lists (lists no longer follow the profession)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/42) · #42
 - 🐞 [Are the rounds right? (380 then 130, the 500/10 forecast)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/34) · #34
-- 🐞 [Why does the queue split Solid Dynamite into rounds of 80?](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/19) · #19
 
 [See all](https://github.com/TIMID-Group/ForeverWorkbench/issues?q=is%3Aissue) (the newest 20 are above)
 
 </details>
 
 <details>
-<summary><b>TIMID Group</b> (5 open, 13 done)</summary>
+<summary><b>TIMID Group</b> (2 open, 16 done)</summary>
 
 **Open**
 
 - 💡 [New addon: Forever Stocking Stuffer, a simple auction house shopping list](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/65) · #65
 - 💡 [New addon: guided profession levelling (route, costs and times, exports a shopping list and a Workbench queue)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/63) · #63
-- 💡 [Ledger → Workbench: craft the materials that free the most bag space first; include mail and vendor steps](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/62) · #62
-- 💡 [Ledger: Queue it sends each plan as a group](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/53) · #53
-- 💡 [All addons: stay quiet during an Auctionator scan](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/51) · #51
 
 **Done**
 
+- 💡 [All addons: stay quiet during an Auctionator scan](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/51) · #51
+- 💡 [Ledger → Workbench: craft the materials that free the most bag space first; include mail and vendor steps](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/62) · #62
+- 💡 [Ledger: Queue it sends each plan as a group](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/53) · #53
 - 💡 [Ledger: break a list down to basic materials, and send the plan to a Workbench queue and a \[classified\] list](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/41) · #41
 - 💡 [All addons: no tooltip on the TIMID minimap button itself](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/40) · #40
 - 💡 [Tests read the version from the .toc instead of pinning it](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/25) · #25
