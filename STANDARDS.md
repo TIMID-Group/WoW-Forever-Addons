@@ -2,6 +2,22 @@
 
 Every TIMID addon follows one standard. **Each kind of element has its own rules** (a loop is judged differently from a variable, a module differently from the suite), and a few rules cut across everything. Each element follows the rules for its kind plus the cross-cutting ones, front end (what players see) and back end (logic, data, APIs) alike. A release needs every element to pass.
 
+## The qualities (ISO/IEC 25010)
+
+"The best" means every addon meets a measurable bar on each software quality. These are the scorecard's columns.
+
+| Quality | Means | Bar |
+|---|---|---|
+| **Performance efficiency** | fast, light, never felt | within the frame budget (`PERFORMANCE.md`); no checker regressions; saved data and login cost within limits |
+| **Functional suitability** | does the right thing every time | before-and-after tests pass; previews and actions share one calculation; every bug has its test |
+| **Reliability** | doesn't break; recovers | every failure mode handled (below); no Lua errors in the problem report; state survives a reload or disconnect |
+| **Security** | private and safe | section 3 below |
+| **Maintainability** | readable, modular, easy to change and test | `ENGINEERING.md`; files under about 800 lines; coupling not rising; public functions tested |
+| **Usability** | easy and pleasant | `STYLE.md`; plain words; quiet defaults; every figure explains itself |
+| **Compatibility** | plays well with the client and other addons | works alone; guarded API use; other addons only through their APIs |
+
+**Reliability: what can go wrong, handled on purpose.** For every feature, write down and test: the server is slow or says no (a purchase fails, mail is empty or not yet arrived); a window closes mid-action (vendor, mailbox, auction house); the player moves, dies, enters combat or disconnects mid-run; another addon is missing, older or misbehaving; saved data is old, partial or damaged. Each has a defined, tested outcome: wait, retry, pause with a reason, or carry on safely. Never a silent wrong result.
+
 ## The documents
 
 | Concern | Document | In short |
