@@ -270,11 +270,14 @@ Nothing reported yet.
 </details>
 
 <details>
-<summary><b>Workbench</b> (1 open, 38 done)</summary>
+<summary><b>Workbench</b> (4 open, 38 done)</summary>
 
 **Open**
 
 - 💡 [Queue blocks with a KPI header that folds to its current step](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/70) · #70
+- 🐞 [Buy for this queue: the plan check says it will buy 100000 of each, then buys the right amounts](https://github.com/TIMID-Group/ForeverWorkbench/issues/6) · #6
+- 🐞 [A large queue lags the game while it sits idle (the plan check reruns too often and too heavily)](https://github.com/TIMID-Group/ForeverWorkbench/issues/5) · #5
+- 💡 [Double-click a recipe in the list to queue it as a full block](https://github.com/TIMID-Group/ForeverWorkbench/issues/4) · #4
 
 **Done**
 
@@ -294,9 +297,6 @@ Nothing reported yet.
 - 💡 [Note and Repeat the queue steps](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/24) · #24
 - 💡 [Drop the strip under the vendor window; open the step editor at the step you clicked](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/49) · #49
 - 🐞 [A plain Queue click should always queue as many as I can](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/48) · #48
-- 🐞 [Two chains sharing Hot Spices; buy a full stack when a slot is used; chains that keep looping](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/46) · #46
-- 🐞 [Lists for Cooking shows Engineering lists (lists no longer follow the profession)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/42) · #42
-- 🐞 [Are the rounds right? (380 then 130, the 500/10 forecast)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/34) · #34
 
 [See all](https://github.com/TIMID-Group/ForeverWorkbench/issues?q=is%3Aissue) (the newest 20 are above)
 
@@ -334,7 +334,7 @@ Nothing reported yet.
 
 </details>
 
-🚪 **Room 404** (1 open, 3 done)
+🚪 **Room 404** (1 open, 4 done)
 
 ## ❓ FAQ
 
