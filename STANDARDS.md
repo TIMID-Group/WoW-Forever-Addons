@@ -1,6 +1,6 @@
 # TIMID engineering standard
 
-Every TIMID addon follows one standard, at every level: the suite as a whole, each addon, each module, each function. Each level follows the rules that apply to it, front end (what players see) and back end (logic, data, APIs) alike. A release needs every level to pass.
+Every TIMID addon follows one standard. **Each kind of element has its own rules** (a loop is judged differently from a variable, a module differently from the suite), and a few rules cut across everything. Each element follows the rules for its kind plus the cross-cutting ones, front end (what players see) and back end (logic, data, APIs) alike. A release needs every element to pass.
 
 ## The documents
 
@@ -31,6 +31,68 @@ Every TIMID addon follows one standard, at every level: the suite as a whole, ea
 | **Correctness** | contract tests between addons | before-and-after tests | one source of truth | unit tests, every fix has its test |
 | **Security** | no secrets, nothing classified in public | private data stays local | imported text validated | game calls guarded |
 | **Data** | API versions | saved data versioned, capped, migrated once | one owner per piece of state | no hidden side effects |
+
+## 2b. Rules that cut across everything
+
+- Plain words, no em dashes, no character names, nothing classified in public.
+- Works alone, richer together. Quiet by default.
+- One source of truth. Every change has its test.
+
+## 2c. Rules by kind of element
+
+Each element follows its own rules. These are the main ones; the documents above have the detail.
+
+**Variables**
+- `local` always; a global only for a saved variable or a deliberate public table.
+- Names say what the thing is (`freeSlots`, not `n`); booleans read as questions (`isOpen`, `hasMail`); constants in capitals (`MAX_ROUNDS`).
+- Smallest scope that works; one meaning per variable; no reuse for something else.
+- Units in the name where it matters (`copper`, `seconds`, `ms`).
+
+**Loops**
+- Numeric `for i = 1, #t` over arrays; `pairs` only for real maps, and never where the order matters.
+- Hoist anything that doesn't change out of the loop (lengths, lookups, global functions as locals).
+- No tables, closures or string building inside a hot loop; reuse a scratch table.
+- Stop early when the answer is known; never loop inside a loop over the same data when an index would do.
+- A loop over something that grows (bags, quests, auctions, queue steps) has a known cost and, if big, runs as a job across frames.
+
+**Functions**
+- One job; a name that says it (a verb: `SizeRound`, `TakeMail`).
+- Inputs as arguments, results as return values; no hidden side effects.
+- Deciding apart from doing: pure logic in one function, game calls in another.
+- Short (about 50 lines); early returns over deep nesting.
+- Guard game calls once, at the edge.
+
+**Tables and data shapes**
+- One shape per kind of record, documented where it is built; no fields that change meaning.
+- Arrays and maps kept apart; never mix numeric and named keys in one table.
+- Reuse (`wipe`) instead of rebuilding in hot paths.
+
+**Strings and text**
+- Player-facing words in one place per module, in plain house words; built once, not per frame.
+- Text from outside (imports, chat) is untrusted: limited in size, parsed field by field.
+
+**Events and timers**
+- Register only while needed; coalesce bursts; unregister on hide or done.
+- No OnUpdate or ticker that runs while nothing happens.
+
+**UI frames**
+- Built on first show, pooled and reused; a view only draws a snapshot, it never computes.
+- Popups and windows follow the style guide; long lists draw only visible rows.
+
+**Saved data**
+- Versioned, capped, migrated once with a mark; never change a player's settings except by a marked one-time move.
+
+**Modules (files)**
+- One job, about 800 lines at most, private by default, one public table, dependencies one way.
+
+**Addon APIs**
+- Versioned (`API.v2`), `Supports(...)` for new parts, older callers keep working, contract-tested against every addon that calls them.
+
+**An addon**
+- Works alone; its pages, report window, TIMID row, help and What's new per the style guide; its login cost and saved-data size within budget; its own tests and changelog.
+
+**The suite**
+- Shared pieces only in the kit; addons talk only through APIs and kit signals; one brand, one look; together inside the frame budget.
 
 ## 3. Security and safety
 
