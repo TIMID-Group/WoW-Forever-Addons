@@ -241,9 +241,13 @@ What has been reported and suggested, per addon: open first, then done. An addon
 </details>
 
 <details>
-<summary><b>Ding</b> (1 open, 0 done)</summary>
+<summary><b>Ding</b> (1 open, 1 done)</summary>
 
 **Open**
+
+- 🐞 [The Ready to hand in list cuts the XP column short (290 shows as 29)](https://github.com/TIMID-Group/ForeverDing/issues/2) · #2
+
+**Done**
 
 - 💡 [Idea (Ding window)](https://github.com/TIMID-Group/ForeverDing/issues/1) · #1
 
@@ -336,7 +340,7 @@ Nothing reported yet.
 
 </details>
 
-🚪 **Room 404** (1 open, 4 done)
+🚪 **Room 404** (2 open, 4 done)
 
 <!-- reports:end -->
 
