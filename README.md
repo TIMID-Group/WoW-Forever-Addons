@@ -276,11 +276,12 @@ Nothing reported yet.
 </details>
 
 <details>
-<summary><b>Workbench</b> (4 open, 38 done)</summary>
+<summary><b>Workbench</b> (5 open, 38 done)</summary>
 
 **Open**
 
 - 💡 [Queue blocks with a KPI header that folds to its current step](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/70) · #70
+- 🐞 [A block's Craft "all I can" finished with 0 made while its materials were in the bags, so its Sell had nothing to sell](https://github.com/TIMID-Group/ForeverWorkbench/issues/7) · #7
 - 🐞 [Buy for this queue: the plan check says it will buy 100000 of each, then buys the right amounts](https://github.com/TIMID-Group/ForeverWorkbench/issues/6) · #6
 - 🐞 [A large queue lags the game while it sits idle (the plan check reruns too often and too heavily)](https://github.com/TIMID-Group/ForeverWorkbench/issues/5) · #5
 - 💡 [Double-click a recipe in the list to queue it as a full block](https://github.com/TIMID-Group/ForeverWorkbench/issues/4) · #4
@@ -302,7 +303,6 @@ Nothing reported yet.
 - 💡 [Run a material group as one chain in rounds](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/52) · #52
 - 💡 [Note and Repeat the queue steps](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/24) · #24
 - 💡 [Drop the strip under the vendor window; open the step editor at the step you clicked](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/49) · #49
-- 🐞 [A plain Queue click should always queue as many as I can](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/48) · #48
 
 [See all](https://github.com/TIMID-Group/ForeverWorkbench/issues?q=is%3Aissue) (the newest 20 are above)
 
@@ -340,7 +340,7 @@ Nothing reported yet.
 
 </details>
 
-🚪 **Room 404** (2 open, 4 done)
+🚪 **Room 404** (3 open, 4 done)
 
 <!-- reports:end -->
 
