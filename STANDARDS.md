@@ -18,6 +18,18 @@ Every TIMID addon follows one standard. **Each kind of element has its own rules
 
 **Reliability: what can go wrong, handled on purpose.** For every feature, write down and test: the server is slow or says no (a purchase fails, mail is empty or not yet arrived); a window closes mid-action (vendor, mailbox, auction house); the player moves, dies, enters combat or disconnects mid-run; another addon is missing, older or misbehaving; saved data is old, partial or damaged. Each has a defined, tested outcome: wait, retry, pause with a reason, or carry on safely. Never a silent wrong result.
 
+## The lifecycle: every feature, start to finish
+
+| Stage | What happens | Gate before the next stage |
+|---|---|---|
+| **1. Requirements** | the owner's ask, written as an issue in plain words; questions answered, not assumed | the owner agrees it says what they meant |
+| **2. Design** | how it works for the player (`STYLE.md`) and inside (`ENGINEERING.md`): modules, data, APIs; its performance section (data size, Big-O, events, frame budget); its failure modes (reliability) | design reviewed against all seven qualities |
+| **3. Implementation** | built to the element rules (section 2c), private by default, one source of truth | the static checker shows nothing worse |
+| **4. Verification** | unit, module, contract, before-and-after and end-to-end tests; perf budgets; an independent review against the scorecard | every test green, scorecard green |
+| **5. Release** | changelog, guide, version; an in-game checklist played by the owner first; then friends | the owner has played it |
+| **6. Operation** | `/timid perf` and the problem reports show how it behaves in real play | real numbers inside the budget |
+| **7. Maintenance** | every report becomes an issue; every fix adds its test; the standards themselves improve from what we learn | nothing gets worse over time |
+
 ## The documents
 
 | Concern | Document | In short |
