@@ -52,7 +52,7 @@ Crafting in bulk means a lot of small chores: counting materials, walking to a v
 
 ## 📸 Screenshots
 
-<p align="center"><img src="../media/workbench-2.3/queue-lists.png" alt="The Engineering profession window with Forever Workbench. Marks run down the recipe list, the Queue card on the right holds three steps ready to start, and two saved Queue Lists sit along the bottom." width="720"></p>
+<p align="center"><img src="../media/redacted/showcase-workbench-queue-lists.png" alt="The Engineering profession window with Forever Workbench. Marks run down the recipe list, the Queue card on the right holds three steps ready to start, and two saved Queue Lists sit along the bottom." width="720"></p>
 <p align="center"><sub>The Queue card and Queue Lists (shown in version 2.3).</sub></p>
 
 <p align="center"><img src="../media/workbench-2.0/queue-your-turn.png" alt="Forever Workbench's Queue card during a run. The first craft is done, and a glowing button waits for the click that starts the next craft of 212 Solid Dynamite." width="720"></p>
