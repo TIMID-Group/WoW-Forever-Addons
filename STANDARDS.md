@@ -20,15 +20,26 @@ Every TIMID addon follows one standard. **Each kind of element has its own rules
 
 ## The lifecycle: every feature, start to finish
 
-| Stage | What happens | Gate before the next stage |
-|---|---|---|
-| **1. Requirements** | the owner's ask, written as an issue in plain words; questions answered, not assumed | the owner agrees it says what they meant |
-| **2. Design** | how it works for the player (`STYLE.md`) and inside (`ENGINEERING.md`): modules, data, APIs; its performance section (data size, Big-O, events, frame budget); its failure modes (reliability) | design reviewed against all seven qualities |
-| **3. Implementation** | built to the element rules (section 2c), private by default, one source of truth | the static checker shows nothing worse |
-| **4. Verification** | unit, module, contract, before-and-after and end-to-end tests; perf budgets; an independent review against the scorecard | every test green, scorecard green |
-| **5. Release** | changelog, guide, version; an in-game checklist played by the owner first; then friends | the owner has played it |
-| **6. Operation** | `/timid perf` and the problem reports show how it behaves in real play | real numbers inside the budget |
-| **7. Maintenance** | every report becomes an issue; every fix adds its test; the standards themselves improve from what we learn | nothing gets worse over time |
+Our stages follow the industry's standard models, so nothing is invented here:
+- **ISO/IEC/IEEE 12207** (software life cycle processes): requirements, design, construction, verification, transition (release), operation, maintenance.
+- **The V-model:** every design stage is paired with the test level that proves it. Requirements are proved by acceptance tests, architecture by integration and contract tests, module design by module tests, and code by unit tests. **The tests are designed in the same stage as the thing they prove,** not after it is built.
+- **ISO/IEC/IEEE 29148** (requirements) and **29119** (testing) for how requirements and tests are written.
+- **The game industry's stages:** concept, pre-production (design document, prototype), production, alpha (feature complete), beta (players test), release, live operations.
+
+| Stage | Industry name | What happens | Designed here too | Gate |
+|---|---|---|---|---|
+| **1. Concept** | concept / requirements elicitation | the owner's idea, issue or feature, in their words | | written as an issue |
+| **2. Requirements** | requirements analysis (29148) | what it must do, for whom, and how well: functional requirements plus a measurable bar for each of the seven qualities | **acceptance tests** (how we'll know it does what was asked) and the **measurements** (frame budget, sizes, times) | the owner agrees it says what they meant |
+| **3. Architecture** | system design / pre-production | where it lives in the suite: which addon, which APIs, what data, what other addons it talks to | **integration and contract tests** between the parts | reviewed against the standard |
+| **4. Detailed design** | module design | modules, functions, data shapes, Big-O, events, failure modes, the UI per the style guide | **module and unit tests**, perf workloads with budgets, failure-mode tests | reviewed against all seven qualities |
+| **5. Construction** | implementation / production | built to the element rules, tests written alongside | | the static checker shows nothing worse |
+| **6. Verification** | testing (29119) / alpha | unit, module, contract, before-and-after and end-to-end tests; perf budgets; an independent review against the scorecard | | everything green, scorecard green |
+| **7. Validation** | acceptance / beta | the owner plays it against the acceptance tests and the in-game checklist | | the owner accepts it |
+| **8. Release** | transition / release | changelog, guide, version; friends get it | | published |
+| **9. Operation** | live operations | `/timid perf` and problem reports in real play | | real numbers within the bars |
+| **10. Maintenance** | maintenance | every report becomes an issue and starts again at stage 1; every fix adds its test; the standards improve | | nothing gets worse |
+
+**Who does what.** The owner brings stage 1 (the idea) and stage 7 (playing it). Everything else, requirements, design, tests, measurements, building, verification and release, is the coordinator's job, with agents as needed.
 
 ## The documents
 
