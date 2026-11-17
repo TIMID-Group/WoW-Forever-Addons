@@ -133,6 +133,29 @@ after it is seen working in game.
   and after in its changelog or report.
 - **Numbers in reviews.** A review of a hot-path change asks for the before and after numbers.
 
+## 9b. Design on paper first
+
+Most performance is decided before any code runs. Every hot calculation and every new feature is checked on paper:
+
+- **How it grows (Big-O).** Write down how the cost grows with its input: queue steps, recipes, auction pages, remembered quests. Anything that grows faster than the data (a walk of the whole queue per block, every page reprocessed on each new page, every quest checked per item) is redesigned: compute once and update, process only what is new, keep an index.
+- **Work proportional to change.** When one thing changes, recompute that thing and what depends on it, not everything (incremental computation, a dependency-aware form of dirty flags).
+- **A frame budget in milliseconds.** A frame at 60 fps is 16.7 ms and the game needs most of it. All TIMID addons together aim for 1 to 2 ms in a busy frame. Each feature's design states its share; Amdahl's law decides where effort goes (the biggest share of time first).
+- **Static checks.** A lint reads the code and flags, in event handlers and per-frame code: new tables, closures and string building; global lookups that should be cached as locals; OnUpdate scripts that never stop.
+- **A performance section in every design:** how big the data gets, how cost grows, which events trigger it, and its budget. It is reviewed before building starts.
+
+## 9c. Correct before fast
+
+- **One calculation, used everywhere.** A preview (the plan check, a tooltip, a card) and the thing that acts (the runner, the buyer) share the same function. Never two copies of the same arithmetic.
+- **Before-and-after tests for every refactor.** Record what the engine produces for real scenarios before the change; the refactored code must produce the same.
+- **Combat safety.** Nothing touches protected actions or frames in combat; anything that would is put off until combat ends.
+
+## 9d. What grows over weeks
+
+- **Saved data has a cap and a size check.** `/timid perf` shows each addon's saved data size and its login time, so slow growth is visible without reading saved files.
+- **Big static data loads when first needed,** not at login, where the client allows it.
+- **Long lists draw only the visible rows** (a virtual list from the kit), however long the list.
+- **Budgets are tests.** The perf workloads run with the other tests, and a change that makes one slower than its budget fails.
+
 ## 10. Checklist for every new feature
 
 1. What events does it listen to, and can they come in bursts? Coalesce them.
@@ -144,3 +167,5 @@ after it is seen working in game.
 7. Does it save anything new? Give it a cap and a version.
 8. Is every game function it calls on this client? Guard it once.
 9. Numbers before and after, from the perf workloads and `/timid perf`.
+10. How does its cost grow, and what is its frame budget? (section 9b)
+11. Does every preview share its calculation with the code that acts? (section 9c)
