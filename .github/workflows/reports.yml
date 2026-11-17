@@ -1,9 +1,9 @@
 name: Reports
-# Every hour (and by hand from the Actions tab): rebuild the README's Reports list from every addon's
-# issues, and keep the org's project board in step. See .github/scripts/reports.py.
+# By hand from the Actions tab (no schedule: the owner chose not to keep a token for it): rebuild the
+# README's Reports list from every addon's issues, and keep the org's project board in step. Needs the
+# HUB_READ_TOKEN secret; without it, it does nothing. The coordinator runs the same script locally
+# after handling issues. See .github/scripts/reports.py.
 on:
-  schedule:
-    - cron: "17 * * * *"
   workflow_dispatch:
 permissions:
   contents: write
