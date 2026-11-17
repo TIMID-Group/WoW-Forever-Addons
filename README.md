@@ -212,6 +212,8 @@ With the game closed, delete `WTF/Account/<account>/SavedVariables/<Addon>.lua`.
 > [!TIP]
 > No title needed: each report is labelled and titled automatically. If a link ever opens with an empty Details box, use **Full report** in that small box (or `/wb report`, `/fcl report` and so on, or `/timid report` for all of them) and paste the text it gives you there.
 
+<!-- reports:start -->
+
 ## 🗂️ Reports
 
 What has been reported and suggested, per addon: open first, then done. An addon's reports are on its own page, so its links open for people who have that addon. 🐞 a problem, 💡 an idea.
@@ -335,6 +337,8 @@ Nothing reported yet.
 </details>
 
 🚪 **Room 404** (1 open, 4 done)
+
+<!-- reports:end -->
 
 ## ❓ FAQ
 
