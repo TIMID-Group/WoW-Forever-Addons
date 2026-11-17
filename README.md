@@ -22,11 +22,11 @@
 
 | | Addon | What it does | Latest | Command | Access |
 | --- | --- | --- | --- | --- | --- |
-| 🛠️ | **[Forever Crafting Ledger](addons/ForeverCraftingLedger.md)** | What every recipe of every profession earns: each material from your cheapest vendor or the auction house, the product sold to a vendor or auctioned. Named shopping lists with your own prices. Reads Auctionator's prices. | [1.10.0](https://github.com/TIMID-Group/ForeverCraftingLedger/releases/latest) | `/fcl` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 📜 | **[Forever Ding](addons/ForeverDing.md)** | Will the quests you can hand in level you up? Forever Ding adds up their XP, in your zone and across the world, and shows the level you would reach. | [1.1.0](https://github.com/TIMID-Group/ForeverDing/releases/latest) | `/ding` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 🛠️ | **[Forever Fishing Chart](addons/ForeverFishingChart.md)** | Fishing waters on the world map: catches, skill checks and time-of-day rates, plus a fish finder and your own catch log. | [1.7.0](https://github.com/TIMID-Group/ForeverFishingChart/releases/latest) | `/ffc` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 📜 | **[Forever Quest Leftovers](addons/ForeverQuestLeftovers.md)** | Looks through your bags and bank for items no quest needs any more, says why, and says what to do with each one. Dungeon keys, attunements and boss summons are listed as worth keeping. It only advises. | [0.11.0](https://github.com/TIMID-Group/ForeverQuestLeftovers/releases/latest) | `/leftovers` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 🛠️ | **[Forever Workbench](addons/ForeverWorkbench.md)** | Makes the profession window richer. Shows materials on hand and items in bags on every recipe, buys the vendor materials for a recipe while leaving bag space to craft, sells what you crafted, and runs a crafting queue. | [2.6.0](https://github.com/TIMID-Group/ForeverWorkbench/releases/latest) | `/workbench` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Crafting Ledger](addons/ForeverCraftingLedger.md)** | What every recipe of every profession earns: each material from your cheapest vendor or the auction house, the product sold to a vendor or auctioned. Named shopping lists with your own prices. Reads Auctionator's prices. | [1.10.1](https://github.com/TIMID-Group/ForeverCraftingLedger/releases/latest) | `/fcl` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 📜 | **[Forever Ding](addons/ForeverDing.md)** | Will the quests you can hand in level you up? Forever Ding adds up their XP, in your zone and across the world, and shows the level you would reach. | [1.1.1](https://github.com/TIMID-Group/ForeverDing/releases/latest) | `/ding` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Fishing Chart](addons/ForeverFishingChart.md)** | Fishing waters on the world map: catches, skill checks and time-of-day rates, plus a fish finder and your own catch log. | [1.7.1](https://github.com/TIMID-Group/ForeverFishingChart/releases/latest) | `/ffc` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 📜 | **[Forever Quest Leftovers](addons/ForeverQuestLeftovers.md)** | Looks through your bags and bank for items no quest needs any more, says why, and says what to do with each one. Dungeon keys, attunements and boss summons are listed as worth keeping. It only advises. | [0.11.1](https://github.com/TIMID-Group/ForeverQuestLeftovers/releases/latest) | `/leftovers` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Workbench](addons/ForeverWorkbench.md)** | Makes the profession window richer. Shows materials on hand and items in bags on every recipe, buys the vendor materials for a recipe while leaving bag space to craft, sells what you crafted, and runs a crafting queue. | [2.6.1](https://github.com/TIMID-Group/ForeverWorkbench/releases/latest) | `/workbench` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 
 Click an addon's name for its page here: what it does, with pictures. Its own page (invite only) has the download, the commands and a full guide.
 
@@ -219,24 +219,24 @@ With the game closed, delete `WTF/Account/<account>/SavedVariables/<Addon>.lua`.
 What has been reported and suggested, per addon: open first, then done. An addon's reports are on its own page, so its links open for people who have that addon. 🐞 a problem, 💡 an idea.
 
 <details>
-<summary><b>Crafting Ledger</b> (11 open, 8 done)</summary>
+<summary><b>Crafting Ledger</b> (7 open, 12 done)</summary>
 
 **Open**
 
-- 💡 [Materials: a Craft sells for column (what one craft of the best recipe vendors for)](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/12) · #12
 - 💡 [Queue it sends no Sell steps, so a group with tight bags pauses with "no room"](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/11) · #11
 - 💡 [Saved data: a version, caps and repair on load](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/10) · #10
 - 🐞 [Pull prices: a second pull overwrites the undo, so prices from before the first are lost](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/9) · #9
-- 🐞 [Measured craft times read from Workbench's saved data; the contract test loads Workbench by file name](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/8) · #8
 - 🐞 [Send can change a list while it is being bought, or overwrite one without asking](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/7) · #7
 - 🐞 [A confidential addon's name ships in the README, CHANGELOG, About.lua and tests](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/6) · #6
-- 🐞 [Garbage and hitches in play: a per-frame watcher, uncached plans, nothing waits for combat](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/5) · #5
 - 🐞 [Send to shopping list: the most to pay can mean buying at a loss](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/4) · #4
-- 💡 [Materials: a "Sells for" column, clearly marked unlearned recipes, and a Known / All recipes switch](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/3) · #3
 - 💡 [What can I make from my bags? A list built from the random materials you collect while levelling](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/2) · #2
 
 **Done**
 
+- 💡 [Materials: a Craft sells for column (what one craft of the best recipe vendors for)](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/12) · #12
+- 🐞 [Measured craft times read from Workbench's saved data; the contract test loads Workbench by file name](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/8) · #8
+- 🐞 [Garbage and hitches in play: a per-frame watcher, uncached plans, nothing waits for combat](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/5) · #5
+- 💡 [Materials: a "Sells for" column, clearly marked unlearned recipes, and a Known / All recipes switch](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/3) · #3
 - 💡 [Sending a shopping list is one and done: remove the self-updating link](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/1) · #1
 - 💡 ["Plan for" setting per list (make everything / cheapest / best gold per hour / buy all I can)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/60) · #60
 - 💡 [An overview of all lists as cards, and a clear way back](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/59) · #59
@@ -304,15 +304,18 @@ What has been reported and suggested, per addon: open first, then done. An addon
 </details>
 
 <details>
-<summary><b>Workbench</b> (16 open, 39 done)</summary>
+<summary><b>Workbench</b> (2 open, 53 done)</summary>
 
 **Open**
 
 - 💡 [Queue blocks with a KPI header that folds to its current step](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/70) · #70
+- 💡 [Contract tests against the real callers, loaded by .toc, run in CI](https://github.com/TIMID-Group/ForeverWorkbench/issues/15) · #15
+
+**Done**
+
 - 🐞 [Sell for this queue ignores each Sell step's rule (keep 40 sells everything)](https://github.com/TIMID-Group/ForeverWorkbench/issues/19) · #19
 - 💡 [Import from text: a size limit and number ranges](https://github.com/TIMID-Group/ForeverWorkbench/issues/18) · #18
 - 💡 [Repeat until a pass makes nothing: go to Sell, then repeat (the owner's rule, not built)](https://github.com/TIMID-Group/ForeverWorkbench/issues/17) · #17
-- 💡 [Contract tests against the real callers, loaded by .toc, run in CI](https://github.com/TIMID-Group/ForeverWorkbench/issues/15) · #15
 - 🐞 [Counts recorded without a bag check or after a reset: sell first, Restart or Jump mid-buy, late mail](https://github.com/TIMID-Group/ForeverWorkbench/issues/14) · #14
 - 🐞 [A confidential addon's name ships in the README, CHANGELOG and tests](https://github.com/TIMID-Group/ForeverWorkbench/issues/13) · #13
 - 🐞 [The open card and the profession strip cost frames and garbage even when nothing changes](https://github.com/TIMID-Group/ForeverWorkbench/issues/12) · #12
@@ -324,9 +327,6 @@ What has been reported and suggested, per addon: open first, then done. An addon
 - 🐞 [Buy for this queue: the plan check says it will buy 100000 of each, then buys the right amounts](https://github.com/TIMID-Group/ForeverWorkbench/issues/6) · #6
 - 🐞 [A large queue lags the game while it sits idle (the plan check reruns too often and too heavily)](https://github.com/TIMID-Group/ForeverWorkbench/issues/5) · #5
 - 💡 [Double-click a recipe in the list to queue it as a full block](https://github.com/TIMID-Group/ForeverWorkbench/issues/4) · #4
-
-**Done**
-
 - 🐞 [Sell all crafted and the vendor queue row sell on a double-click](https://github.com/TIMID-Group/ForeverWorkbench/issues/16) · #16
 - 💡 [Buy and Collect from mail choices by scope: next craft, this block, this queue (all bag-smart)](https://github.com/TIMID-Group/ForeverWorkbench/issues/3) · #3
 - 🐞 [Lists bar: Export to text is hard to find (urgent)](https://github.com/TIMID-Group/ForeverWorkbench/issues/2) · #2
@@ -369,7 +369,7 @@ What has been reported and suggested, per addon: open first, then done. An addon
 
 </details>
 
-🚪 **Room 404** (12 open, 4 done)
+🚪 **Room 404** (5 open, 11 done)
 
 <!-- reports:end -->
 
