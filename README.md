@@ -22,10 +22,10 @@
 
 | | Addon | What it does | Latest | Command | Access |
 | --- | --- | --- | --- | --- | --- |
-| 🛠️ | **[Forever Crafting Ledger](addons/ForeverCraftingLedger.md)** | What every recipe of every profession earns: each material from your cheapest vendor or the auction house, the product sold to a vendor or auctioned. Named shopping lists with your own prices. Reads Auctionator's prices. | [1.10.1](https://github.com/TIMID-Group/ForeverCraftingLedger/releases/latest) | `/fcl` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 📜 | **[Forever Ding](addons/ForeverDing.md)** | Will the quests you can hand in level you up? Forever Ding adds up their XP, in your zone and across the world, and shows the level you would reach. | [1.1.1](https://github.com/TIMID-Group/ForeverDing/releases/latest) | `/ding` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 🛠️ | **[Forever Fishing Chart](addons/ForeverFishingChart.md)** | Fishing waters on the world map: catches, skill checks and time-of-day rates, plus a fish finder and your own catch log. | [1.7.1](https://github.com/TIMID-Group/ForeverFishingChart/releases/latest) | `/ffc` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
-| 📜 | **[Forever Quest Leftovers](addons/ForeverQuestLeftovers.md)** | Looks through your bags and bank for items no quest needs any more, says why, and says what to do with each one. Dungeon keys, attunements and boss summons are listed as worth keeping. It only advises. | [0.11.1](https://github.com/TIMID-Group/ForeverQuestLeftovers/releases/latest) | `/leftovers` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Crafting Ledger](addons/ForeverCraftingLedger.md)** | What every recipe of every profession earns: each material from your cheapest vendor or the auction house, the product sold to a vendor or auctioned. Named shopping lists with your own prices. Reads Auctionator's prices. | [1.11.0](https://github.com/TIMID-Group/ForeverCraftingLedger/releases/latest) | `/fcl` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 📜 | **[Forever Ding](addons/ForeverDing.md)** | Will the quests you can hand in level you up? Forever Ding adds up their XP, in your zone and across the world, and shows the level you would reach. | [1.1.2](https://github.com/TIMID-Group/ForeverDing/releases/latest) | `/ding` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🛠️ | **[Forever Fishing Chart](addons/ForeverFishingChart.md)** | Fishing waters on the world map: catches, skill checks and time-of-day rates, plus a fish finder and your own catch log. | [1.7.2](https://github.com/TIMID-Group/ForeverFishingChart/releases/latest) | `/ffc` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 📜 | **[Forever Quest Leftovers](addons/ForeverQuestLeftovers.md)** | Looks through your bags and bank for items no quest needs any more, says why, and says what to do with each one. Dungeon keys, attunements and boss summons are listed as worth keeping. It only advises. | [0.11.2](https://github.com/TIMID-Group/ForeverQuestLeftovers/releases/latest) | `/leftovers` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 | 🛠️ | **[Forever Workbench](addons/ForeverWorkbench.md)** | Makes the profession window richer. Shows materials on hand and items in bags on every recipe, buys the vendor materials for a recipe while leaving bag space to craft, sells what you crafted, and runs a crafting queue. | [2.6.1](https://github.com/TIMID-Group/ForeverWorkbench/releases/latest) | `/workbench` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 
 Click an addon's name for its page here: what it does, with pictures. Its own page (invite only) has the download, the commands and a full guide.
@@ -219,10 +219,11 @@ With the game closed, delete `WTF/Account/<account>/SavedVariables/<Addon>.lua`.
 What has been reported and suggested, per addon: open first, then done. An addon's reports are on its own page, so its links open for people who have that addon. 🐞 a problem, 💡 an idea.
 
 <details>
-<summary><b>Crafting Ledger</b> (7 open, 12 done)</summary>
+<summary><b>Crafting Ledger</b> (8 open, 12 done)</summary>
 
 **Open**
 
+- 🐞 [Bundled recipe data has Classic reagents for about 25 recipes WoW Forever changed](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/13) · #13
 - 💡 [Queue it sends no Sell steps, so a group with tight bags pauses with "no room"](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/11) · #11
 - 💡 [Saved data: a version, caps and repair on load](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/10) · #10
 - 🐞 [Pull prices: a second pull overwrites the undo, so prices from before the first are lost](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/9) · #9
@@ -251,14 +252,11 @@ What has been reported and suggested, per addon: open first, then done. An addon
 </details>
 
 <details>
-<summary><b>Ding</b> (1 open, 4 done)</summary>
-
-**Open**
-
-- 🐞 [A confidential addon's name appears in a test file](https://github.com/TIMID-Group/ForeverDing/issues/5) · #5
+<summary><b>Ding</b> (0 open, 5 done)</summary>
 
 **Done**
 
+- 🐞 [A confidential addon's name appears in a test file](https://github.com/TIMID-Group/ForeverDing/issues/5) · #5
 - 💡 [Double-click the XP or reputation bar to open Ding](https://github.com/TIMID-Group/ForeverDing/issues/4) · #4
 - 🐞 [At level 60 the sums read "0 XP to reach 61" and "-nan to 60"](https://github.com/TIMID-Group/ForeverDing/issues/3) · #3
 - 🐞 [The Ready to hand in list cuts the XP column short (290 shows as 29)](https://github.com/TIMID-Group/ForeverDing/issues/2) · #2
@@ -269,15 +267,15 @@ What has been reported and suggested, per addon: open first, then done. An addon
 </details>
 
 <details>
-<summary><b>Fishing Chart</b> (2 open, 1 done)</summary>
+<summary><b>Fishing Chart</b> (1 open, 2 done)</summary>
 
 **Open**
 
 - 💡 [World map: no tests for its 7 requirements, and a watcher that runs every frame](https://github.com/TIMID-Group/ForeverFishingChart/issues/3) · #3
-- 🐞 [A confidential addon's name ships in the README, Window.lua comments and a test](https://github.com/TIMID-Group/ForeverFishingChart/issues/2) · #2
 
 **Done**
 
+- 🐞 [A confidential addon's name ships in the README, Window.lua comments and a test](https://github.com/TIMID-Group/ForeverFishingChart/issues/2) · #2
 - 💡 [Treasure broken out: every container, bloated fish and trophy fish as its own entry, with where it comes from and drop rates](https://github.com/TIMID-Group/ForeverFishingChart/issues/1) · #1
 
 [See all](https://github.com/TIMID-Group/ForeverFishingChart/issues?q=is%3Aissue)
@@ -285,18 +283,18 @@ What has been reported and suggested, per addon: open first, then done. An addon
 </details>
 
 <details>
-<summary><b>Quest Leftovers</b> (5 open, 1 done)</summary>
+<summary><b>Quest Leftovers</b> (4 open, 2 done)</summary>
 
 **Open**
 
 - 💡 [Dungeon Journal and Questie are read through their internals: guard, probe and test older shapes](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/5) · #5
 - 💡 [Saved data: a version, caps and repair on load](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/4) · #4
-- 🐞 [A confidential addon's name ships in the README and a test](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/3) · #3
 - 🐞 [The scan gets slower every month: remembered quests never pruned, scans in combat and per bank slot](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/2) · #2
 - 💡 [Tests for every sell-or-destroy verdict rule (7 of 22 untested)](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/1) · #1
 
 **Done**
 
+- 🐞 [A confidential addon's name ships in the README and a test](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/3) · #3
 - 🐞 [Dungeon keys, a boss summon and a quest reward listed as left over](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/2) · #2
 
 [See all](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues?q=is%3Aissue)
@@ -369,7 +367,7 @@ What has been reported and suggested, per addon: open first, then done. An addon
 
 </details>
 
-🚪 **Room 404** (5 open, 11 done)
+🚪 **Room 404** (6 open, 11 done)
 
 <!-- reports:end -->
 
