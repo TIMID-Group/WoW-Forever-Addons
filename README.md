@@ -217,14 +217,15 @@ With the game closed, delete `WTF/Account/<account>/SavedVariables/<Addon>.lua`.
 What has been reported and suggested, per addon: open first, then done. An addon's reports are on its own page, so its links open for people who have that addon. 🐞 a problem, 💡 an idea.
 
 <details>
-<summary><b>Crafting Ledger</b> (1 open, 7 done)</summary>
+<summary><b>Crafting Ledger</b> (1 open, 8 done)</summary>
 
 **Open**
 
-- 💡 [Sending a shopping list is one and done: remove the self-updating link](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/1) · #1
+- 💡 [What can I make from my bags? A list built from the random materials you collect while levelling](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/2) · #2
 
 **Done**
 
+- 💡 [Sending a shopping list is one and done: remove the self-updating link](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/1) · #1
 - 💡 ["Plan for" setting per list (make everything / cheapest / best gold per hour / buy all I can)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/60) · #60
 - 💡 [An overview of all lists as cards, and a clear way back](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/59) · #59
 - 💡 [Keep the \[classified\] list in step with the plan](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/55) · #55
@@ -269,15 +270,15 @@ Nothing reported yet.
 </details>
 
 <details>
-<summary><b>Workbench</b> (2 open, 37 done)</summary>
+<summary><b>Workbench</b> (1 open, 38 done)</summary>
 
 **Open**
 
 - 💡 [Queue blocks with a KPI header that folds to its current step](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/70) · #70
-- 💡 [Buy and Collect from mail choices by scope: next craft, this block, this queue (all bag-smart)](https://github.com/TIMID-Group/ForeverWorkbench/issues/3) · #3
 
 **Done**
 
+- 💡 [Buy and Collect from mail choices by scope: next craft, this block, this queue (all bag-smart)](https://github.com/TIMID-Group/ForeverWorkbench/issues/3) · #3
 - 🐞 [Lists bar: Export to text is hard to find (urgent)](https://github.com/TIMID-Group/ForeverWorkbench/issues/2) · #2
 - 🐞 [Queue card: the step list stops early above a mostly empty footer; redesign the footer](https://github.com/TIMID-Group/ForeverWorkbench/issues/1) · #1
 - 🐞 [The queue's right-click menu doesn't close when you click elsewhere](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/69) · #69
@@ -302,10 +303,11 @@ Nothing reported yet.
 </details>
 
 <details>
-<summary><b>TIMID Group</b> (2 open, 16 done)</summary>
+<summary><b>TIMID Group</b> (3 open, 16 done)</summary>
 
 **Open**
 
+- 💡 [New addon: Forever Light Bags (open all your clams in one go)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/73) · #73
 - 💡 [New addon: Forever Stocking Stuffer, a simple auction house shopping list](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/65) · #65
 - 💡 [New addon: guided profession levelling (route, costs and times, exports a shopping list and a Workbench queue)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/63) · #63
 
@@ -332,7 +334,7 @@ Nothing reported yet.
 
 </details>
 
-🚪 **Room 404** (0 open, 3 done)
+🚪 **Room 404** (1 open, 3 done)
 
 ## ❓ FAQ
 
