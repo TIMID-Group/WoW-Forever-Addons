@@ -49,7 +49,8 @@ A full quest log raises one question before every trip to town. Will handing the
 
 ## 📸 Screenshots
 
-Screenshots are on their way. Until then, the guide in the addon's repo walks through the window and the minimap button, and the [announcement on the hub](https://github.com/TIMID-Group/WoW-Forever-Addons/discussions/50) tells the story.
+<p align="center"><img src="../media/showcase/ding.png" alt="The Forever Ding window: your level and XP, what is ready to hand in here and everywhere, how much XP that brings and how much you would still need, and the list of ready quests with their zone and XP." width="420"></p>
+<p align="center"><sub>Will your quests level you up? Here, everywhere, and what you would still need (version 1.0).</sub></p>
 
 ## 🔗 Works with
 
