@@ -241,6 +241,12 @@ finder or the leftovers list, and every report window) behaves like the game's o
   short list in a tight spot, where the game's bar would take too much room (Workbench's Queue
   Lists in the strip, two rows high), may scroll with the mouse wheel and draw a slim thumb of its
   own instead (3 pixels, on a faint track), hidden when everything fits.
+- **Tabs.** The house tab look is the game's own tab buttons, made with `Kit.Tabs` (never buttons that
+  look like actions): bottom tabs (`PanelTabButtonTemplate`, as on the character window) hanging under
+  a main window switch its pages (the Crafting Ledger, the fish finder); top tabs
+  (`PanelTopTabButtonTemplate`) above a list inside a window switch what the list shows (Forever
+  Apprentice's Steps and What you need). The game's select functions draw the chosen tab; on a client
+  without the game's tabs a plain button stands in, lit when chosen.
 - **Parts of the game's own windows** (Workbench's strip and pages) live inside those windows and
   follow them; they do not need their own layer rules.
 - **The strip takeover** (Workbench 2.3.0, #33). While the Queue card is open, the bar under the
