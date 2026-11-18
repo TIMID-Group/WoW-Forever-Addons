@@ -20,6 +20,7 @@ body:
         - label: Forever Ding
         - label: Forever Fishing Chart
         - label: Forever Quest Leftovers
+        - label: Forever Stocking Stuffer
         - label: Forever Workbench
   - type: textarea
     id: note
