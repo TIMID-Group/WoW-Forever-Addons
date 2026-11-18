@@ -365,15 +365,12 @@ Nothing reported yet.
 </details>
 
 <details>
-<summary><b>TIMID Group</b> (2 open, 22 done)</summary>
-
-**Open**
-
-- 💡 [New addon: Forever Stocking Stuffer, a simple auction house shopping list](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/65) · #65
-- 💡 [New addon: guided profession levelling (route, costs and times, exports a shopping list and a Workbench queue)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/63) · #63
+<summary><b>TIMID Group</b> (0 open, 24 done)</summary>
 
 **Done**
 
+- 💡 [New addon: guided profession levelling (route, costs and times, exports a shopping list and a Workbench queue)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/63) · #63
+- 💡 [New addon: Forever Stocking Stuffer, a simple auction house shopping list](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/65) · #65
 - 💡 [Hub tooling has no tests, and no release check for em dashes, names or confidential names](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/77) · #77
 - 🐞 [Kit busy signal: a holder that errors keeps everyone throttled; scan quiet has no maximum wait](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/78) · #78
 - 🐞 [Reports: the kit scrubs nothing personal by default, so a name in an error line goes out as is](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/76) · #76
