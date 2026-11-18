@@ -18,6 +18,7 @@
 | 🛠️ | **[Forever Fishing Chart](ForeverFishingChart.md)** | What bites, where and when, right on your world map. |
 | 📜 | **[Forever Quest Leftovers](ForeverQuestLeftovers.md)** | Find the quest items you no longer need, and keep the ones you do. |
 | 🎅 | **[Forever Stocking Stuffer](ForeverStockingStuffer.md)** | A simple auction house shopping list: one click per purchase, cheapest first. |
+| 🗺️ | **[Forever Wanderer](ForeverWanderer.md)** | Every place you have not explored yet, in the shortest order, one click away. |
 | 🛠️ | **[Forever Workbench](ForeverWorkbench.md)** | Your profession window, with buying, selling and a crafting queue built in. |
 
 Every addon is invite only. [Request access](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml), then follow the [Install](https://github.com/TIMID-Group/WoW-Forever-Addons#-install) steps on the main page.

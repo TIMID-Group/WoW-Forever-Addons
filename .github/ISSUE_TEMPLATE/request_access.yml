@@ -22,6 +22,7 @@ body:
         - label: Forever Fishing Chart
         - label: Forever Quest Leftovers
         - label: Forever Stocking Stuffer
+        - label: Forever Wanderer
         - label: Forever Workbench
   - type: textarea
     id: note

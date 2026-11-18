@@ -18,6 +18,9 @@ contact_links:
   - name: "Forever Stocking Stuffer: report a problem or suggest an idea"
     url: https://github.com/TIMID-Group/ForeverStockingStuffer/issues/new/choose
     about: On the addon's own page, which only people who have the addon can open. The game's report button takes you there.
+  - name: "Forever Wanderer: report a problem or suggest an idea"
+    url: https://github.com/TIMID-Group/ForeverWanderer/issues/new/choose
+    about: On the addon's own page, which only people who have the addon can open. The game's report button takes you there.
   - name: "Forever Workbench: report a problem or suggest an idea"
     url: https://github.com/TIMID-Group/ForeverWorkbench/issues/new/choose
     about: On the addon's own page, which only people who have the addon can open. The game's report button takes you there.
