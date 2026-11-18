@@ -26,6 +26,7 @@
 | 📜 | **[Forever Ding](addons/ForeverDing.md)** | Will the quests you can hand in level you up? Forever Ding adds up their XP, in your zone and across the world, and shows the level you would reach. | [1.1.2](https://github.com/TIMID-Group/ForeverDing/releases/latest) | `/ding` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 | 🛠️ | **[Forever Fishing Chart](addons/ForeverFishingChart.md)** | Fishing waters on the world map: catches, skill checks and time-of-day rates, plus a fish finder and your own catch log. | [1.7.2](https://github.com/TIMID-Group/ForeverFishingChart/releases/latest) | `/ffc` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 | 📜 | **[Forever Quest Leftovers](addons/ForeverQuestLeftovers.md)** | Looks through your bags and bank for items no quest needs any more, says why, and says what to do with each one. Dungeon keys, attunements and boss summons are listed as worth keeping. It only advises. | [0.11.2](https://github.com/TIMID-Group/ForeverQuestLeftovers/releases/latest) | `/leftovers` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 💰 | **[Forever Stocking Stuffer](addons/ForeverStockingStuffer.md)** | A simple auction house shopping list: put items on a list with a quantity and a max price, then click Buy next once per purchase, cheapest first. | [0.1.0](https://github.com/TIMID-Group/ForeverStockingStuffer/releases/latest) | `/stuffer` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 | 🛠️ | **[Forever Workbench](addons/ForeverWorkbench.md)** | Makes the profession window richer. Shows materials on hand and items in bags on every recipe, buys the vendor materials for a recipe while leaving bag space to craft, sells what you crafted, and runs a crafting queue. | [2.8.0](https://github.com/TIMID-Group/ForeverWorkbench/releases/latest) | `/workbench` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 
 Click an addon's name for its page here: what it does, with pictures. Its own page (invite only) has the download, the commands and a full guide.
@@ -58,6 +59,7 @@ https://github.com/TIMID-Group/ForeverCraftingLedger
 https://github.com/TIMID-Group/ForeverDing
 https://github.com/TIMID-Group/ForeverFishingChart
 https://github.com/TIMID-Group/ForeverQuestLeftovers
+https://github.com/TIMID-Group/ForeverStockingStuffer
 https://github.com/TIMID-Group/ForeverWorkbench
 ```
 
@@ -199,6 +201,7 @@ With the game closed, delete `WTF/Account/<account>/SavedVariables/<Addon>.lua`.
 | Forever Ding | [Report a problem](https://github.com/TIMID-Group/ForeverDing/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverDing/issues/new?template=feature_request.yml) |
 | Forever Fishing Chart | [Report a problem](https://github.com/TIMID-Group/ForeverFishingChart/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverFishingChart/issues/new?template=feature_request.yml) |
 | Forever Quest Leftovers | [Report a problem](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/new?template=feature_request.yml) |
+| Forever Stocking Stuffer | [Report a problem](https://github.com/TIMID-Group/ForeverStockingStuffer/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverStockingStuffer/issues/new?template=feature_request.yml) |
 | Forever Workbench | [Report a problem](https://github.com/TIMID-Group/ForeverWorkbench/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverWorkbench/issues/new?template=feature_request.yml) |
 
 **About TIMID as a whole** (the TIMID button and panel, the TIMID Group window, or several addons at once): [**report a problem**](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=bug_report.yml&addon=TIMID%20Group) or [**suggest an idea**](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=feature_request.yml&addon=TIMID%20Group) here, on this page, open to everyone, invited or not. Reports here are public; the report from the game holds nothing about your character, gold or account.
@@ -298,6 +301,15 @@ What has been reported and suggested, per addon: open first, then done. An addon
 - 🐞 [Dungeon keys, a boss summon and a quest reward listed as left over](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/2) · #2
 
 [See all](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues?q=is%3Aissue)
+
+</details>
+
+<details>
+<summary><b>Stocking Stuffer</b> (0 open, 0 done)</summary>
+
+Nothing reported yet.
+
+[See all](https://github.com/TIMID-Group/ForeverStockingStuffer/issues?q=is%3Aissue)
 
 </details>
 
