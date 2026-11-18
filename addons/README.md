@@ -12,6 +12,7 @@
 
 | | Addon | In one line |
 | --- | --- | --- |
+| 🎓 | **[Forever Apprentice](ForeverApprentice.md)** | Level a profession step by step: the route, what it costs, and one click to queue it all. |
 | 🛠️ | **[Forever Crafting Ledger](ForeverCraftingLedger.md)** | Know what every recipe earns before you spend a copper. |
 | 🔔 | **[Forever Ding](ForeverDing.md)** | See whether the quests you can hand in will level you up. |
 | 🛠️ | **[Forever Fishing Chart](ForeverFishingChart.md)** | What bites, where and when, right on your world map. |

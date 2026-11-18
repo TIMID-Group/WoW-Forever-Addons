@@ -16,6 +16,7 @@ body:
     attributes:
       label: Which addons?
       options:
+        - label: Forever Apprentice
         - label: Forever Crafting Ledger
         - label: Forever Ding
         - label: Forever Fishing Chart

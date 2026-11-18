@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
+  - name: "Forever Apprentice: report a problem or suggest an idea"
+    url: https://github.com/TIMID-Group/ForeverApprentice/issues/new/choose
+    about: On the addon's own page, which only people who have the addon can open. The game's report button takes you there.
   - name: "Forever Crafting Ledger: report a problem or suggest an idea"
     url: https://github.com/TIMID-Group/ForeverCraftingLedger/issues/new/choose
     about: On the addon's own page, which only people who have the addon can open. The game's report button takes you there.
