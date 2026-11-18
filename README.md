@@ -6,7 +6,7 @@
 
 <sub>by [TIMID Group](https://github.com/TIMID-Group) · connected systems. better builds.</sub>
 
-**Small, focused addons for WoW Forever:** professions, crafting, fishing, quests and levelling.
+**Small, focused addons for WoW Forever:** shopping lists, professions, crafting, fishing, quests, levelling and exploring.
 
 [Addons](#-the-addons) · [Install](#-install) · [Let an AI do it](#3-let-an-ai-agent-do-it) · [Updating](#-updating) · [Troubleshooting](#-troubleshooting) · [Bugs and ideas](#-bugs-and-ideas) · [Reports](#-reports) · [FAQ](#-faq)
 
@@ -28,6 +28,7 @@
 | 🛠️ | **[Forever Fishing Chart](addons/ForeverFishingChart.md)** | Fishing waters on the world map: catches, skill checks and time-of-day rates, plus a fish finder and your own catch log. | [1.7.3](https://github.com/TIMID-Group/ForeverFishingChart/releases/latest) | `/ffc` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 | 📜 | **[Forever Quest Leftovers](addons/ForeverQuestLeftovers.md)** | Looks through your bags and bank for items no quest needs any more, says why, and says what to do with each one. Dungeon keys, attunements and boss summons are listed as worth keeping. It only advises. | [0.12.0](https://github.com/TIMID-Group/ForeverQuestLeftovers/releases/latest) | `/leftovers` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 | 💰 | **[Forever Stocking Stuffer](addons/ForeverStockingStuffer.md)** | A simple auction house shopping list: put items on a list with a quantity and a max price, then click Buy next once per purchase, cheapest first. | [0.1.0](https://github.com/TIMID-Group/ForeverStockingStuffer/releases/latest) | `/stuffer` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
+| 🗺️ | **[Forever Wanderer](addons/ForeverWanderer.md)** | Explore every place you have not discovered yet: one click on a Legacy Explore challenge makes the shortest journey through them. | [0.1.0](https://github.com/TIMID-Group/ForeverWanderer/releases/latest) | `/wanderer` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 | 🛠️ | **[Forever Workbench](addons/ForeverWorkbench.md)** | Makes the profession window richer. Shows materials on hand and items in bags on every recipe, buys the vendor materials for a recipe while leaving bag space to craft, sells what you crafted, and runs a crafting queue. | [2.8.0](https://github.com/TIMID-Group/ForeverWorkbench/releases/latest) | `/workbench` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 
 Click an addon's name for its page here: what it does, with pictures. Its own page (invite only) has the download, the commands and a full guide.
@@ -62,6 +63,7 @@ https://github.com/TIMID-Group/ForeverDing
 https://github.com/TIMID-Group/ForeverFishingChart
 https://github.com/TIMID-Group/ForeverQuestLeftovers
 https://github.com/TIMID-Group/ForeverStockingStuffer
+https://github.com/TIMID-Group/ForeverWanderer
 https://github.com/TIMID-Group/ForeverWorkbench
 ```
 
@@ -205,6 +207,7 @@ With the game closed, delete `WTF/Account/<account>/SavedVariables/<Addon>.lua`.
 | Forever Fishing Chart | [Report a problem](https://github.com/TIMID-Group/ForeverFishingChart/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverFishingChart/issues/new?template=feature_request.yml) |
 | Forever Quest Leftovers | [Report a problem](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/new?template=feature_request.yml) |
 | Forever Stocking Stuffer | [Report a problem](https://github.com/TIMID-Group/ForeverStockingStuffer/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverStockingStuffer/issues/new?template=feature_request.yml) |
+| Forever Wanderer | [Report a problem](https://github.com/TIMID-Group/ForeverWanderer/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverWanderer/issues/new?template=feature_request.yml) |
 | Forever Workbench | [Report a problem](https://github.com/TIMID-Group/ForeverWorkbench/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverWorkbench/issues/new?template=feature_request.yml) |
 
 **About TIMID as a whole** (the TIMID button and panel, the TIMID Group window, or several addons at once): [**report a problem**](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=bug_report.yml&addon=TIMID%20Group) or [**suggest an idea**](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=feature_request.yml&addon=TIMID%20Group) here, on this page, open to everyone, invited or not. Reports here are public; the report from the game holds nothing about your character, gold or account.
@@ -320,6 +323,15 @@ Nothing reported yet.
 </details>
 
 <details>
+<summary><b>Wanderer</b> (0 open, 0 done)</summary>
+
+Nothing reported yet.
+
+[See all](https://github.com/TIMID-Group/ForeverWanderer/issues?q=is%3Aissue)
+
+</details>
+
+<details>
 <summary><b>Workbench</b> (1 open, 54 done)</summary>
 
 **Open**
@@ -353,19 +365,19 @@ Nothing reported yet.
 </details>
 
 <details>
-<summary><b>TIMID Group</b> (6 open, 18 done)</summary>
+<summary><b>TIMID Group</b> (2 open, 22 done)</summary>
 
 **Open**
 
-- 🐞 [Kit busy signal: a holder that errors keeps everyone throttled; scan quiet has no maximum wait](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/78) · #78
-- 💡 [Hub tooling has no tests, and no release check for em dashes, names or confidential names](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/77) · #77
-- 🐞 [Reports: the kit scrubs nothing personal by default, so a name in an error line goes out as is](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/76) · #76
-- 🐞 [Kit popups: keys could stick if combat starts right after an Escape](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/75) · #75
 - 💡 [New addon: Forever Stocking Stuffer, a simple auction house shopping list](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/65) · #65
 - 💡 [New addon: guided profession levelling (route, costs and times, exports a shopping list and a Workbench queue)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/63) · #63
 
 **Done**
 
+- 💡 [Hub tooling has no tests, and no release check for em dashes, names or confidential names](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/77) · #77
+- 🐞 [Kit busy signal: a holder that errors keeps everyone throttled; scan quiet has no maximum wait](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/78) · #78
+- 🐞 [Reports: the kit scrubs nothing personal by default, so a name in an error line goes out as is](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/76) · #76
+- 🐞 [Kit popups: keys could stick if combat starts right after an Escape](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/75) · #75
 - 💡 [Access request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/79) · #79
 - 💡 [New addon: Forever Light Bags (open all your clams in one go)](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/73) · #73
 - 💡 [All addons: stay quiet during an Auctionator scan](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/51) · #51
