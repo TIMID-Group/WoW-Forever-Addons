@@ -22,6 +22,7 @@
 
 | | Addon | What it does | Latest | Command | Access |
 | --- | --- | --- | --- | --- | --- |
+| 🛠️ | **[Forever Apprentice](addons/ForeverApprentice.md)** | Levels a profession step by step: the route from the Forever guides, the costs, and one click to Workbench and your shopping list. | [0.1.0](https://github.com/TIMID-Group/ForeverApprentice/releases/latest) | `/apprentice` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 | 🛠️ | **[Forever Crafting Ledger](addons/ForeverCraftingLedger.md)** | What every recipe of every profession earns: each material from your cheapest vendor or the auction house, the product sold to a vendor or auctioned. Named shopping lists with your own prices. Reads Auctionator's prices. | [1.12.0](https://github.com/TIMID-Group/ForeverCraftingLedger/releases/latest) | `/fcl` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 | 📜 | **[Forever Ding](addons/ForeverDing.md)** | Will the quests you can hand in level you up? Forever Ding adds up their XP, in your zone and across the world, and shows the level you would reach. | [1.1.3](https://github.com/TIMID-Group/ForeverDing/releases/latest) | `/ding` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
 | 🛠️ | **[Forever Fishing Chart](addons/ForeverFishingChart.md)** | Fishing waters on the world map: catches, skill checks and time-of-day rates, plus a fish finder and your own catch log. | [1.7.3](https://github.com/TIMID-Group/ForeverFishingChart/releases/latest) | `/ffc` | 🔒 invite only ([request](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/new?template=request_access.yml)) |
@@ -55,6 +56,7 @@ First, **accept your invites**: one per addon, by email or from the banner on ea
 4. **Get Addons → Install from URL**, paste an addon's link, install. Repeat for each:
 
 ```text
+https://github.com/TIMID-Group/ForeverApprentice
 https://github.com/TIMID-Group/ForeverCraftingLedger
 https://github.com/TIMID-Group/ForeverDing
 https://github.com/TIMID-Group/ForeverFishingChart
@@ -197,6 +199,7 @@ With the game closed, delete `WTF/Account/<account>/SavedVariables/<Addon>.lua`.
 
 | Addon | |
 | --- | --- |
+| Forever Apprentice | [Report a problem](https://github.com/TIMID-Group/ForeverApprentice/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverApprentice/issues/new?template=feature_request.yml) |
 | Forever Crafting Ledger | [Report a problem](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/new?template=feature_request.yml) |
 | Forever Ding | [Report a problem](https://github.com/TIMID-Group/ForeverDing/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverDing/issues/new?template=feature_request.yml) |
 | Forever Fishing Chart | [Report a problem](https://github.com/TIMID-Group/ForeverFishingChart/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/TIMID-Group/ForeverFishingChart/issues/new?template=feature_request.yml) |
@@ -222,20 +225,29 @@ With the game closed, delete `WTF/Account/<account>/SavedVariables/<Addon>.lua`.
 What has been reported and suggested, per addon: open first, then done. An addon's reports are on its own page, so its links open for people who have that addon. 🐞 a problem, 💡 an idea.
 
 <details>
-<summary><b>Crafting Ledger</b> (7 open, 13 done)</summary>
+<summary><b>Apprentice</b> (0 open, 0 done)</summary>
+
+Nothing reported yet.
+
+[See all](https://github.com/TIMID-Group/ForeverApprentice/issues?q=is%3Aissue)
+
+</details>
+
+<details>
+<summary><b>Crafting Ledger</b> (2 open, 18 done)</summary>
 
 **Open**
+
+- 🐞 [A confidential addon's name ships in the README, CHANGELOG, About.lua and tests](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/6) · #6
+- 💡 [What can I make from my bags? A list built from the random materials you collect while levelling](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/2) · #2
+
+**Done**
 
 - 💡 [Queue it sends no Sell steps, so a group with tight bags pauses with "no room"](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/11) · #11
 - 💡 [Saved data: a version, caps and repair on load](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/10) · #10
 - 🐞 [Pull prices: a second pull overwrites the undo, so prices from before the first are lost](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/9) · #9
 - 🐞 [Send can change a list while it is being bought, or overwrite one without asking](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/7) · #7
-- 🐞 [A confidential addon's name ships in the README, CHANGELOG, About.lua and tests](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/6) · #6
 - 🐞 [Send to shopping list: the most to pay can mean buying at a loss](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/4) · #4
-- 💡 [What can I make from my bags? A list built from the random materials you collect while levelling](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/2) · #2
-
-**Done**
-
 - 🐞 [Bundled recipe data has Classic reagents for about 25 recipes WoW Forever changed](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/13) · #13
 - 💡 [Materials: a Craft sells for column (what one craft of the best recipe vendors for)](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/12) · #12
 - 🐞 [Measured craft times read from Workbench's saved data; the contract test loads Workbench by file name](https://github.com/TIMID-Group/ForeverCraftingLedger/issues/8) · #8
@@ -270,14 +282,11 @@ What has been reported and suggested, per addon: open first, then done. An addon
 </details>
 
 <details>
-<summary><b>Fishing Chart</b> (1 open, 2 done)</summary>
-
-**Open**
-
-- 💡 [World map: no tests for its 7 requirements, and a watcher that runs every frame](https://github.com/TIMID-Group/ForeverFishingChart/issues/3) · #3
+<summary><b>Fishing Chart</b> (0 open, 3 done)</summary>
 
 **Done**
 
+- 💡 [World map: no tests for its 7 requirements, and a watcher that runs every frame](https://github.com/TIMID-Group/ForeverFishingChart/issues/3) · #3
 - 🐞 [A confidential addon's name ships in the README, Window.lua comments and a test](https://github.com/TIMID-Group/ForeverFishingChart/issues/2) · #2
 - 💡 [Treasure broken out: every container, bloated fish and trophy fish as its own entry, with where it comes from and drop rates](https://github.com/TIMID-Group/ForeverFishingChart/issues/1) · #1
 
@@ -286,17 +295,14 @@ What has been reported and suggested, per addon: open first, then done. An addon
 </details>
 
 <details>
-<summary><b>Quest Leftovers</b> (4 open, 2 done)</summary>
+<summary><b>Quest Leftovers</b> (0 open, 6 done)</summary>
 
-**Open**
+**Done**
 
 - 💡 [Dungeon Journal and Questie are read through their internals: guard, probe and test older shapes](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/5) · #5
 - 💡 [Saved data: a version, caps and repair on load](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/4) · #4
 - 🐞 [The scan gets slower every month: remembered quests never pruned, scans in combat and per bank slot](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/2) · #2
 - 💡 [Tests for every sell-or-destroy verdict rule (7 of 22 untested)](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/1) · #1
-
-**Done**
-
 - 🐞 [A confidential addon's name ships in the README and a test](https://github.com/TIMID-Group/ForeverQuestLeftovers/issues/3) · #3
 - 🐞 [Dungeon keys, a boss summon and a quest reward listed as left over](https://github.com/TIMID-Group/WoW-Forever-Addons/issues/2) · #2
 
